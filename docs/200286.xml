@@ -1,0 +1,22 @@
+<guide name="fpo_speciality_gr1" key="T_FPO_SPECIALITIES" title="Спеціальності (1)" version="1.0" kind="global" donot_use_add_originid="donot_use_add_originid">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+				<column attr="use" kind="local" ctrltype="ctCheck" title="Use"/>
+			</columns>
+			<sql>
+				<uman>
+select VCT.NODEID as ID,
+VCT.TITLE as VAL,
+1 as USE
+from CONTENTTREE CT
+inner join V_CONTENT_TYPE VCT
+on VCT.PATH starting with CT.FULL_PATH
+where VCT.VISIBLE = 1
+and CT.NODE_KEY =   'STAT2_GUIDE_FPO_SPECIALITY_1'
+and VCT.T_NODE_KEY = 'T_FPO_SPECIALITY'
+order by 2
+	         </uman>
+			</sql>
+         <items/>
+		</guide>

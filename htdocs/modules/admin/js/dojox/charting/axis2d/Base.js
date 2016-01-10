@@ -1,0 +1,2 @@
+//>>built
+define("dojox/charting/axis2d/Base",["dojo/_base/declare","../Element"],function(a,c){return a("dojox.charting.axis2d.Base",c,{constructor:function(a,b){this.vertical=b&&b.vertical},clear:function(){return this},initialized:function(){return!1},calculate:function(){return this},getScaler:function(){return null},getTicks:function(){return null},getOffsets:function(){return{l:0,r:0,t:0,b:0}},render:function(){this.dirty=!1;return this}})});

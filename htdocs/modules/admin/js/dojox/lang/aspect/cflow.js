@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox"],function(k,i,j){i.provide("dojox.lang.aspect.cflow");(function(){var f=j.lang.aspect;f.cflow=function(g,a){arguments.length>1&&!(a instanceof Array)&&(a=[a]);for(var h=f.getContextStack(),c=h.length-1;c>=0;--c){var b=h[c];if(!(g&&b.instance!=g)){if(!a)return!0;for(var b=b.joinPoint.targetName,d=a.length-1;d>=0;--d){var e=a[d];if(e instanceof RegExp){if(e.test(b))return!0}else if(b==e)return!0}}}return!1}})()});

@@ -1,0 +1,3 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/cometd/_base"],function(e,b,c){b.provide("dojox.cometd.ack");b.require("dojox.cometd._base");c.cometd._ack=new function(){var b=!1,d=-1;this._in=function(a){a.channel=="/meta/handshake"?b=a.ext&&a.ext.ack:b&&a.channel=="/meta/connect"&&a.ext&&a.ext.ack&&a.successful&&(d=parseInt(a.ext.ack));return a};this._out=function(a){if(a.channel=="/meta/handshake"){if(!a.ext)a.ext={};a.ext.ack=c.cometd.ackEnabled;d=-1}if(b&&a.channel=="/meta/connect"){if(!a.ext)a.ext=
+{};a.ext.ack=d}return a}};c.cometd._extendInList.push(b.hitch(c.cometd._ack,"_in"));c.cometd._extendOutList.push(b.hitch(c.cometd._ack,"_out"));c.cometd.ackEnabled=!0});

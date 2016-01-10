@@ -1,0 +1,49 @@
+<letter>
+	<sql>select  IU.NODEID as USERID,
+         LIST((CT2.TITLE||' за '||CT.TITLE||' до '||  LPAD(EXTRACT(DAY FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))), 2, '0') || '.' ||
+       LPAD(EXTRACT(MONTH FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))), 2, '0') || '.' ||
+       EXTRACT(YEAR FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))) ), ',') as MESSAGE
+
+from V_CONTENT_TYPE CT
+inner join CONTENTTREE CT1
+on CT1.NODEID = CT.PARENTID
+inner join CONTENTTREE CT2
+on CT2.NODEID = CT1.PARENTID
+inner join ALLOW_NODES AN
+on AN.NODEID = CT2.NODEID
+inner join CONTENTTREE CT3
+on CT3.NODEID = AN.ALLOWNODEID
+inner join INFO_USERS IU
+on IU.STRUCTUREID = CT3.NODEID
+where CT.T_NODE_KEY = 'T_STAT2_PERIOD'
+      and IU.NODEID in (:userlist)
+   and ((  select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICDATE'))) = ?) group by 1</sql>
+	<text>Здравствуйте!
+На офіційному сайті збору і обробоки статистичної інформації ВМ(Ф)НЗ України (http://contingent.tdmu.edu.ua) опубліковані наступні вимоги по статистичних звітах післядипломної освіти для МОЗ України:
+message
+
+Увага! Дані по статистиці, які Ви подаєте в "Статистику 2" повинні повністю співпадати з тими даними, які подаються в планово-фінансовий відділ Вашого ВНЗ. Тільки тоді в МОЗ України будуть співпадати дані Управленія фінансів і Управленія освіти і науки.
+
+-- 
+З найкращими побажаннями,
+ група розробнків
+
+E-Mail:  contingent@tdmu.edu.ua
+   Web:  contingent.tdmu.edu.ua
+	</text>
+	<subject>Міністерська статистика. Післядипломна освіта</subject>
+	<from_email>contingent@tdmu.edu.ua</from_email>
+	<from_name>Група розробників</from_name>
+</letter>

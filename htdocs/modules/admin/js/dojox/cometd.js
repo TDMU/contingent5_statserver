@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/cometd/_base,dojox/cometd/longPollTransport,dojox/cometd/callbackPollTransport"],function(b,a){a.provide("dojox.cometd");a.require("dojox.cometd._base");a.require("dojox.cometd.longPollTransport");a.require("dojox.cometd.callbackPollTransport")});

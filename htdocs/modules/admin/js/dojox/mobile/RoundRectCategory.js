@@ -1,0 +1,2 @@
+//>>built
+define("dojox/mobile/RoundRectCategory",["dojo/_base/declare","dojo/_base/window","dijit/_Contained","dijit/_WidgetBase"],function(b,c,d,e){return b("dojox.mobile.RoundRectCategory",[e,d],{label:"",buildRendering:function(){this.domNode=this.containerNode=this.srcNodeRef||c.doc.createElement("H2");this.domNode.className="mblRoundRectCategory";if(!this.label)this.label=this.domNode.innerHTML},_setLabelAttr:function(a){this.label=a;this.domNode.innerHTML=this._cv?this._cv(a):a}})});

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content><style type="text/css">
+<!--
+.cnt table  {
+	border-collapse: collapse;
+}
+
+.cnt td  {
+	text-align: center;
+	border: thin solid;
+}
+--></style>
+Скачать эту статью: <a href="downloads/Рекомендации по оцениванию ДI.doc">Рекомендации по оцениванию ДI.doc</a>
+<p style="text-align: center;">
+	<br />
+	<strong>Рекомендации по оцениванию государственного экзамена<br />
+	в системе </strong><strong>ECTS</strong><strong>в рамках использования программы Контингент.</strong></p>
+<p>
+	<br />
+	1. Так как в программе &laquo;Контингент&raquo; любая повторно разнесенная студентам дисциплина рассматривается как повторное изучение, нельзя экзаменационные дисциплины разносить с тем же названием, что и у дисциплин, которые изучались студентом ранее.<br />
+	Из всех государственных экзаменов по названию с дисциплиной совпадает &laquo;<strong>Акушерство і гінекологія</strong>&raquo;. В связи с этим мы предлагаем для всех государственных экзаменов добавить аббревиатуру <strong>ДІ </strong>и рассматривать госэкзамены какновые дисциплины:<br />
+	&nbsp; <strong>1987&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДІ Акушерство і гінекологія</strong><br />
+	&nbsp; <strong>...</strong><br />
+	&nbsp; <strong>2010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДІ Внутрішні, професійні та інфекційні хвороби</strong><br />
+	&nbsp; <strong>2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДІ Хірургічні хвороби з дитячою хірургією</strong><br />
+	&nbsp; <strong>...</strong><br />
+	&nbsp; <strong>2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДІ Дитячі хвороби з дитячими інфекційними хворобами&nbsp;&nbsp;&nbsp; </strong><br />
+	&nbsp; <strong>2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ДІ Гігієна, соціальна медицина, організація та економіка охорони здоров&#39;я</strong></p>
+<p>
+	<br />
+	(Эти дисциплины можно добавить вручную в справочник или они добавятся автоматически с обновлением сервиспак 6.13 (V5.6.13.207).)<br />
+	Для каждой из этих дисциплин следует создать <strong>вариант преподавания с одним модулем</strong> и формой контроля &laquo;<strong>Державний іспит</strong>&raquo;&nbsp; (в справочнике &laquo;Форми контролю (ECTS)&raquo; соответствует ID = &laquo;<strong>ДЕ</strong>&raquo;) (Название формы контроля будет изменено при установке обновления сервиспак 6.13 (V5.6.13.207), прежнее название &laquo;<strong>екзамен</strong>&raquo; поменяется на &laquo;<strong>Державний іспит</strong>&raquo;).<br />
+	Если студентам уже были разнесены экзаменационные дисциплины, рекомендуем удалить их из учебных карточек и разнести указанные выше.</p>
+<p>
+	<br />
+	2. <em>Рекомендации к протоколу проведения экзамена.</em><br />
+	В форме протокола экзамена (разработанного в соответствии с приказом № 53 МОЗ Украины) следует внести следующие изменения. Выполнение заданий оценивается баллами &ndash; &laquo;1&raquo; и &laquo;0&raquo; (возможно еще &laquo;0,5&raquo;). При пересчете среднее арифметическое по дисциплине умножается на коэффициент &laquo;200&raquo; (ранее коэффициент был &laquo;5&raquo;; если в вузе принята 100-бальная система оценивания, то умножается на коэффициент &laquo;100&raquo;.) <strong>Критерии выставления оценки</strong>: 200-180 баллов &ndash; &laquo;<strong>отлично</strong>&raquo;, &laquo;<strong>А</strong>&raquo;; 179,9-160 баллов &ndash; &laquo;<strong>хорошо</strong>&raquo;, &laquo;<strong>B</strong>&raquo;; 159,9-140 баллов &ndash; &laquo;<strong>хорошо</strong>&raquo;, &laquo;<strong>С</strong>&raquo;; 139,9-120 баллов &ndash; &laquo;<strong>удовлетворительно</strong>&raquo;, &laquo;<strong>D</strong>&raquo;; 119,9-100,1 баллов &ndash; &laquo;<strong>удовлетворительно</strong>&raquo;, &laquo;<strong>E</strong>&raquo;; 100 баллов и менее &ndash; &laquo;<strong>неудовлетворительно</strong>&raquo;, &laquo;<strong>FX</strong>&raquo;. (Если в вузе принята 100-бальная система оценивания, то следует пересчитать границы оценок.)<br />
+	Для наглядности привожу таблицу:<br />
+	&nbsp;</p>
+<br />
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 650px; height: 177px;">
+	<tbody>
+		<tr>
+			<td align="center" colspan="2" style="width: 291px; height: 20px; text-align: center;" valign="middle">
+				Прежние традиционные границы оценок в соответствии с приказом № 53, но дополненные промежутками для соответствия оценкам ECTSпри коэф. &laquo;5&raquo;</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;" valign="middle">
+				Оценка ECTS</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;" valign="middle">
+				Новые границы оценок в<br />
+				приведении к 200 бальной шкале</td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				5 - 4,5</td>
+			<td align="center" nowrap="nowrap" style="width: 178px; height: 20px; text-align: center;">
+				Отлично</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				A</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>200 </strong><strong>- 180</strong></td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				4,49 - 4</td>
+			<td rowspan="2" style="width: 178px; height: 20px; text-align: center; white-space: nowrap; vertical-align: middle;">
+				Хорошо</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				B</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>179,9 </strong><strong>- 160</strong></td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				3,99 - 3,5</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				C</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>159,9 </strong><strong>- 140</strong></td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				3,49 - 3</td>
+			<td rowspan="2" style="width: 178px; height: 20px; text-align: center; white-space: nowrap; vertical-align: middle;">
+				Удовлетворительно</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				D</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>139,9 </strong><strong>- 120</strong></td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				2,99 - 2,51</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				E</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>119,9 </strong><strong>- 100,1</strong></td>
+		</tr>
+		<tr>
+			<td align="center" style="width: 113px; height: 20px; text-align: center;">
+				2,5 - 0</td>
+			<td align="center" nowrap="nowrap" style="width: 178px; height: 20px; text-align: center;">
+				Неудовлетворительно</td>
+			<td align="center" nowrap="nowrap" style="width: 72px; height: 20px; text-align: center;">
+				FХ</td>
+			<td align="center" nowrap="nowrap" style="width: 154px; height: 20px; text-align: center;">
+				<strong>100 </strong><strong>- 0</strong></td>
+		</tr>
+	</tbody>
+</table>
+<br />
+<br />
+<p>
+	3. В экзаменационные ведомости по дисциплине (форма № У-9.03 (9.04 и пр.) выносится <strong>традиционная оценка</strong>, <strong>оценка </strong><strong>ECTS</strong> и <strong>средний балл (по 200 бальной шкале)</strong>.</p>
+<p>
+	4. В программе &laquo;Контингент&raquo; в ведомости, созданные по модулю каждой экзаменационной дисциплины, вносится только <strong>средний балл (по 200 бальной шкале)</strong>.</p>
+<p>
+	5. В справочник &laquo;<strong>Оц</strong><strong>інки </strong><strong>ECTS</strong>&raquo; программы &laquo;Контингент&raquo; в колонку &laquo;<strong>М</strong><strong>і</strong><strong>н. кредит</strong><strong>ів</strong>&raquo; вносятся граничные баллы: <strong>180, 160, 140, 120, 100,1 </strong>для &laquo;<strong>A</strong>&raquo;, &laquo;<strong>B</strong>&raquo;, &laquo;<strong>C</strong>&raquo;, &laquo;<strong>D</strong>&raquo;, &laquo;<strong>E</strong>&raquo;соответственно.</p>
+<p>
+	6. Для студентов производится <strong>абсолютное ранжирование</strong> с настройками, приведенными на рисунке. (Отмеченные параметры обязательны для ранжирования. Параметры: &laquo;<strong>Протокол для</strong>&raquo;, &laquo;<strong>Дата создания протокола</strong>&raquo;&nbsp; выбираются в соответствии с процессом проведения экзамена)</p>
+<p style="text-align: center;">
+	<img alt="" src="protocol1.JPG" style="width: 633px; height: 519px;" /></p>
+<p>
+	Если все выполнено правильно, то в &laquo;Контингенте&raquo; в протоколе ранжирования должны выставиться те же оценки, какие студенты получили на экзамене.<br />
+	<br />
+	<strong>Примечание.</strong><br />
+	ECTS оценки по государственному экзамену могут быть получены путем относительного ранжирования (о чем говорилось на последнем совещании в Тернополе).</p>
+В этом случае:<br />
+<ol>
+	<li>
+		Пункт 1 остается без изменений;</li>
+	<li>
+		В пункте 2 из формулировок убираются оценки ECTS и таблица ранжирования будет выглядеть следующим образом:</li>
+</ol>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 650px;">
+	<tbody>
+		<tr>
+			<td colspan="2">
+				Прежние традиционные границы оценок в соответствии с приказом №&nbsp;53</td>
+			<td>
+				Новые границы оценок в приведении к 200 бальной шкале</td>
+		</tr>
+		<tr>
+			<td>
+				5&nbsp;-&nbsp;4,5</td>
+			<td>
+				Отлично</td>
+			<td>
+				<strong>200&nbsp;</strong><strong>-&nbsp;180</strong></td>
+		</tr>
+		<tr>
+			<td>
+				4,49&nbsp;-&nbsp;3,5</td>
+			<td>
+				Хорошо</td>
+			<td>
+				<strong>179,9&nbsp;</strong><strong>-&nbsp;140</strong></td>
+		</tr>
+		<tr>
+			<td>
+				3,49&nbsp;-&nbsp;2,51</td>
+			<td>
+				Удовлетворительно</td>
+			<td>
+				<strong>139,9&nbsp;-</strong><strong>&nbsp;100,1</strong></td>
+		</tr>
+		<tr>
+			<td>
+				2,5&nbsp;-&nbsp;0</td>
+			<td>
+				Неудовлетворительно</td>
+			<td nowrap="nowrap">
+				<strong>100&nbsp;</strong><strong>-&nbsp;0</strong></td>
+		</tr>
+	</tbody>
+</table>
+<div style="clear: both;">
+	&nbsp;</div>
+&nbsp;<br />
+<ol>
+	<li value="3">
+		Пункт 3 остается без изменений;</li>
+	<li value="4">
+		В пункт 4 следует добавить, что в ведомости вносятся <u>только целочисленные баллы</u>.</li>
+	<li value="5">
+		В справочник <u>&laquo;</u><u>Традиційні оцінки&raquo;</u> программы &laquo;Контингент&raquo; в колонку &laquo;Мін. кредитів&raquo; вносятся граничные баллы: 180, 140, 100,1 для &laquo;5&raquo;, &laquo;4&raquo;, &laquo;3&raquo; соответственно.</li>
+	<li value="6">
+		Для студентов производится <strong>относительное ранжирование</strong><strong>.</strong> Для этого следует выполнить следующие настройки:</li>
+</ol>
+<div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Тип протоколу - Відносне за останньою відомістю;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мінімум для трійки - &lt;пусто&gt; (будет браться из справочника)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Традиційна оцінка &ndash; абсолютним ранжуванням;</div>
+<p>
+	<br />
+	<br />
+	Скачать эту статью: <a href="downloads/Рекомендации по оцениванию ДI.doc">Рекомендации по оцениванию ДI.doc</a></p>
+</content>

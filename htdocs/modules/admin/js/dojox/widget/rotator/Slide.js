@@ -1,0 +1,3 @@
+//>>built
+define(["dijit","dojo","dojox"],function(h,d,g){d.provide("dojox.widget.rotator.Slide");(function(e){function c(a,b){var c=b.node=b.next.node,f=b.rotatorBox,d=a%2,f=(d?f.w:f.h)*(a<2?-1:1);e.style(c,{display:"",zIndex:(e.style(b.current.node,"zIndex")||1)+1});if(!b.properties)b.properties={};b.properties[d?"left":"top"]={start:f,end:0};return e.animateProperty(b)}e.mixin(g.widget.rotator,{slideDown:function(a){return c(0,a)},slideRight:function(a){return c(1,a)},slideUp:function(a){return c(2,a)},
+slideLeft:function(a){return c(3,a)}})})(d)});

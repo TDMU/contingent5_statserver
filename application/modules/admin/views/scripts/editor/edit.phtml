@@ -1,0 +1,34 @@
+<div id="dialogScripts" style="display: none">
+Line for workin script in IE
+<script type="text/javascript">
+	function onFormCreate() {
+		<?php
+		if(isset($this->js_oncreate)) {
+			echo "var baseUrl = '{$this->baseUrl}';\n";
+			echo "var baseHref = 'http://{$_SERVER['HTTP_HOST']}/tmp/{$this->id}/';\n";
+			echo "var id = '{$this->id}';\n";
+			echo $this->js_oncreate;
+		}
+		?>
+	}
+
+	function beforeSubmit() {
+		<?php
+			echo $this->js_beforesubmit;
+		?>
+		return true;
+	}
+
+//	onFormCreate();
+</script>
+</div>
+
+<?php
+	if ($this->form) {
+		echo '<div style="text-align:center;font-size:20px;font-weight:bold;">' . $this->title . '</div><hr/>';
+		echo '<div style="max-height: 550px; overflow: auto;">';
+		echo $this->form->render();
+		echo '<div id="formError"></div>';
+		echo '</div>';
+	}
+?>

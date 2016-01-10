@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content><h1>Відправлення звітів</h1>
+<div class="widget" params="widget=stat/import/show">&nbsp;</div></content>

@@ -1,0 +1,2 @@
+//>>built
+define("dojox/data/JsonQueryRestStore",["dojo","dojox","dojox/data/JsonRestStore","dojox/data/util/JsonQuery","dojox/data/ClientFilter","dojox/json/query"],function(b,a){b.declare("dojox.data.JsonQueryRestStore",[a.data.JsonRestStore,a.data.util.JsonQuery],{matchesQuery:function(a){return a.__id&&a.__id.indexOf("#")==-1&&this.inherited(arguments)}});return a.data.JsonQueryRestStore});

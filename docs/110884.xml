@@ -1,0 +1,20 @@
+<letter>
+	<sql>select  IU.NODEID as USERID, '' as MESSAGE, cast (? as varchar(15)) as curdate
+from INFO_USERS IU
+where IU.NODEID in (:userlist)
+</sql>
+	<text>Уважаемые коллеги!
+
+ Заместитель начальника Отдела образования Департамента работы с персоналом, образования и науки МОЗ Украины Пятницкий Юрий Сергеевич сообщил, что для подготовки отчета "уточненный план" за 1-й квартал следует использовать рабочие планы, рамещенные на сайте КГМУ от 23.01.2014. 
+
+
+С наилучшими пожеланиями,
+группа разработчиков
+
+E-Mail:  contingent@mail.ru
+     Web:  www.csmu.edu.ua  
+	</text>
+	<subject>МОЗ. Планы приема 2014.</subject>
+	<from_email>contingent@mail.ru</from_email>
+	<from_name>Группа разработчиков</from_name>
+</letter>

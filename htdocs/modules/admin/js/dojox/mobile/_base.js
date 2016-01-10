@@ -1,0 +1,2 @@
+//>>built
+define("dojox/mobile/_base",["./common","./View","./Heading","./RoundRect","./RoundRectCategory","./EdgeToEdgeCategory","./RoundRectList","./EdgeToEdgeList","./ListItem","./Switch","./ToolBarButton","./ProgressIndicator"],function(a){return a});

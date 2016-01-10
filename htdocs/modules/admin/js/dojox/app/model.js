@@ -1,0 +1,2 @@
+//>>built
+define("dojox/app/model",["dojo/_base/kernel","dojo/_base/Deferred","dojox/mvc/StatefulModel"],function(f,g){return function(a,e){var c={};e&&f.mixin(c,e);if(a)for(var b in a)if(b.charAt(0)!=="_"){var d=a[b].params?a[b].params:{};c[b]=g.when(dojox.mvc.newStatefulModel({store:d.store.store,query:d.store.query?d.store.query:{}}),function(a){return a})}return c}});

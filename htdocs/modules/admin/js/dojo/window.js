@@ -1,0 +1,12 @@
+/*
+	Copyright (c) 2004-2011, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+//>>built
+define("dojo/window",["./_base/kernel","./_base/lang","./_base/sniff","./_base/window","./dom","./dom-geometry","./dom-style"],function(j,s,m,g,D,n,E){s.getObject("window",!0,j);j.window.getBox=function(){var b=g.doc.compatMode=="BackCompat"?g.body():g.doc.documentElement,y=n.docScroll(),d=g.doc.parentWindow||g.doc.defaultView;return{l:y.x,t:y.y,w:d.innerWidth||b.clientWidth,h:d.innerHeight||b.clientHeight}};j.window.get=function(b){if(m("ie")&&window!==document.parentWindow){b.parentWindow.execScript("document._parentWindow = window;",
+"Javascript");var g=b._parentWindow;b._parentWindow=null;return g}return b.parentWindow||b.defaultView};j.window.scrollIntoView=function(b,j){try{var b=D.byId(b),d=b.ownerDocument||g.doc,e=d.body||g.body(),h=d.documentElement||e.parentNode,f=m("ie"),z=m("webkit");if((!m("mozilla")&&!f&&!z&&!m("opera")||b==e||b==h)&&typeof b.scrollIntoView!="undefined")b.scrollIntoView(!1);else{var t=d.compatMode=="BackCompat",l=f>=9&&b.ownerDocument.parentWindow.frameElement?h.clientHeight>0&&h.clientWidth>0&&(e.clientHeight==
+0||e.clientWidth==0||e.clientHeight>h.clientHeight||e.clientWidth>h.clientWidth)?h:e:t?e:h,d=z?e:l,u=l.clientWidth,v=l.clientHeight,w=!n.isBodyLtr(),i=j||n.position(b),c=b.parentNode,l=function(a){return f<=6||f&&t?!1:E.get(a,"position").toLowerCase()=="fixed"};if(!l(b))for(;c;){c==e&&(c=d);var a=n.position(c),A=l(c);if(c==d){a.w=u;a.h=v;d==h&&f&&w&&(a.x+=d.offsetWidth-a.w);if(a.x<0||!f)a.x=0;if(a.y<0||!f)a.y=0}else{var o=n.getPadBorderExtents(c);a.w-=o.w;a.h-=o.h;a.x+=o.l;a.y+=o.t;var k=c.clientWidth,
+p=a.w-k;if(k>0&&p>0)a.w=k,a.x+=w&&(f||c.clientLeft>o.l)?p:0;k=c.clientHeight;p=a.h-k;if(k>0&&p>0)a.h=k}if(A){if(a.y<0)a.h+=a.y,a.y=0;if(a.x<0)a.w+=a.x,a.x=0;if(a.y+a.h>v)a.h=v-a.y;if(a.x+a.w>u)a.w=u-a.x}var q=i.x-a.x,r=i.y-Math.max(a.y,0),B=q+i.w-a.w,C=r+i.h-a.h;if(B*q>0){var x=Math[q<0?"max":"min"](q,B);if(w&&(f==8&&!t||f>=9))x=-x;i.x+=c.scrollLeft;c.scrollLeft+=x;i.x-=c.scrollLeft}C*r>0&&(i.y+=c.scrollTop,c.scrollTop+=Math[r<0?"max":"min"](r,C),i.y-=c.scrollTop);c=c!=d&&!A&&c.parentNode}}}catch(s){console.error("scrollIntoView: "+
+s),b.scrollIntoView(!1)}};return j.window});

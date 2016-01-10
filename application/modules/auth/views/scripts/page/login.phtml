@@ -1,0 +1,131 @@
+<table width="100%" height="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tr>
+		<td height="120" valign="top">
+		<table width="100%" height="120" border="0" cellpadding="0"
+			cellspacing="0" background="/modules/auth/img/fon2.gif">
+			<tr>
+				<td width="100" rowspan="2" align="center" valign="top"><img
+					src="/modules/auth/img/vuz_gerb.gif" width="100" height="94" hspace="5"
+					vspace="10" /></td>
+				<td height="65" align="center" valign="bottom"><img
+					src="/modules/auth/img/vuz.gif" width="400" height="62" vspace="5" /></td>
+				<td width="100" rowspan="2" align="center" valign="top">
+				<table width="100" height="100%" border="0" cellpadding="0"
+					cellspacing="0">
+					<tr>
+						<td>&#160;</td>
+						<td>&#160;</td>
+						<td>&#160;</td>
+						<td>&#160;</td>
+					</tr>
+					<tr>
+						<td>&#160;</td>
+						<td><img src="/modules/auth/img/flag_ru.gif" width="16" height="12" hspace="5" />
+						</td>
+						<td align="left"><a href="?locale=ru">Русский</a></td>
+						<td>&#160;</td>
+					</tr>
+					<tr>
+						<td>&#160;</td>
+						<td><img src="/modules/auth/img/flag_uk.gif" width="16" height="12" hspace="5" />
+						</td>
+						<td align="left"><a href="?locale=uk">Українска</a></td>
+						<td>&#160;</td>
+					</tr>
+					<tr>
+						<td>&#160;</td>
+						<td>&#160;</td>
+						<td>&#160;</td>
+						<td>&#160;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td height="35" align="center" valign="top" class="title2">
+                 <?php echo $this->translate ( 'skin.orgname_full' )?>
+              </td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="top">
+		<div align="right"><span class="subtitle1">
+              <?php echo $this->translate ( 'skin.copyright_info' )?>
+            </span> <br />
+		<br />
+		<br />
+		<br />
+		<br />
+		</div>
+          
+          <?php //if (isset ( $_GET ['error'] )) echo $this->translate ( 'Authorization error. Please, try again.' ) . '<br/><br/>'?>
+          <?php if(!empty($this->message)) :?>
+<div id="message">
+<?php echo $this->message?>
+</div><br/><br/>
+<?php endif; ?>
+
+<form action="/auth/page/login" method="post">
+	<input type="hidden" name="resource" value="<?php echo $this->resource?>">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="33%" height="100%">&#160;</td>
+				<td height="100%">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td height="25" colspan="2" align="center" bgcolor="#86B9FF"><strong>
+						<font color="#FFFFFF">
+                          <?php echo $this->translate ( 'EnterLogin' )?>
+                        </font> </strong></td>
+					</tr>
+					<tr>
+						<td width="50%">&#160;</td>
+						<td width="50%">&#160;</td>
+					</tr>
+					<tr>
+						<td align="right"><strong><?php echo $this->translate ( 'UserName' )?>&#160;&#160;</strong>
+						</td>
+						<td align="left"><input name="username" type="text" id="username"
+							style="width: 165px" /></td>
+					</tr>
+					<tr>
+						<td>&#160;</td>
+						<td>&#160;</td>
+					</tr>
+					<tr>
+						<td align="right"><strong><?php echo $this->translate ( 'UserPassword' )?>&#160;&#160;</strong>
+						</td>
+						<td align="left"><input name="password" type="password"
+							id="password" style="width: 165px" /></td>
+					</tr>
+					<tr>
+						<td>&#160;</td>
+						<td>&#160;</td>
+					</tr>
+					<tr>
+						<td height="25" colspan="2" align="center" bgcolor="#86B9FF"><input
+							type="submit" name="submit"
+							value="<?php echo $this->translate ( 'btLogin' )?>" /></td>
+					</tr>
+					<tr>
+						<td height="25" colspan="2" align="right"><a
+							href="/"><?php echo $this->translate ('Guest login')?></a>&#160;&#160;&#160;
+						</td>
+					</tr>
+				</table>
+				</td>
+				<td width="33%" height="100%">&#160;</td>
+			</tr>
+		</table>
+		
+		</form>
+		
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom">&#160;</td>
+	</tr>
+</table>

@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/io/httpParse,dojox/cometd/RestChannels"],function(c,a,b){a.provide("dojox.cometd.HttpChannels");a.require("dojox.io.httpParse");a.require("dojox.cometd.RestChannels");b.cometd.HttpChannels=b.cometd.RestChannels});

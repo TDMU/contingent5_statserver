@@ -1,0 +1,34 @@
+<h2 style="text-align: center;">Для обраного осередку доступні такі пояснення</h2>
+<table border="1" cellspacing="0" cellpadding1="0">
+  <thead>
+    <tr>
+      <th>Валідація</th>
+      <th>Аргумент1</th>
+      <th>Аргумент2</th>
+      <th>Пояснення</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($this->validations as $validation):?>
+<tr>
+  <td>
+<?php echo $validation['VALIDATION']?>
+	</td>
+	<td>
+<?php echo $validation['ARG1']?>
+	</td>
+	<td>
+<?php echo $validation['ARG2']?>
+	</td>
+	<td>
+<?php echo $validation['NOTE']?>
+	</td>
+</tr>
+<?php endforeach?>
+	</tbody>
+</table>
+<p>
+<div align="center">
+<input type="button" value="Закрити" onclick="window.close()"/>
+</div>
+</p>

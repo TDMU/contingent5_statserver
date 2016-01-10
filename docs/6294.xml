@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content><h1>
+	Контактная информация</h1>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="right" class="t2" valign="top">
+				E-mail:</td>
+			<td>
+				<a href="mailto:contingent@tdmu.edu.ua">contingent@tdmu.edu.ua</a></td>
+		</tr>
+		<tr>
+			<td align="right" class="t2" valign="top">
+				Home&nbsp;page:</td>
+			<td>
+				<a href="http://contingent.tdmu.edu.ua/">http://contingent.tdmu.edu.ua/</a></td>
+		</tr>
+		<tr>
+			<td align="right" class="t2" valign="top">
+				Адрес:</td>
+			<td class="textcur">
+				майдан Волi, 1, Тернопiль, 46001,&nbsp;<br />
+				Тернопільський державний медичний університет ім. І.Я. Горбачевського,&nbsp;<br />
+				информационно-аналитический отдел</td>
+		</tr>
+		<tr>
+			<td align="right" class="t2" valign="top">
+				Тел./факс:</td>
+			<td class="textcur">
+				(0352) 52-09-58</td>
+		</tr>
+	</tbody>
+</table>
+</content>

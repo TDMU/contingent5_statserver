@@ -1,0 +1,2 @@
+//>>built
+define("dojox/app/view",["dojo/_base/declare","dijit/_WidgetBase","dijit/_Container","dijit/_Contained","dijit/_TemplatedMixin","dijit/_WidgetsInTemplateMixin"],function(a,b,c,d,e,f){return a("dojox.app.view",[b,e,c,d,f],{selected:!1,keepScrollPosition:!0,baseClass:"applicationView mblView",config:null,widgetsInTemplate:!0,templateString:"<div></div>",toString:function(){return this.id},activate:function(){},deactivate:function(){},getParent:function(){return null}})});

@@ -1,0 +1,570 @@
+<report>
+	<info>
+		<reportid/>
+		<title/>
+		<begindate/>
+		<enddate/>
+		<publicdate/>
+		<timelimit/>
+		<validresult>0</validresult>
+		<comment>Річний рух контингенту
+
+Дані звіту подаються диференційовано за спеціальностями, формами навчання, фінансування, типами громадянства. Звіт складається з трьох основних розділів: «Звіт по плану», «План» і «Перспективний план».
+
+«Звіт по плану» — містить дані за рік звіту.
+Колонки розділу:
+
+«Наявність» – стан контингенту на початок календарного року (станом на 01.01.). У даній колонці враховуються всі студенти: які навчаються, студенти, які знаходяться в академічній відпустці і на повторному навчанні.
+
+«Прийом» – фактичний прийом за календарний рік (період 01.01. – 31.12.).
+
+«Випуск» – фактичний випуск за календарний рік (період 01.01. – 31.12.).
+
+«Присів» – у даній колонці враховується такий контингент: «поновлення на навчання», «переведення з іншого вузу», «поновлення на навчання з іншого вузу», «поновлення на навчання та допуск до державної атестації», «поновлення на навчання з іншого вузу та допуск до державної атестації». А також: переведення: «на іншу форму фінансування»,  «іншу форму навчання», «зміна громадянства», «зміна спеціальності» (за календарний рік, період 01.01. – 31.12.).
+
+«Відсів» – у даній колонці враховується наступний контингент: усі відраховані студенти (окрім відрахованих «у зв'язку з закінченням терміну навчання»), студенти переведені «на іншу форму фінансування», «іншу форму навчання» і студенти, які змінили громадянство чи змінили спеціальність (за календарний рік, період 01.01. – 31.12.).
+
+«На кінець року» - дані розраховуються автоматично за допомогою програми станом на 31.12.
+
+
+«План» — містить дані щодо планів випуску та прийому у наступному році.
+Колонки розділу:
+
+«Наявність» – стан контингенту на початок наступного року. Дані повинні відповідати даним «на кінець року» розділу «Звіт по плану».
+
+«Прийом» – подається план минулого року (для импорту з "Контингент 5" небхідно заповнення планів прийому на наступний рік. При відсутності плану використовуйте план за минулий рік).
+
+«Випуск» – план випуску студентів. Подається фактична кількість студентів на останньому курсі навчання, яких заплановано випустити в наступному році. (для импорту з "Контингент 5" небхідно заповнення терміну навчання студентів)
+
+«Присів» – не планується, подається 0.
+
+«Відсів» – не планується, подається 0.
+
+«На кінець року» - дані розраховуються автоматично за допомогою програми станом на 31.12.
+
+
+«Перспективний план» — містить дані щодо планів випуску та прийому через рік.
+Колонки розділу:
+
+«Наявність» – стан контингенту на початок року перспективного плану. Дані повинні відповідати даним «на кінець року» розділу «План».
+
+«Прийом» – подається план минулого року.
+
+«Випуск» – план випуску студентів. Подається фактична кількість студентів на передостанньому курсі навчання, яких заплановано випустити через рік.
+
+«Присів» – не планується, подається 0.
+
+«Відсів» – не планується, подається 0.
+
+«На кінець року» - дані розраховуються автоматично за допомогою програми станом на 31.12.
+		</comment>
+		<dbversion_cont5 min="5.5.15.172" max=""/>
+	</info>
+	<description>
+		<!-- old request -->
+		<groupfield name="main" title="main">
+			<dbcode name="dbcode" title="Код БД" ctrltype="ctCombobox" datatype="dtInteger" required="true" componentwidth="30" unique="true" readonly="true"/>
+			<filterparam name="eduform" title="Форма навчання" ctrltype="ctCombobox" datatype="dtString" datasize="2" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUFORMID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/>
+					<!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="eduform" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<filterparam name="edubasis" title="Форма фінансування" ctrltype="ctCombobox" datatype="dtString" datasize="1" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUBASISID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/>
+					<!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="edubasis" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<filterparam name="countrytype" title="Тип громадянства" ctrltype="ctCombobox" datatype="dtString" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_COUNTRYTYPEID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/>
+					<!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="countrytype" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+			<fieldgroupparam name="speciality" title="Спеціальність" ctrltype="ctCombobox" datatype="dtSmallInt" componentwidth="100" unique="true" nodekey="STAT_PARAM_SPECIALITYID">
+				<lookup defkey="#first">
+					<items sourceguide="speciality" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</fieldgroupparam>
+			<repeater paramname="reportplankind">
+				<source>
+					<items sourceguide="reportplankind" fieldid="id" fieldtitle="val"/>
+				</source>
+				<content>
+					<groupfield name="reportplankind_%s" title="%s" nodekey="STAT_PARAM_REPORTPLANKIND">
+						<repeater paramname="kind">
+							<source>
+								<items sourceguide="kind" fieldid="id" fieldtitle="val"/>
+							</source>
+							<content>
+								<field name="cur_%s_%s" title="%s|%s" ctrltype="ctEdit" datatype="dtInteger" componentwidth="40" footer="fvtSum"/>
+							</content>
+						</repeater>
+						<calcfield name="endyear_%s" expression="SUM(cur_%s_STAT_KIND_CS) + SUM(cur_%s_STAT_KIND_CENTER) - SUM(cur_%s_STAT_KIND_CEXIT) + SUM(cur_%s_STAT_KIND_MOVEIN) - SUM(cur_%s_STAT_KIND_MOVEOUT)" ctrltype="ctLabel" title="%s|На кінець року" datatype="dtInteger" footer="fvtSum" componentwidth="40"/>
+					</groupfield>
+				</content>
+			</repeater>
+		</groupfield>
+	</description>
+	<script>
+          procedure sum1(DataSet: TDataSet; AgrFieldName: string; Fields: TStringList);
+          begin
+            DataSet.FieldByName(AgrFieldName).asInteger := 111;
+          end;
+
+          begin
+          end.
+	</script>
+	<import>
+		<cont5>
+			<params/>
+			<sql order="aoThrough">
+                   select
+              cast((select PARAMETERVALUE from PARAMETERS where PARAMETERNAME = 'DBCode') as Integer) as DBCode,
+
+              coalesce(SP.EDUFORMID,0),
+              coalesce(SP.EDUBASISID,0),
+              coalesce(SP.COUNTRYTYPE,0),
+              coalesce(SP.SPECIALITYID,0),
+
+              coalesce(SP.CS,0),
+              coalesce(SP.CENTER,0),
+              coalesce(SP.CEXIT,0),
+              coalesce(SP.MOVEIN,0),
+              coalesce(SP.MOVEOUT,0),
+              coalesce(SP1.CS,0),
+              coalesce(SP1.CENTER,0),
+              coalesce(SP1.CEXIT,0),
+              0,
+              0,
+              coalesce(SP1.CS,0) + coalesce(SP1.CENTER,0) - coalesce(SP1.CEXIT,0),
+              coalesce(SP2.CENTER,0),
+              coalesce(SP2.CEXIT,0),
+              0,
+              0
+
+            from
+                SP_EXP_MOZ_YEAR_COMMON(:D1, :D2, 0) SP
+                left join SP_EXP_MOZ_YEAR_COMMON(:D2, :D2, 1) SP1
+                on SP1.EDUFORMID = SP.EDUFORMID
+                 and SP1.EDUBASISID = SP.EDUBASISID
+                 and SP1.COUNTRYTYPE = SP.COUNTRYTYPE
+                 and SP1.SPECIALITYID = SP.SPECIALITYID
+
+                left join SP_EXP_MOZ_YEAR_COMMON(:D2, :D2, 2) SP2
+                on SP2.EDUFORMID = SP.EDUFORMID
+                 and SP2.EDUBASISID = SP.EDUBASISID
+                 and SP2.COUNTRYTYPE = SP.COUNTRYTYPE
+                 and SP2.SPECIALITYID = SP.SPECIALITYID
+
+                inner join GUIDE_SPECIALITY GS
+                on GS.SPECIALITYID = SP.SPECIALITYID
+
+            order by GS.CODE
+			</sql>
+		</cont5>
+	</import>
+	<validation>
+		<conditions>
+			<fieldsnotnull>
+				<field>STAT_KIND_CS</field>
+				<field>STAT_KIND_CENTER</field>
+				<field>STAT_KIND_CEXIT</field>
+			</fieldsnotnull>
+			<fieldsequal>
+				<equal field1="endyear_1" field2="cur_2_STAT_KIND_CS"/>
+				<equal field1="endyear_2" field2="cur_3_STAT_KIND_CS"/>
+			</fieldsequal>
+			<fieldsdata>
+				<rules>
+					<rule fieldname="cur_1_STAT_KIND_CENTER" title="План МОЗ">
+select ST.PARAMGROUPID, ST.DATAVALUE
+from CONTENTTREE CT
+inner join CONTENTTREE CT1
+on CT1.NODEID = CT.PARENTID
+inner join CONTENTTREE CT2
+on CT2.NODEID = CT1.PARENTID
+inner join CONTENTTREE Ct3
+on CT3.NODEID = CT2.PARENTID
+inner join V_ADD_VALUES_REF IAV
+on IAV.NODEID = CT.NODEID
+and IAV.FIELDNAME = 'STRUCTUREID'
+inner join STAT_DATA ST
+on ST.DATAREPORTID = CT.NODEID
+where CT3.NODE_KEY  = 'REQ_MOZ_PLAN_IN'
+and IAV.VAL = ?
+and (
+  (
+    select AVD.VAL
+    from V_ADD_VALUES_DATE AVD
+    where (AVD.NODEID = CT1.NODEID) 
+	and (AVD.FIELDNAME = '_ADD_STARTDATE')
+   ) = ?)
+					</rule>
+<!-- Будет работать только с 2011 года, т.к. отчет по специальностям появился только в 2010 г.  -->
+					<rule fieldname="cur_1_STAT_KIND_CS" title="Наявність на кінець попереднього року">
+select SD.PARAMGROUPID,
+sum(decode(
+    CT_KIND.NODE_KEY,
+    'STAT_KIND_CS', cast(SD.DATAVALUE as integer),
+    'STAT_KIND_CENTER', cast(SD.DATAVALUE as integer),
+    'STAT_KIND_CEXIT', 0 - cast(SD.DATAVALUE as integer),
+    'STAT_KIND_MOVEIN', cast(SD.DATAVALUE as integer),
+    'STAT_KIND_MOVEOUT', 0 - cast(SD.DATAVALUE as integer),
+    0
+  )
+) as DATAVALUE
+from CONTENTTREE CT_REPORT
+inner join CONTENTTREE CT_PERIOD
+on CT_PERIOD.NODEID = CT_REPORT.PARENTID
+inner join CONTENTTREE CT_REPORTS
+on CT_REPORTS.NODEID = CT_PERIOD.PARENTID
+inner join CONTENTTREE CT_REQUEST
+on CT_REQUEST.NODEID = CT_REPORTS.PARENTID
+inner join V_ADD_VALUES_REF AV_STRUCTUREID
+on AV_STRUCTUREID.NODEID = CT_REPORT.NODEID
+and AV_STRUCTUREID.FIELDNAME = 'STRUCTUREID'
+inner join STAT_DATA SD
+on SD.DATAREPORTID = CT_REPORT.NODEID
+inner join CONTENTTREE CT_KIND
+on CT_KIND.NODEID = SD.KINDID
+where CT_REQUEST.NODE_KEY = 'REQ_MOZ_CONTMOVEMENT_YEAR_SPEC'
+and AV_STRUCTUREID.VAL = ?
+and (
+  exists (
+    select *
+    from V_STAT_PARAMGROUPS VSP
+    inner join V_ADD_VALUES VA_ORIGIN
+    on (VA_ORIGIN.NODEID = VSP.PARAMVALUE)
+    and (VA_ORIGIN.FIELDNAME = '_ADD_ORIGINID')
+    and (VA_ORIGIN.VAL = '1')
+    where VSP.PARAMGROUPID = SD.PARAMGROUPID
+    and VSP.PARAMNAME = 'STAT_PARAM_REPORTPLANKIND'
+  )
+)
+and (
+  (
+    select AVD.VAL
+    from V_ADD_VALUES_DATE AVD
+    where (AVD.NODEID = CT_PERIOD.NODEID)
+    and (AVD.FIELDNAME = '_ADD_ENDDATE')
+  ) = cast(? as date) - 1)
+group by SD.PARAMGROUPID
+					</rule>
+				</rules>
+			</fieldsdata>
+
+		</conditions>
+	</validation>
+
+	<guides>
+		<guide name="kind" key="T_VALUE_KINDS" title="Kind" version="1.0" kind="static">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+			</columns>
+			<items>
+				<item id="STAT_KIND_CS" val="Наявність на початок року">
+					<cont5>	
+						<sqlfields>
+							<FIO title="ПІБ" width="233"/>
+							<STUDENTID title="ID" width="87"/>
+							<COUNTRYTYPE title="Тип країни" width="30"/>
+							<DEPARTMENT title="Підрозділ" width="150"/>
+							<SPECIALITY title="Спеціальність" width="112"/>
+						</sqlfields>
+						<sqlcontlist>
+							   select
+        coalesce(GC.COUNTRYTYPE, '?') as COUNTRYTYPE,
+        GD.DEPARTMENT ,GS.SPECIALITY,  HMF.STUDENTID, S.FIO
+      from HS_MOVEMENT_FULL HMF
+      inner join GUIDE_SPECIALITY GS
+      on GS.SPECIALITYID = HMF.SPECIALITYID
+      inner join GUIDE_DEPARTMENT GD
+      on GD.DEPARTMENTID = HMF.DEPARTMENTID
+      inner join STUDENTS S
+      on S.STUDENTID = HMF.STUDENTID
+			inner join ORDERS O
+      on O.ORDERID = HMF.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = HMF.STUDENTID
+      and HC.BEGINDATE = (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= :D1
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC
+      on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where (HMF.BEGINDATE &lt;= :D1) and (HMF.ENDDATE &gt; :D1)
+      and (HMF.STATUS in ('С','А','П'))
+      and HMF.EDUFORMID = :EDUFORM
+      and HMF.EDUBASISID = :EDUBASIS
+      and HMF.SPECIALITYID = :SPECIALITY
+			and :COUNTRYTYPE = (case GC.COUNTRYTYPE when 'СНД' then 'ЗАК' else GC.COUNTRYTYPE end)
+and :REPORTPLANKIND = 1
+						</sqlcontlist>
+					</cont5>
+				</item>
+				<item id="STAT_KIND_CENTER" val="Прийом">
+					<cont5>
+						<sqlfields>
+							<FIO title="ПІБ" width="233"/>
+							<STUDENTID title="ID" width="87"/>
+							<ORDERNUM title="№ наказу" width="65"/>
+							<ORDERDATE title="Дата наказу" width="72"/>
+							<COUNTRYTYPE title="Тип країни" width="30"/>
+							<DEPARTMENT title="Підрозділ" width="150"/>
+							<SPECIALITY title="Спеціальність" width="112"/>
+						</sqlfields>
+						<sqlcontlist>
+							      select
+        coalesce(GC.COUNTRYTYPE, '?') as COUNTRYTYPE,
+        GD.DEPARTMENT ,GS.SPECIALITY,  HMF.STUDENTID, S.FIO, O.ORDERNUM, O.ORDERDATE
+      from V_MOVEMENT_FULL HMF
+      inner join GUIDE_SPECIALITY GS
+      on GS.SPECIALITYID = HMF.SPECIALITYID
+      inner join GUIDE_DEPARTMENT GD
+      on GD.DEPARTMENTID = HMF.DEPARTMENTID
+      inner join STUDENTS S
+      on S.STUDENTID = HMF.STUDENTID
+			inner join ORDERS O
+      on O.ORDERID = HMF.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = HMF.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= HMF.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where HMF.BEGINDATE &gt;= :D1 and HMF.BEGINDATE &lt;= :D2
+      and Exists (
+         select 1 from V_STUDENTORDERS STO
+         inner join REASONTOCATEGORY RTC
+         on (RTC.REASONID = STO.REASONID)
+         where STO.STUDENTID = HMF.STUDENTID
+         and STO.ORDERID = HMF.ORDERID
+         and
+            (STO.REASONID in (1,5))) -- Только новое поступление
+     and HMF.EDUFORMID = :EDUFORM
+      and HMF.EDUBASISID = :EDUBASIS
+      and HMF.SPECIALITYID = :SPECIALITY
+      and :COUNTRYTYPE = (case GC.COUNTRYTYPE when 'СНД' then 'ЗАК' else GC.COUNTRYTYPE end)
+and :REPORTPLANKIND = 1
+						</sqlcontlist>
+					</cont5>
+
+				</item>
+				<item id="STAT_KIND_CEXIT" val="Випуск">
+					<cont5>
+						<sqlfields>
+							<FIO title="ПІБ" width="233"/>
+							<STUDENTID title="ID" width="87"/>
+							<ORDERNUM title="№ наказу" width="65"/>
+							<ORDERDATE title="Дата наказу" width="72"/>
+							<COUNTRYTYPE title="Тип країни" width="30"/>
+							<DEPARTMENT title="Підрозділ" width="150"/>
+							<SPECIALITY title="Спеціальність" width="112"/>
+						</sqlfields>
+						<sqlcontlist>
+							        select
+        coalesce(GC.COUNTRYTYPE, '?') as COUNTRYTYPE,
+        GD.DEPARTMENT ,GS.SPECIALITY,  VSBO.STUDENTID, S.FIO, O.ORDERNUM, O.ORDERDATE
+      from  V_STATEBEFOREORDER VSBO
+      inner join GUIDE_SPECIALITY GS
+      on GS.SPECIALITYID = VSBO.SPECIALITYID
+      inner join GUIDE_DEPARTMENT GD
+      on GD.DEPARTMENTID = VSBO.DEPARTMENTID
+      inner join STUDENTS S
+      on S.STUDENTID = VSBO.STUDENTID
+			inner join ORDERS O
+      on O.ORDERID = VSBO.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = VSBO.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= VSBO.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where (VSBO.BEGINDATE &gt;= :D1) and (VSBO.BEGINDATE &lt;= :D2) and
+      VSBO.REASONID =  (
+        select first 1 STO.REASONID
+        from V_STUDENTORDERS STO
+          inner join REASONTOCATEGORY RTC
+            on (RTC.REASONID = STO.REASONID)
+        where STO.STUDENTID = VSBO.STUDENTID
+        and STO.ORDERID = VSBO.ORDERID
+        and
+           (STO.REASONID in (1501)))
+
+      and VSBO.EDUFORMID = :EDUFORM
+      and VSBO.EDUBASISID = :EDUBASIS
+      and VSBO.SPECIALITYID = :SPECIALITY
+      and :COUNTRYTYPE = (case GC.COUNTRYTYPE when 'СНД' then 'ЗАК' else GC.COUNTRYTYPE end)
+and :REPORTPLANKIND = 1
+						</sqlcontlist>
+					</cont5>
+				</item>
+				<item id="STAT_KIND_MOVEIN" val="Присів">
+					<cont5>
+						<sqlfields>
+							<FIO title="ПІБ" width="233"/>
+							<STUDENTID title="ID" width="87"/>
+							<ORDERNUM title="№ наказу" width="65"/>
+							<ORDERDATE title="Дата наказу" width="72"/>
+							<COUNTRYTYPE title="Тип країни" width="30"/>
+							<DEPARTMENT title="Підрозділ" width="150"/>
+							<SPECIALITY title="Спеціальність" width="112"/>
+						</sqlfields>
+						<sqlcontlist>
+							        select coalesce(GC.COUNTRYTYPE, '?') as COUNTRYTYPE,
+        GD.DEPARTMENT ,GS.SPECIALITY,  HMF.STUDENTID, S.FIO, O.ORDERNUM, O.ORDERDATE
+      from V_MOVEMENT_FULL HMF
+      inner join GUIDE_SPECIALITY GS
+      on GS.SPECIALITYID = HMF.SPECIALITYID
+      inner join GUIDE_DEPARTMENT GD
+      on GD.DEPARTMENTID = HMF.DEPARTMENTID
+      inner join STUDENTS S
+      on S.STUDENTID = HMF.STUDENTID
+			inner join ORDERS O
+      on O.ORDERID = HMF.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = HMF.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= HMF.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where HMF.BEGINDATE &gt;= :D1 and HMF.BEGINDATE &lt;= :D2
+      and ( case when HMF.EDUBASISID = 'Б' then
+
+
+         (select first 1 1 from V_STUDENTORDERS STO
+         inner join REASONTOCATEGORY RTC
+         on (RTC.REASONID = STO.REASONID)
+         where STO.STUDENTID = HMF.STUDENTID
+         and STO.ORDERID = HMF.ORDERID
+         and  (STO.REASONID in (2,3,4,10,11,12,13,14,15,2003, 2004,2101,2002,11016)))
+
+        else
+          (
+          select first 1 1 from V_STUDENTORDERS STO
+         inner join REASONTOCATEGORY RTC
+         on (RTC.REASONID = STO.REASONID)
+         where STO.STUDENTID = HMF.STUDENTID
+         and STO.ORDERID = HMF.ORDERID
+         and  (STO.REASONID in (2,3,4,10,11,12,13,14,15,2003, 2004,2102,2002,11016))
+         )
+
+         end ) = 1
+      and HMF.EDUFORMID = :EDUFORM
+      and HMF.EDUBASISID = :EDUBASIS
+      and HMF.SPECIALITYID = :SPECIALITY
+      and :COUNTRYTYPE = (case GC.COUNTRYTYPE when 'СНД' then 'ЗАК' else GC.COUNTRYTYPE end)
+and :REPORTPLANKIND = 1
+						</sqlcontlist>
+					</cont5>
+				</item>
+				<item id="STAT_KIND_MOVEOUT" val="Відсів">
+					<cont5>
+						<sqlfields>
+							<FIO title="ПІБ" width="233"/>
+							<STUDENTID title="ID" width="87"/>
+							<ORDERNUM title="№ наказу" width="65"/>
+							<ORDERDATE title="Дата наказу" width="72"/>
+							<COUNTRYTYPE title="Тип країни" width="30"/>
+							<DEPARTMENT title="Підрозділ" width="150"/>
+							<SPECIALITY title="Спеціальність" width="112"/>
+						</sqlfields>
+						<sqlcontlist>
+							       select
+        coalesce(GC.COUNTRYTYPE, '?') as COUNTRYTYPE,
+        GD.DEPARTMENT ,GS.SPECIALITY,  VSBO.STUDENTID, S.FIO, O.ORDERNUM, O.ORDERDATE
+      from  V_STATEBEFOREORDER VSBO
+      inner join GUIDE_SPECIALITY GS
+      on GS.SPECIALITYID = VSBO.SPECIALITYID
+      inner join GUIDE_DEPARTMENT GD
+      on GD.DEPARTMENTID = VSBO.DEPARTMENTID
+      inner join STUDENTS S
+      on S.STUDENTID = VSBO.STUDENTID
+			inner join ORDERS O
+      on O.ORDERID = VSBO.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = VSBO.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= VSBO.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where (VSBO.BEGINDATE &gt;= :D1) and (VSBO.BEGINDATE &lt;= :D2) and
+      VSBO.REASONID = (case when VSBO.EDUBASISID = 'Б' then
+
+      ( select first 1 STO.REASONID
+        from V_STUDENTORDERS STO
+          inner join REASONTOCATEGORY RTC
+            on (RTC.REASONID = STO.REASONID)
+        where STO.STUDENTID = VSBO.STUDENTID
+        and STO.ORDERID = VSBO.ORDERID
+        and
+           (((RTC.REASONCATEGORYID = 3)
+           and (STO.REASONID &lt;&gt; 1501)) or (STO.REASONID in (2003, 2004,2102,2002,11016)) ) )
+
+       else
+
+       ( select first 1 STO.REASONID
+        from V_STUDENTORDERS STO
+          inner join REASONTOCATEGORY RTC
+            on (RTC.REASONID = STO.REASONID)
+        where STO.STUDENTID = VSBO.STUDENTID
+        and STO.ORDERID = VSBO.ORDERID
+        and
+           (((RTC.REASONCATEGORYID = 3)
+           and (STO.REASONID &lt;&gt; 1501)) or (STO.REASONID in (2003, 2004,2101,2002,11016)) ) )
+       end)
+
+      and VSBO.EDUFORMID = :EDUFORM
+      and VSBO.EDUBASISID = :EDUBASIS
+      and VSBO.SPECIALITYID = :SPECIALITY
+      and :COUNTRYTYPE = (case GC.COUNTRYTYPE when 'СНД' then 'ЗАК' else GC.COUNTRYTYPE end)
+and :REPORTPLANKIND = 1
+						</sqlcontlist>
+					</cont5>
+				</item>
+			</items>
+		</guide>
+	</guides>
+	<data/>
+	<params/>
+</report>

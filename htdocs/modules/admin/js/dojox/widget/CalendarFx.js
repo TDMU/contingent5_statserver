@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/widget/FisheyeLite"],function(e,a,b){a.provide("dojox.widget.CalendarFx");a.require("dojox.widget.FisheyeLite");a.declare("dojox.widget._FisheyeFX",null,{addFx:function(c,d){a.query(c,d).forEach(function(a){new b.widget.FisheyeLite({properties:{fontSize:1.1}},a)})}});a.declare("dojox.widget.CalendarFisheye",[b.widget.Calendar,b.widget._FisheyeFX],{})});

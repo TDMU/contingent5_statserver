@@ -1,0 +1,2 @@
+//>>built
+define("dojox/form/manager/_DisplayMixin",["dojo/_base/kernel","dojo/dom-style","dojo/_base/declare"],function(f,d,c){return c("dojox.form.manager._DisplayMixin",null,{gatherDisplayState:function(a){return this.inspectAttachedPoints(function(a,e){return d.get(e,"display")!="none"},a)},show:function(a,b){arguments.length<2&&(b=!0);this.inspectAttachedPoints(function(a,b,c){d.set(b,"display",c?"":"none")},a,b);return this},hide:function(a){return this.show(a,!1)}})});

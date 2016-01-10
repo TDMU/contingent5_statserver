@@ -1,0 +1,2 @@
+//>>built
+define("dojox/geo/openlayers/LineString",["dojo/_base/kernel","dojo/_base/declare","dojox/geo/openlayers/Geometry"],function(c,a,b){return a("dojox.geo.openlayers.LineString",b,{setPoints:function(a){this.coordinates=a},getPoints:function(){return this.coordinates}})});

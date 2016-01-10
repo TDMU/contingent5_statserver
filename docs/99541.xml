@@ -1,0 +1,155 @@
+<report>
+	<info>
+		<reportid/>
+		<title/>
+		<begindate/>
+		<enddate/>
+		<publicdate/>
+		<timelimit/>
+		<validresult>-1</validresult>
+		<comment>Вакантні місця
+
+Звіт містить дані щодо вакантних місць у вузі за держзамовленням на кінець звітного періоду. Дані подаються за спеціальностями, курсами та формами навчання.
+
+Під час імпорту статистики з БД "Контингент" дані отримуються з урахуванням планів прийому (плани прийому повинні бути заповнені за останні 7 років).
+
+Увага! Перевищення кількості студентів подається зі знаком мінус.
+		</comment>
+		<dbversion_cont5 min="5.5.15.172" max=""/>
+	</info>
+	<description>
+		<!-- old request -->
+		<groupfield name="main" title="main">
+			<dbcode name="dbcode" title="Код БД" ctrltype="ctCombobox" datatype="dtInteger" required="true" componentwidth="30" unique="true" readonly="true"/>
+					<filterparam name="eduform" title="Форма навчання" ctrltype="ctCombobox" datatype="dtString" datasize="2" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUFORMID">
+						<lookup defkey="#first">
+							<item id="0" value="усі"/><!-- Add lookup list ONLY, can not save in DATA!!! -->
+							<items sourceguide="eduform" fieldid="id" fieldtitle="val" fieldorder="val"/>
+						</lookup>
+					</filterparam>
+
+			<!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+			<fieldgroupparam name="speciality" title="Спеціальність" ctrltype="ctCombobox" datatype="dtSmallInt" componentwidth="100" unique="true" nodekey="STAT_PARAM_SPECIALITYID">
+				<lookup defkey="#first">
+					<items sourceguide="speciality" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</fieldgroupparam>
+					<repeater paramname="kind">
+						<source>
+							<items sourceguide="kind" fieldid="id" fieldtitle="val"/>
+						</source>
+						<content>
+							<groupfield name="cursessum_%s" title="%s">
+								<calcfield name="sum_%s" expression="sum(curses_%s[fkField])" ctrltype="ctLabel" title="%s|SUM" datatype="dtInteger" footer="fvtSum" componentwidth="40"/>
+								<groupfield name="curses_%s">
+									<repeater paramname="course">
+										<source>
+											<items sourceguide="course" fieldid="id" fieldtitle="val"/>
+										</source>
+										<content>
+											<field name="cur_%s_%s" title="%s|%s" ctrltype="ctEdit" datatype="dtInteger" componentwidth="30" footer="fvtSum" nodekey="STAT_PARAM_COURSE"/>
+										</content>
+									</repeater>
+								</groupfield>
+							</groupfield>
+						</content>
+					</repeater>
+		
+		</groupfield>
+	</description>
+	<script>
+          procedure sum1(DataSet: TDataSet; AgrFieldName: string; Fields: TStringList);
+          begin
+            DataSet.FieldByName(AgrFieldName).asInteger := 111;
+          end;
+
+          begin
+          end.
+
+	</script>
+	<import>
+		<cont5>
+			<params/>
+			<sql order="aoByname">
+           select
+              SP.SPECIALITYID as SPECIALITY,
+              SP.EDUFORMID as EDUFORM,
+              cast((select PARAMETERVALUE from PARAMETERS where PARAMETERNAME = 'DBCode') as Integer) as DBCode,
+              GS.CODE,
+
+
+              (- sum(SP.CS1) + (case when sum(SP.CS1)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_1,
+              (- sum(SP.CS2) + (case when sum(SP.CS2)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR -1 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_2,
+              (- sum(SP.CS3) + (case when sum(SP.CS3)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR-2 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_3,
+              (- sum(SP.CS4) + (case when sum(SP.CS4)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR-3 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_4,
+              (- sum(SP.CS5) + (case when sum(SP.CS5)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR-4 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_5,
+              (- sum(SP.CS6) + (case when sum(SP.CS6)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR-5 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_6,
+              (- sum(SP.CS7) + (case when sum(SP.CS7)=0 then 0 else coalesce((select E.ENTERPLAN
+                           from ENROLYEAR E
+                           where E.SPECIALITYID = SP.SPECIALITYID
+                                 and E.EDUFORMID = SP.EDUFORMID
+                                 and E.EDUBASISID = 'Б'
+                                 and E.COUNTRYTYPE = 'УКР'
+                                 and E.EDUYEAR = (select SGE.EDUYEAR-6 from SP_GET_EDUYEAR(:D2) SGE)),0) end)) as cur_STAT_KIND_CS_7
+
+            from
+                SP_EXP_MOZ_COMMON(?D1, ?D2, 1, 1, 1) SP
+            inner join GUIDE_SPECIALITY GS
+            on GS.SPECIALITYID = SP.SPECIALITYID
+            where SP.EDUBASISID = 'Б'
+            group by 1,2,3,4
+            order by GS.CODE
+			</sql>
+		</cont5>
+	</import>
+
+	<guides>
+					<guide name="kind" key="T_VALUE_KINDS" title="Kind" version="1.0" kind="static">
+					<columns>
+						<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+						<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+					</columns>
+					<items>
+						<item id="STAT_KIND_CS" val="Вакантні місця на курсах"/>
+</items>
+				</guide>
+			</guides>
+			<data/>
+	<params/>
+</report>

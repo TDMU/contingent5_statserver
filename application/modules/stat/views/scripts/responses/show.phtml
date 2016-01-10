@@ -1,0 +1,75 @@
+<?php $this->headStyle()->captureStart()?>
+table.ldata {border: 1px solid #4F88E1; border-collapse: separate;}
+table.ldata thead tr {background-color: #D2E1F8; border: 1px solid #4F88E1; font-weight: bold; text-align: center; vertical-align: middle;}
+table.ldata thead td {text-align: center;}
+table.ldata tbody tr.odd {background-color: #E0E0E0;}
+table.ldata tbody tr.even {background-color: #FFFFFF;}
+table.ldata tbody td {text-align: center; vertical-align: middle;}
+table.ldata tbody td.left {text-align: left;}
+table.ldata tbody tr.odd td.norm {background-color: #40FF40;}
+table.ldata tbody tr.even td.norm {background-color: #90FF90;}
+table.ldata tbody tr.odd td.expired {background-color: #3030FF; color: white;}
+table.ldata tbody tr.even td.expired {background-color: #7070FF; color: white;}
+table.ldata tbody tr.odd td.no {background-color: #FF4040; color: white;}
+table.ldata tbody tr.even td.no {background-color: #FF6060; color: white;}
+table.ldata tbody tr.odd td.wait {background-color: #FFFF90;}
+table.ldata tbody tr.even td.wait {background-color: #FFFFB0;}
+<?php $this->headStyle()->captureEnd()?>
+<?php echo $this->form?>
+<hr />
+<table class="ldata">
+	<thead>
+		<tr>
+			<th style="width: 400px">ВНЗ</th>
+<?php foreach ($this->requests as $request) :
+	  $publicEndDate = strtotime($request['REQUEST_PUBLIC_ENDDATE']);
+?>
+			<th style="width:120px"><?php echo $request['REQUEST_TITLE'] . ' ' . $request['REQUEST_PERIOD'] . '<br>Термін подачі ' . date('d.m.Y', $publicEndDate)?></th>
+<?php endforeach?>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($this->est2reports as $estnum => $est2report):?>
+		<tr class="<?php echo $estnum%2 ? 'odd': 'even'?>">
+			<td class="left"><?php echo $est2report['TITLE']?></td>
+  <?php
+    foreach ($this->requests as $request) :
+    $report = @$est2report['reports'][$request['REQUEST_PERIODID']];
+	  $uploadDateStr = @$report['UPLOADDATE'];
+	  if($uploadDateStr) {
+  	  $uploadDate = strtotime($uploadDateStr);
+	  	$maxDate = strtotime($report['MAXDATE']);
+		  $class = ($uploadDate > $maxDate ? 'expired' : 'norm');
+  		$title =  date('d.m.Y', $uploadDate);
+	    } else {
+//    	  $publicEndDate = strtotime($request['REQUEST_PUBLIC_ENDDATE']);
+	      $createDateStr = $report['CREATEDATE'];
+	      $class = time() <= strtotime($request['REQUEST_PUBLIC_ENDDATE'] . " +1 day") ? 'wait' : 'no';
+	      $title = $createDateStr ? date('d.m.Y'/*H:i*/, strtotime($createDateStr)) : '&nbsp;';
+	    }
+  ?>
+			<td class="<?php echo $class?>"><?php echo $title?></td>
+  <?php endforeach?>
+		</tr>
+<?php endforeach?>
+	</tbody>
+</table>
+<br />
+<table>
+	<tr>
+		<td style="background-color: green; width: 12px">&#160;</td>
+		<td>- звіт подано</td>
+	</tr>
+	<tr>
+		<td style="background-color: blue; width: 12px">&#160;</td>
+		<td>- звіт прострочено</td>
+	</tr>
+	<tr>
+		<td style="background-color: #FFFFA0; width: 12px">&#160;</td>
+		<td>- звіт очікується</td>
+	</tr>
+	<tr>
+		<td style="background-color: red; width: 12px">&#160;</td>
+		<td>- звіт не подано</td>
+	</tr>
+</table>

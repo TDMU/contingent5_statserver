@@ -1,0 +1,3 @@
+//>>built
+define("dojox/mobile/TextBox",["dojo/_base/declare","dojo/dom-construct","dijit/_WidgetBase","dijit/form/_FormValueMixin","dijit/form/_TextBoxMixin"],function(a,b,c,d,e){return a("dojox.mobile.TextBox",[c,d,e],{baseClass:"mblTextBox",_setTypeAttr:null,_setPlaceHolderAttr:"textbox",buildRendering:function(){if(!this.srcNodeRef)this.srcNodeRef=b.create("input",{type:this.type});this.inherited(arguments);this.textbox=this.focusNode=this.domNode},postCreate:function(){this.inherited(arguments);this.connect(this.textbox,
+"onfocus","_onFocus");this.connect(this.textbox,"onblur","_onBlur")}})});

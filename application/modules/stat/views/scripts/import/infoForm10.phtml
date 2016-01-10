@@ -1,0 +1,41 @@
+<form id="<?php echo $this->element->getName()?>" action="<?php echo $this->element->getAction()?>" method="<?php echo $this->element->getMethod()?>" enctype="<?php echo $this->element->getEnctype ()?>">
+<?php echo $this->element->step?>
+<?php echo $this->element->filename?>
+<?php echo $this->element->validreports?>
+<h2 style="text-align: center;">Інформація про пакет:</h2>
+<hr>
+<table align="center">
+	<tr>
+		<td style="width: 100px">Назва організіції</td>
+		<td><?php echo $this->info['orgname']?></td>
+	</tr>
+	<tr>
+		<td>Тип пакету</td>
+		<td><?php echo $this->info['packagetype']?></td>
+	</tr>
+	<tr>
+		<td>Версія пакету</td>
+		<td><?php echo $this->info['version']?></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 50px; font-weight: bold; font-size: 14px; vertical-align: bottom; text-align: center">Звіти<hr/></td>
+	</tr>	
+	<tr>
+</table>
+<table align="center">
+<?php 
+	$isPackageValid = false;
+	foreach ($this->info['info_reports'] as $info_report):
+		if($info_report['isReportValid']) $isPackageValid = true;
+		$title = $info_report['title'].' ('.$info_report['begindate'].'-'.$info_report['enddate'].')';
+		$color = $info_report['isReportValid'] == 0 ? $color = 'red' : $color = '';
+?>
+<tr style="color:<?php echo $color?>">
+	<td style="width: 300px"><?php echo $title?></td>
+	<td><?php echo $info_report['errors']?></td>
+</tr>
+<?php endforeach?>
+</table>
+
+<div align="center"><br/><br/><?php  if($isPackageValid) echo $this->element->submit?></div>
+</form>

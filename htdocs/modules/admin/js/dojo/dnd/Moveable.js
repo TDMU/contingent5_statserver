@@ -1,0 +1,11 @@
+/*
+	Copyright (c) 2004-2011, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+//>>built
+define("dojo/dnd/Moveable",["../main","../Evented","../touch","./Mover"],function(a,f,e){a.declare("dojo.dnd.Moveable",[f],{handle:"",delay:0,skip:!1,constructor:function(b,c){this.node=a.byId(b);c||(c={});this.handle=c.handle?a.byId(c.handle):null;if(!this.handle)this.handle=this.node;this.delay=c.delay>0?c.delay:0;this.skip=c.skip;this.mover=c.mover?c.mover:a.dnd.Mover;this.events=[a.connect(this.handle,e.press,this,"onMouseDown"),a.connect(this.handle,"ondragstart",this,"onSelectStart"),a.connect(this.handle,
+"onselectstart",this,"onSelectStart")]},markupFactory:function(b,a,d){return new d(a,b)},destroy:function(){a.forEach(this.events,a.disconnect);this.events=this.node=this.handle=null},onMouseDown:function(b){if(!this.skip||!a.dnd.isFormElement(b)){if(this.delay)this.events.push(a.connect(this.handle,e.move,this,"onMouseMove"),a.connect(this.handle,e.release,this,"onMouseUp")),this._lastX=b.pageX,this._lastY=b.pageY;else this.onDragDetected(b);a.stopEvent(b)}},onMouseMove:function(b){if(Math.abs(b.pageX-
+this._lastX)>this.delay||Math.abs(b.pageY-this._lastY)>this.delay)this.onMouseUp(b),this.onDragDetected(b);a.stopEvent(b)},onMouseUp:function(b){for(var c=0;c<2;++c)a.disconnect(this.events.pop());a.stopEvent(b)},onSelectStart:function(b){(!this.skip||!a.dnd.isFormElement(b))&&a.stopEvent(b)},onDragDetected:function(b){new this.mover(this.node,b,this)},onMoveStart:function(b){a.publish("/dnd/move/start",[b]);a.addClass(a.body(),"dojoMove");a.addClass(this.node,"dojoMoveItem")},onMoveStop:function(b){a.publish("/dnd/move/stop",
+[b]);a.removeClass(a.body(),"dojoMove");a.removeClass(this.node,"dojoMoveItem")},onFirstMove:function(){},onMove:function(b,a){this.onMoving(b,a);var d=b.node.style;d.left=a.l+"px";d.top=a.t+"px";this.onMoved(b,a)},onMoving:function(){},onMoved:function(){}});return a.dnd.Moveable});

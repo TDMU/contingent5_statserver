@@ -1,0 +1,2 @@
+//>>built
+define("dojox/mobile/RoundRect",["dojo/_base/array","dojo/_base/declare","dojo/_base/window","dijit/_Contained","dijit/_Container","dijit/_WidgetBase"],function(b,c,d,e,f,g){return c("dojox.mobile.RoundRect",[g,f,e],{shadow:!1,buildRendering:function(){this.domNode=this.containerNode=this.srcNodeRef||d.doc.createElement("DIV");this.domNode.className=this.shadow?"mblRoundRect mblShadow":"mblRoundRect"},resize:function(){b.forEach(this.getChildren(),function(a){a.resize&&a.resize()})}})});

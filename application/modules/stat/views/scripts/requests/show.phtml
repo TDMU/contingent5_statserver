@@ -1,0 +1,104 @@
+<?php echo $this->form?>
+<hr />
+<?php $this->headScript()->captureStart()?>
+function getCheckedReports() {
+  var repList = '';
+	var e = document.reportsForm.elements;
+	for (var i = 0; i < e.length; i++) {
+		if(e[i].type=='checkbox' && e[i].checked)
+			repList += (repList ? ',' : '') + e[i].value;
+	}
+	return repList;
+}
+
+function checkReports() {  
+	document.getElementById('download').disabled = !getCheckedReports(); 
+}
+
+function delReport(reportid) {  
+	if(confirm('Ви дійсно бажаєте вилучити звіт?'))
+		document.location.href = "<?php echo $this->url(array('module' => 'stat', 'controller' => 'requests', 'action' => 'remove'))?>/reportid/" + reportid;
+}
+
+function downloadRequest() {
+	document.location.href = '<?php	echo $this->url(array('controller' => 'export', 'action' => 'export'))?>?id=' + getCheckedReports();
+}
+
+<?php $this->headScript()->captureEnd()?>
+
+<form name="reportsForm">
+<table class="data" style="border-collapse: separate;">
+	<thead>
+		<tr>
+			<th style="width: 40px;">#</th>
+			<th style="width: 140px;">Період</th>
+			<th>Звіт</th>
+			<th style="width: 80px;">Термін подачі</th>
+			<th style="width: 80px;">Дата отримання вимоги</th>
+			<th style="width: 80px;">Дата прийому пакета</th>
+			<th style="width: 80px;">Видалення пакета</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php
+	$i = 0;	
+	
+	foreach($this->reports as $reportnum => $reports) {
+		$i++;
+		$timelimit_date = $reports ['PUBLICENDDATE'] ? date('d.m.Y', strtotime($reports['PUBLICENDDATE'])) : '';
+		if ($reports ['UPLOADDATE'] !== null) {
+			$uploaddate = date('d.m.Y', strtotime($reports['UPLOADDATE']));
+		} else {
+			$uploaddate = '';
+		}
+
+		if ($reports ['CREATEDATE'] !== null) {
+			$createdate = date('d.m.Y', strtotime($reports['CREATEDATE']));
+		} else {
+			$createdate = '';
+		}
+
+		$delReportEnable = 'disabled';
+		if($uploaddate == '') {
+			$color = 'red';
+		} else {
+			if(strtotime($timelimit_date) < strtotime($uploaddate)) {
+				$color = 'blue';
+			} else {
+				$color = 'green';
+			}
+			if(strtotime($timelimit_date) >= strtotime("today")) $delReportEnable = '';
+		}
+						
+		echo "<tr class=\"" . ($reportnum % 2 ? 'odd' : 'even') . "\" style=\"color:$color\">
+				<td><input type=\"checkbox\" name=\"list\" id=\"check{$i}\" value= \"{$reports['PERIODID']}\" onclick=\"checkReports()\" /></td>
+				<td>{$reports['PERIOD']}</td>
+				<td style=\"text-align:left;font-size=12px;font-weight: bolder;\">{$reports['REPORT']}</td>
+			  <td>{$timelimit_date}</td>
+			  <td>{$createdate}</td>
+			  <td>{$uploaddate}</td>
+			  <td><input type=\"button\" value=\"Вилучити\" {$delReportEnable} onclick=\"delReport({$reports['REPORTID']})\" /></td>
+			</tr>";
+		
+	}
+	?>
+	</tbody>
+</table>
+<br />
+<table>
+	<tr>
+		<td style="background-color: green; width: 12px">&#160;</td>
+		<td>- звіт подано</td>
+	</tr>
+	<tr>
+		<td style="background-color: blue; width: 12px">&#160;</td>
+		<td>- звіт прострочено</td>
+	</tr>
+	<tr>
+		<td style="background-color: red; width: 12px">&#160;</td>
+		<td>- звіт не подано</td>
+	</tr>
+</table>
+<br/>
+<input type="button" id="download" value="Завантажити" onclick="downloadRequest()" disabled="disabled"/>
+</form>

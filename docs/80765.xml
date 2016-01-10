@@ -1,0 +1,17 @@
+<letter>
+	<sql>select  IU.NODEID as USERID, '' as MESSAGE, cast (? as varchar(15)) as curdate
+from INFO_USERS IU
+where IU.NODEID in (:userlist)</sql>
+	<text>Здравствуйте!
+На сайте главного сервера Крымского государственного медицинского университета (http://www.csmu.edu.ua) опубликованы следующие требования по статистическим отчетам для МОЗ Украины:
+Квартальний рух контингенту за 01.01.2010 - 31.03.2010 до 08.04.2010
+Уточнений план контингенту за 01.01.2010 - 31.03.2010 до 08.04.2010
+
+
+E-Mail:  contingent@mail.ru
+   Web:  www.csmu.edu.ua
+	</text>
+	<subject>Министерская статистика</subject>
+	<from_email>contingent@mail.ru</from_email>
+	<from_name>contingent</from_name>
+</letter>

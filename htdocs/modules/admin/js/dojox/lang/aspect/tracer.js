@@ -1,0 +1,3 @@
+//>>built
+define(["dijit","dojo","dojox"],function(g,b,e){b.provide("dojox.lang.aspect.tracer");(function(){var c=e.lang.aspect,d=function(a){this.method=a?"group":"log";if(a)this.after=this._after};b.extend(d,{before:function(){var a=c.getContext(),f=a.joinPoint,b=Array.prototype.join.call(arguments,", ");console[this.method](a.instance,"=>",f.targetName+"("+b+")")},afterReturning:function(a){var b=c.getContext().joinPoint;typeof a!="undefined"?console.log(b.targetName+"() returns:",a):console.log(b.targetName+
+"() returns")},afterThrowing:function(a){console.log(c.getContext().joinPoint.targetName+"() throws:",a)},_after:function(){console.groupEnd()}});c.tracer=function(a){return new d(a)}})()});

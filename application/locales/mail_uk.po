@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2008-12-02 13:37+0200\n"
+"PO-Revision-Date: 2010-02-23 12:54+0200\n"
+"Last-Translator: Alexander Krepky <contingent@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Value is required and can't be empty"
+msgstr "Поле обов’язкове й не може бути порожнім"
+
+msgid "Captcha value is wrong"
+msgstr "Значення неправильне"
+
+msgid "'%value%' is no valid email address in the basic format local-part@hostname"
+msgstr "'%value%' неправильна адреса електронної пошти у форматі local-part@hostname"
+
+msgid "To"
+msgstr "Кому"
+
+msgid "Your e-mail address"
+msgstr "Зворотня адреса"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Message body"
+msgstr "Текст повідомлення"
+
+msgid "Enter safety code"
+msgstr "Введіть код безпеки"
+
+msgid "Send"
+msgstr "Відправити"
+
+msgid "Sent successfully"
+msgstr "Повідомлення відправлено успішно"
+
+msgid "You didn't enter your e-mail address. If you've sent a question, we are not able to answer it. Continue?"
+msgstr "Ви не ввели зворотню адресу. Якщо було поставлено питання, то відповісти на нього ми не зможемо. Продовжити?"
+

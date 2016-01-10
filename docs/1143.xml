@@ -1,0 +1,27 @@
+<guide name="department" key="T_DEPARTMENTS" title="Факультет" version="1.0" kind="global">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+				<column attr="use" kind="local" ctrltype="ctCheck" title="Use"/>
+			</columns>
+			<sql>
+				<uman>
+          select VAD.VAL as ID, CT1.TITLE as VAL, 1 as USE
+      from CONTENTTREE CT
+      inner join CONTENTTREE CT1
+      on CT1.PARENTID = CT.NODEID
+      inner join V_ADD_VALUES VAD
+      on VAD.NODEID = CT1.NODEID
+      where CT1.VISIBLE = 1 
+      and CT.NODE_KEY =   'STAT2_GUIDE_DEPARTMENT'
+      and VAD.FIELDNAME = '_ADD_ORIGINID'
+      order by CT1.VISIBLE desc, 2
+	         </uman>
+				<cont5>
+          select DEPARTMENTID as ID, DEPARTMENT as VAL, CAST(USE as SMALLINT) as USE
+          from GUIDE_DEPARTMENT
+				
+				</cont5>
+			</sql>
+			<items/>
+		</guide>

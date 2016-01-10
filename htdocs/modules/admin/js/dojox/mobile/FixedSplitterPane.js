@@ -1,0 +1,2 @@
+//>>built
+define("dojox/mobile/FixedSplitterPane",["dojo/_base/array","dojo/_base/declare","dojo/dom-class","dijit/_Contained","dijit/_Container","dijit/_WidgetBase"],function(b,c,d,e,f,g){return c("dojox.mobile.FixedSplitterPane",[g,f,e],{buildRendering:function(){this.inherited(arguments);d.add(this.domNode,"mblFixedSplitterPane")},resize:function(){b.forEach(this.getChildren(),function(a){a.resize&&a.resize()})}})});

@@ -1,0 +1,45 @@
+<table width="100%" height="100%">
+	<tr>
+		<td class="sep1">
+			<div>&nbsp;</div>
+		</td>
+	</tr>
+	<tr height="25px">
+		<td>
+			<h2 class="artitle">
+			  <?php echo $this->translate ( "skin.gadget.search.search" )?>
+			</h2>
+		</td>
+	</tr>
+	<tr>
+		<td class="cnt">
+			<div>
+				<form method="get" action="<?php //echo $this->url(array('controller' => 'search', 'docid' => $this->docid), null, true)?>">
+					<input type="text" name="query" value="<?php echo $this->query?>" size="60">&nbsp;
+					<input type="submit" name="s" value="<?php echo $this->translate('skin.gadget.search.search')?>">
+				</form>
+				<br/>
+<?php if($this->paginator->count() > 0):?>
+<hr/><p style="text-align: center; font-size: 18px"><?php echo $this->translate("skin.gadget.search.results")?></p><hr />
+<?php elseif(strlen($this->query) > 0):?>
+<p style="text-align: center; font-size: 18px"><?php echo $this->translate("skin.gadget.search.notfound")?></p>
+<?php endif?>
+<?php echo $this->paginationControl($this->messagesPaginator, null, null, $this->queryParams)?>
+<br/>
+<table>
+	<tr>
+		<td></td>
+	</tr>
+<?php foreach ($this->paginator as $num => $hit):?>
+	<tr><td><?php echo $this->paginator->getAbsoluteItemNumber($num + 1)?>.</td><td><a href="<?php echo $this->url(array('docid' => $hit->nodeid, 'controller' => 'page'), null, true)?>"><?php echo $hit->title?></a></td></tr>
+<?php endforeach?>
+</table>
+<br/>
+<?php echo $this->paginationControl($this->messagesPaginator, null, null, $this->queryParams)?>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="sep2"><div></div></td>
+	</tr>
+</table>

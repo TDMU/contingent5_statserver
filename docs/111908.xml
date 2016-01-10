@@ -1,0 +1,18 @@
+<guide name="students" key="CONT_STUDENTS" title="Студенты" version="1.0" kind="global">
+	<columns>
+		<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+		<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+	</columns>
+	<sql>
+		<uman>
+select FIO || coalesce(' (' || GROUPNUM || ')', '') as ID, 
+  FIO || coalesce(' (' || GROUPNUM || ')', '') as VAL
+from STUDENTS
+where STATUS = 'С'
+order by 2
+		</uman>
+	</sql>
+	<items>
+		<item id="!Должников нет" val="!Должников нет"/>
+	</items>
+</guide>

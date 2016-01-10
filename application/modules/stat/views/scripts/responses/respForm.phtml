@@ -1,0 +1,14 @@
+<form action="<?php echo $this->escape($this->element->getAction())?>" method="<?php echo $this->escape($this->element->getMethod())?>">
+<table style="width:400px" class="params">
+	<tr>
+		<td style="width:100px"><?php echo $this->element->report->getLabel() ?></td>
+		<td style="width:300px"><?php echo $this->element->report ?></td>
+		<td class="btn" rowspan="2"><?php echo $this->element->refresh ?></td>
+		
+	</tr>
+	<tr>
+		<td style="width:100px"><?php echo $this->element->year->getLabel() ?></td>
+		<td style="width:300px"><?php echo $this->element->year ?></td>
+	</tr>
+</table>
+</form>

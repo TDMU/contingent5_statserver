@@ -1,0 +1,33 @@
+<table style="width: 100%; height: 100%">
+	<tr>
+		<td class="sep1">
+			<div>&nbsp;</div>
+		</td>
+	</tr>
+	<tr style="height: 25px">
+		<td>
+				<h2 class="artitle">
+			    <?php	echo $this->node_info['TITLE']?>
+			  </h2>
+		</td>
+	</tr>
+	<tr>
+		<td class="cnt">
+		<div>
+<?php foreach($this->items as $item): ?>
+	<a href="<?php echo $item['href']?>" target="<?php echo $item['DOC_TARGET']?>">
+		<img src="/modules/site/img/<?php echo $item['img']?>" border="0" title="<?php echo $item ['FILETYPE_TITLE']?>"/>
+	</a>&#160;
+	<a href="<?php echo $item['href']?>" target="<?php echo $item['DOC_TARGET']?>">
+		<?php echo $item['TITLE']?>
+	</a><?php echo $item['size']?><br/>
+<?php endforeach?>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="sep2">
+			<div>&nbsp;</div>
+		</td>
+	</tr>
+</table>

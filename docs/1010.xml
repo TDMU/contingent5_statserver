@@ -1,0 +1,294 @@
+<report>
+    <info>
+        <reportid/>
+        <title/>
+        <begindate/>
+        <enddate/>
+        <publicdate/>
+        <timelimit/>
+        <dbversion_cont5 min="5.5.15.172" max=""/>
+	<validresult>-1</validresult>
+        <comment>Квартальний рух контингенту
+
+Дані звіту подаються диференційовано за спеціальностями, формами навчання, фінансування, факультетами, громадянством. Звіт складається з трьох основних розділів: «Наявність студентів по курсах», «Прибуло» і «Вибуло».
+
+«Наявність студентів по курсах» — містить дані щодо наявності студентів по курсах на кінець терміну звіту. У даній колонці враховуються всі студенти: студенти, які навчаються, студенти, що знаходяться в академічній відпустці і на повторному навчанні.
+
+«Прибуло» — містить дані щодо «прийому студентів», «поновлення на навчання», «переведення з іншого вузу», «поновлення на навчання з іншого вузу», «поновлення на навчання та допуск до державної атестації», «поновлення на навчання з іншого вузу та допуск до державної атестації». А також: переведення: «на іншу форму фінансування», «на іншу форму навчання», «зміна громадянства», «зміна спеціальності».
+
+«Вибуло» — у даній колонці враховується наступний контингент: усі відраховані студенти, випуск, переведені студенти («на іншу форму фінансування», «переведення до іншого вузу»,  «на іншу форму навчання») і студенти, які змінили громадянство чи змінили спеціальність.
+		</comment>        
+    </info>
+    <description>
+        <!-- old request -->
+        <groupfield name="main" title="main">
+            <dbcode name="dbcode" title="Код БД" ctrltype="ctCombobox" datatype="dtInteger" required="true" componentwidth="30" unique="true" readonly="true"/>
+            <filterparam name="eduform" title="Форма навчання" ctrltype="ctCombobox" datatype="dtString" datasize="2" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUFORMID">
+                <lookup defkey="#first">
+                    <item id="0" value="усі"/>
+                    <!-- Add lookup list ONLY, can not save in DATA!!! -->
+                    <items sourceguide="eduform" fieldid="id" fieldtitle="val" fieldorder="val"/>
+                </lookup>
+            </filterparam>
+            <filterparam name="edubasis" title="Форма фінансування" ctrltype="ctCombobox" datatype="dtString" datasize="1" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUBASISID">
+                <lookup defkey="#first">
+                    <item id="0" value="усі"/>
+                    <!-- Add lookup list ONLY, can not save in DATA!!! -->
+                    <items sourceguide="edubasis" fieldid="id" fieldtitle="val" fieldorder="val"/>
+                </lookup>
+            </filterparam>
+            <filterparam name="department" title="Факультет" ctrltype="ctCombobox" datatype="dtLargeInt" required="true" componentwidth="300" unique="true">
+                <lookup defkey="#first">
+                    <item id="0" value="усі"/>
+                    <!-- Add lookup list ONLY, can not save in DATA!!! -->
+                    <items sourceguide="department" fieldid="id" fieldtitle="val" fieldorder="val"/>
+                </lookup>
+            </filterparam>
+            <filterparam name="country" title="Країна" ctrltype="ctCombobox" datatype="dtLargeInt" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_COUNTRYID">
+                <lookup defkey="#first">
+                    <item id="0" value="усі"/>
+                    <!-- Add lookup list ONLY, can not save in DATA!!! -->
+                    <items sourceguide="country" fieldid="id" fieldtitle="val" fieldorder="val"/>
+                </lookup>
+            </filterparam>
+            <!-- wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww -->
+            <fieldgroupparam name="speciality" title="Спеціальність" ctrltype="ctCombobox" datatype="dtSmallInt" componentwidth="100" unique="true" nodekey="STAT_PARAM_SPECIALITYID">
+                <lookup defkey="#first">
+                    <items sourceguide="speciality" fieldid="id" fieldtitle="val" fieldorder="val"/>
+                </lookup>
+            </fieldgroupparam>
+            <repeater paramname="kind">
+                <source>
+                    <items sourceguide="kind" fieldid="id" fieldtitle="val"/>
+                </source>
+                <content>
+                    <groupfield name="cursessum_%s" title="%s">
+                        <calcfield name="sum_%s" expression="sum(curses_%s[fkField])" ctrltype="ctLabel" title="%s|SUM" datatype="dtInteger" footer="fvtSum" componentwidth="40"/>
+                        <groupfield name="curses_%s">
+                            <repeater paramname="course">
+                                <source>
+                                    <items sourceguide="course" fieldid="id" fieldtitle="val"/>
+                                </source>
+                                <content>
+                                    <field name="cur_%s_%s" title="%s|%s" ctrltype="ctEdit" datatype="dtInteger" componentwidth="30" footer="fvtSum" nodekey="STAT_PARAM_COURSE"/>
+                                </content>
+                            </repeater>
+                        </groupfield>
+                    </groupfield>
+                </content>
+            </repeater>
+        </groupfield>
+    </description>
+    <script>
+          procedure sum1(DataSet: TDataSet; AgrFieldName: string; Fields: TStringList);
+          begin
+            DataSet.FieldByName(AgrFieldName).asInteger := 111;
+          end;
+
+          begin
+          end.
+    </script>
+    <import>
+        <cont5>
+            <params/>
+            <!-- sql> order="aoThrough"/"aoByname" (fields appropriate order) -->
+            <sql order="aoThrough">
+			      select
+              cast((select PARAMETERVALUE from PARAMETERS where PARAMETERNAME = 'DBCode') as Integer) as DBCode,
+              SP.EDUFORMID,
+              SP.EDUBASISID,
+              SP.DEPARTMENTID,
+              SP.COUNTRYID,
+              SP.SPECIALITYID,
+             coalesce(SP.CS1,0),
+              coalesce(SP.CS2,0),
+              coalesce(SP.CS3,0),
+              coalesce(SP.CS4,0),
+              coalesce(SP.CS5,0),
+              coalesce(SP.CS6,0),
+              coalesce(SP.CS7,0),
+              coalesce(SP.CIN1,0),
+              coalesce(SP.CIN2,0),
+              coalesce(SP.CIN3,0),
+              coalesce(SP.CIN4,0),
+              coalesce(SP.CIN5,0),
+              coalesce(SP.CIN6,0),
+              coalesce(SP.CIN7,0),
+              coalesce(SP.COUT1,0),
+              coalesce(SP.COUT2,0),
+              coalesce(SP.COUT3,0),
+              coalesce(SP.COUT4,0),
+              coalesce(SP.COUT5,0),
+              coalesce(SP.COUT6,0),
+              coalesce(SP.COUT7,0)
+
+            from
+                SP_EXP_MOZ_COMMON(?D1, ?D2, 1, 1, 1) SP
+            inner join GUIDE_SPECIALITY GS
+            on GS.SPECIALITYID = SP.SPECIALITYID
+            order by GS.CODE
+            </sql>
+        </cont5>
+    </import>
+    <guides>
+        <guide name="kind" key="T_VALUE_KINDS" title="Kind" version="1.0" kind="static">
+            <columns>
+                <column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+                <column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+            </columns>
+            <items>
+                <item id="STAT_KIND_CS" val="Стан на дату">
+                    <cont5>
+                        <sqlfields>
+                            <FIO title="ПІБ" width="233"/>
+                            <STUDENTID title="ID" width="87"/>
+                        </sqlfields>
+                        <sqlcontlist>
+							select
+        S.FIO, S.STUDENTID
+
+      from HS_MOVEMENT_FULL HMF
+      inner join STUDENTS S
+      on S.STUDENTID = HMF.STUDENTID
+      inner join ORDERS O
+      on O.ORDERID = HMF.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = HMF.STUDENTID
+      and HC.BEGINDATE = (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= :D2
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC
+      on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where (HMF.BEGINDATE &lt;= :D2) and (HMF.ENDDATE &gt; :D2)
+      and (HMF.STATUS in ('С','А','П'))
+      and HMF.EDUBASISID = :EDUBASIS
+      and HMF.EDUFORMID = :EDUFORM
+      and HMF.SPECIALITYID = :SPECIALITY
+      and HMF.DEPARTMENTID = :DEPARTMENT
+      and HC.COUNTRYID = :COUNTRY
+      and cast(((HMF.SEMESTER + 1)/2 - 0.5) as smallint) = :COURSE
+                        </sqlcontlist>
+                    </cont5>
+                </item>
+                <item id="STAT_KIND_CIN" val="Прибуло">
+                    <cont5>
+                        <sqlfields>
+                            <FIO title="ПІБ" width="233"/>
+                            <STUDENTID title="ID" width="87"/>
+                            <ORDERNUM title="№ наказу" width="65"/>
+                            <ORDERDATE title="Дата наказу" width="72"/>
+                        </sqlfields>
+                        <sqlcontlist>
+							select
+        S.FIO, S.STUDENTID, O.ORDERNUM, O.ORDERDATE
+
+      from V_MOVEMENT_FULL HMF
+      inner join STUDENTS S
+      on S.STUDENTID = HMF.STUDENTID
+      left join ORDERS O
+      on O.ORDERID = HMF.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = HMF.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= HMF.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where HMF.BEGINDATE &gt;= :D1 and HMF.BEGINDATE &lt;= :D2
+      and Exists (
+         select 1 from V_STUDENTORDERS STO
+         left join REASONTOCATEGORY RTC
+         on (RTC.REASONID = STO.REASONID)
+         where STO.STUDENTID = HMF.STUDENTID
+         and (STO.ORDERID = HMF.ORDERID or STO.ORDERID = HC.ORDERID)
+         and (( HMF.EDUBASISID = 'Б'
+								and (RTC.REASONCATEGORYID = 9 or (STO.REASONID in (1,5,2101, 11016)))
+							)
+							or
+						( HMF.EDUBASISID = 'К'
+           and (RTC.REASONCATEGORYID = 9 or (STO.REASONID in (1,5,2102, 11016)))
+					  )
+
+          )
+				 )
+
+      and HMF.EDUBASISID = :EDUBASIS
+      and HMF.EDUFORMID = :EDUFORM
+      and HMF.SPECIALITYID = :SPECIALITY
+      and HMF.DEPARTMENTID = :DEPARTMENT
+      and HC.COUNTRYID = :COUNTRY
+      and cast(((HMF.SEMESTER + 1)/2 - 0.5) as smallint) = :COURSE
+                        </sqlcontlist>
+                    </cont5>
+                </item>					
+                <item id="STAT_KIND_COUT" val="Вибуло">
+                    <cont5>
+                        <sqlfields>
+                            <FIO title="ПІБ" width="233"/>
+                            <STUDENTID title="ID" width="87"/>
+                            <ORDERNUM title="№ наказу" width="65"/>
+                            <ORDERDATE title="Дата наказу" width="72"/>
+                        </sqlfields>
+                        <sqlcontlist>
+							 select  S.FIO, S.STUDENTID, O.ORDERNUM, O.ORDERDATE
+
+      from  V_STATEBEFOREORDER VSBO
+      inner join STUDENTS S
+      on S.STUDENTID = VSBO.STUDENTID
+      inner join ORDERS O
+      on O.ORDERID = VSBO.ORDERID
+      left join HS_COUNTRY HC
+      on HC.STUDENTID = VSBO.STUDENTID
+      and HC.BEGINDATE =
+      (
+        select first 1 H.BEGINDATE
+        from HS_COUNTRY H
+        where H.STUDENTID = HC.STUDENTID
+        and H.BEGINDATE &lt;= VSBO.BEGINDATE
+        order by H.BEGINDATE desc
+      )
+
+      left join GUIDE_COUNTRY GC on (GC.COUNTRYID = HC.COUNTRYID)
+
+      where (VSBO.BEGINDATE &gt;= :D1) and (VSBO.BEGINDATE &lt;= :D2) and
+      VSBO.REASONID =  (
+        select first 1 STO.REASONID
+        from V_STUDENTORDERS STO
+          left join REASONTOCATEGORY RTC
+            on (RTC.REASONID = STO.REASONID)
+        where STO.STUDENTID = VSBO.STUDENTID
+        and STO.ORDERID = VSBO.ORDERID
+        and (RTC.REASONCATEGORYID in (3,8)
+				    or ((VSBO.EDUBASISID = 'Б' and STO.REASONID in (2102,11016))  -- присев с бюджета на контракт
+               or(VSBO.EDUBASISID = 'К' and STO.REASONID in (2101,11016))) -- присев с контракта на бюджет)
+						)
+      )
+      and VSBO.EDUBASISID = :EDUBASIS
+      and VSBO.EDUFORMID = :EDUFORM
+      and VSBO.SPECIALITYID = :SPECIALITY
+      and VSBO.DEPARTMENTID = :DEPARTMENT
+      and HC.COUNTRYID = :COUNTRY
+      and cast(((VSBO.SEMESTER + 1)/2 - 0.5) as smallint) = :COURSE
+                        </sqlcontlist>
+                    </cont5>
+                </item>
+            </items>
+        </guide>
+    </guides>
+    <data>
+    </data>
+    <params>
+    </params>
+</report>

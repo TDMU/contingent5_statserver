@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content>
+<h1>Часто задаваемые вопросы</h1>
+<table cellspacing="10" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc1"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left" height="39">Как перенести данные в программу &quot;Диплом&quot;?</td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc2"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left">Почему при экспорте данных в программу &quot;Диплом&quot; неправильно экспортируются серия и номер паспорта?</td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc3"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left">Как восстановить поврежденную БД?</td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc4"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left">Как передать студентов другому инспектору в сетевой версии &quot;Контингент 5&quot;?</td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc5"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left">Как сформировать пакет отчетности для министерства?</td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc6"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left"><span class="textselect">Не работает создание и прием пакетов с информацией о студентах и учебных планах. Что делать?</span> <span class="textnews">(добавлено 01.12.2004)</span></td>
+        </tr>
+        <tr>
+            <td class="textselect" valign="middle" align="left"><a href="#asc7"><img height="38" alt="" width="31" border="0" src="q.gif" /></a></td>
+            <td class="textselect" valign="middle" align="left"><span class="textselect">Медленная работа программы &quot;Контингент 4&quot; на WinMe/WinXP <span class="textnews"><br />
+            (добавлено 23.02.2005)</span></span></td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="540" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc1" name="asc1"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Как перенести данные в программу &quot;Диплом&quot;?</span></td>
+            <td>
+            <p class="textselect">Перенос данных производится в 2 этапа:</p>
+            <p class="textselect"><span class="textcur">1. Экспорт данных из программы &quot;Контингент&quot; в текстовый файл специального формата.</span> <span class="textcur"><br />
+            &nbsp;&nbsp;&nbsp;Для этого необходимо выделить студентов и выбрать пункт меню <span class="textselect">&quot;Список|Экспорт в программу &quot;Диплом&quot;|Диплома&quot; </span>или<span class="textselect"> &quot;Студенческого билета&quot;</span>. В появившемся окне &quot;Параметры&quot; необходимо выбрать или ввести соответствующие параметры. После этого должен появиться файл, который вы указали в параметре </span><span class="textselect">&quot;Экспорт в файл&quot;</span><span class="textcur">. Если Вы делаете экспорт для студенческого билета и в личных карточках студентов внесены фотографии, то автоматически будут созданы файлы фотографий студентов формата: <span class="textselect">&quot;IDSTUDENTA.JPG&quot;</span></span>. <br />
+            &nbsp;</p>
+            <p class="textselect"><span class="textcur">2. Импорт данных в программу &quot;Диплом&quot; </span><span class="textselect">(v.2.0.5.1)</span><span class="textcur"> из этого файла. </span></p>
+            <p class="textselect"><span class="textcur">Выберите пункт меню </span><span class="textselect">&quot;Данные|Импорт данных&quot;</span><span class="textcur">.</span></p>
+            <p class="textselect"><span class="textcur">В появившемся окне выберите Тип файлов - </span><span class="textselect">&quot;Текстовый файл&quot;</span><span class="textcur"> и найдите файл, который был создан при экспорте из программы &quot;Контингент 5&quot;. В следующем окне необходимо выбрать учебное заведение и тип импортируемого документа.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a name="asc2"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Почему при экспорте данных в программу &quot;Диплом&quot; неправильно экспортируются серия и номер паспорта?</span><br />
+            &nbsp;</td>
+            <td valign="top" align="left">
+            <p class="textcur">Для того, чтобы эти данные корректно переносились в программу &quot;Диплом&quot;, они должны быть набраны в формате <span class="textselect">серия/пробел/номер</span>, например <span class="textselect">АА&nbsp;123456</span>. В &quot;номере&quot; указывается только число (без символа № и др.).</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="540" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc3" name="asc3"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Как восстановить поврежденную БД?</span> <br />
+            &nbsp;</td>
+            <td class="textcur" valign="top" align="left">
+            <p>Обычно достаточно бывает сделать резервную копию и восстановление БД (Этот процесс подробно описан в документации к программе, в разделе &quot;<span class="textselect">Резервное копирование</span>&quot;). Но в некоторых случаях это не помогает. Существует методика восстановления БД Firebird, которая подробно описана по адресу <span class="textselect"><a href="http://www.ibase.ru/devinfo/db_repair.htm">http://www.ibase.ru/devinfo/db_repair.htm</a></span>.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="540" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc4" name="asc4"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Как передать студентов другому инспектору в сетевой версии &quot;Контингент 5 &quot;</span></td>
+            <td valign="top" align="left">
+            <p><span class="textcur">Выделите студентов в списке студентов, откройте личную карточку (в заголовке окна будет</span> <span class="textselect">&quot;редактирование нескольких&quot;</span>), <span class="textcur">в поле</span> <span class="textselect">&quot;Ответственный&quot;</span> <span class="textcur">выберите инспектора, который должен видеть этих студентов, нажмите галочку (сохранить), на вопрос, применить ли ко всем студентам, ответьте</span> <span class="textselect">&quot;да&quot;</span>.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc5" name="asc5"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Как сформировать пакет отчетности для министерства?</span></td>
+            <td class="textcur" valign="top" align="left">
+            <p>1. (<span class="textselect">Отчет с персональных раб. мест</span>) На первом персональном рабочем месте создается пакет статистики (Отчет - Подготовка статистики - Пакет - Создать - &quot;Стат. данные по Контингенту&quot;) в этот пакет извлекаются стат-данные с персонального рабочего места (Данные - Добавить с БД) и записывается на дискету (Пакет - Сохранить как), затем, в любом порядке, на каждом персональном месте пакет открывается (Отчет - Подготовка статистики - Пакет - Открыть), и в него добавляется информация с этого рабочего места (Данные - Добавить с БД).</p>
+            <p>После того, как в файл будет добавлена информация с каждого рабочего места, полученный файл отправляется в министерство.</p>
+            <p>2. (<span class="textselect">Отчет из сетевой версии программы </span>) Отчет формируется так же как и для персонального рабочего места, только один раз на любом клиентском рабочем месте.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc6" name="asc6"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Не работает создание и прием пакетов с информацией о студентах и учебных планах. Что делать? <span class="textnews"><br />
+            (добавлено 01.12.2004)</span></span></td>
+            <td class="textcur" valign="top" align="left">
+            <p>Если у Вас установлен Windows ниже Windows XP, для создания и приема пакетов передачи информации о студентах и учебных планах, необходимо установить библиотеку <a href="download">MS&nbsp;XML3</a>.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr size="3" color="#009999" />
+<table cellspacing="5" cellpadding="0" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td valign="top" align="center" width="130"><a id="asc7" name="asc7"></a><img height="38" alt="" width="31" src="q.gif" /><br />
+            <span class="textselect">Медленная работа программы &quot;Контингент 4&quot; на WinMe/WinXP <span class="textnews"><br />
+            (добавлено 23.02.2005)</span></span></td>
+            <td class="textcur" valign="top" align="left">
+            <p>Причина в том, что Me и XP содержат так называемую систему восстановления файлов. В соответствии со списком расширений любой файл, который изменяется, копируется системой в специальное место для возможного восстановления в дальнейшем.</p>
+            <p>В этом списке есть расширение gdb, что приводит к долгому подключению к базе данных и очень медленной работе.</p>
+            <p>&nbsp;</p>
+            <p class="textselect">На XP:</p>
+            <p>Данную особенность можно выключить целиком:</p>
+            <p>&quot;System Properties | System Restore | Turn off System Restore on all drives&quot;,</p>
+            <p>либо убрать из списка расширение &quot;gdb&quot;, отредактировав файл:</p>
+            <p>windows\system32\restore\filelist.xml</p>
+            <p class="textselect">на Me:</p>
+            <p>убрать из списка расширение &quot;gdb&quot;, отредактировав файл:</p>
+            <p>windows\system\restore\filelist.xml</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</content>

@@ -1,0 +1,3 @@
+//>>built
+define("dojox/app/bind",["dojo/_base/kernel","dojo/query","dojo/_base/array","dijit","dojo/_base/json"],function(e,f,c,g,h){return function(i,j){c.forEach(i,function(b){b=f('div[dojoType^="dojox.mvc"],div[data-dojo-type^="dojox.mvc"]',b.domNode);c.forEach(b,function(b){var a=b.getAttribute("ref");if(a===null){var d=b.getAttribute("data-dojo-props");if(d){try{d=h.fromJson("{"+d+"}")}catch(c){throw Error(c.toString()+" in data-dojo-props='"+extra+"'");}a=d.ref.replace(/^\s*rel\s*:\s*/,"")}}a&&(a[0]===
+"'"&&(a=a.substring(1,a.length-1)),(a=e.getObject(a,!1,j))&&g.byNode(b).set("ref",a))},this)},this)}});

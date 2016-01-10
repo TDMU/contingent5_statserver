@@ -1,0 +1,78 @@
+<html>
+<head>
+<style type="text/css">
+	table#nodes_rights {
+		border: 1px solid gray;
+		border-collapse: collapse;
+	}
+
+	table#nodes_rights .rightcol {
+		width: 70px;
+	}
+
+	table#nodes_rights td {
+		padding: 2px;
+		border: 1px solid gray;
+		text-align: center;
+	}
+
+	table#nodes_rights th {
+    font-weight: bold;
+		border: 1px solid gray;
+		text-align: center;
+	}
+
+  table#nodes_rights td.title {
+  	font-weight: 300;
+    padding-right: 5px;
+		text-align: left;
+  }
+
+  .r_non {background-image: url(/modules/admin/img/r_non.png) }
+  .r_res {background-image: url(/modules/admin/img/r_res.png) }
+  .r_set {background-image: url(/modules/admin/img/r_set.png) }
+</style>
+</head>
+<body>
+	<div data-dojo-type="dijit.form.DropDownButton" id="users" showLabel="true">
+		<span>Users</span>
+		<div data-dojo-type="dijit.TooltipDialog" jsId="usersDlg" title="Select user">
+
+	<script type="dojo/method" event="execute" args="">
+		var item = utree.lastFocused.item;
+		var id = utree.model.store.getIdentity(item);
+		var name = utree.model.store.getValue(item, 'TITLE');
+		if(utree.model.store.getValue(item, 'ALLOW_MOD')) admin.currentManObj.setUser(id, name);
+		else alert('You do not have right to modify this node');
+	</script>
+
+<div data-dojo-type="dojo.data.ItemFileReadStore" jsId="ustore" url="/admin/guide/guidetree?id=GUIDE_USERS&root=0&deep=10"></div>
+<div data-dojo-type="dijit.tree.ForestStoreModel" jsId="umodel" store="ustore"></div>
+<input type="hidden" name="user" id="user"/>
+<div data-dojo-type="dijit.Tree" jsId="utree" model="umodel" label1="root" persist="false" showRoot="false" openOnClick="false">
+	<script type="dojo/method" event="onDblClick" args="e">
+		usersDlg._onSubmit();
+	</script>
+</div>
+<button data-dojo-type="dijit.form.Button" type="submit">OK</button>
+
+		</div>
+	</div>
+
+<span>&nbsp;Access&nbsp;</span>
+<?php
+	Zend_Dojo_View_Helper_Dojo::setUseDeclarative ();
+
+	$gm = new Admin_Model_Guide();
+	$accCombo = new Zend_Dojo_Form_Element_FilteringSelect('access');
+	$accCombo->setMultiOptions($gm->getGuideItems('T_ACCESS'));
+	$accCombo->setAttrib('onChange', 'admin.currentManObj.refresh()');
+	$accCombo->setAttrib('style', 'width:100px');
+	$accCombo->setDecorators(array('DijitElement'));
+	echo $accCombo->render();
+?>
+<span>&nbsp;Show full rights&nbsp;</span>
+<input data-dojo-type="dijit.form.CheckBox" id="fullRights" onChange="admin.currentManObj.refresh()" checked="false"/>
+
+<div data-dojo-type="dojox.layout.ContentPane" jsId="rightsContent" executeScripts="false"></div>
+</body>

@@ -1,0 +1,164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-11 12:45+0200\n"
+"PO-Revision-Date: 2012-01-24 10:25+0200\n"
+"Last-Translator: Alexander Krepky <contingent@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: D:\\Work\\eclipse_ws\\uman\\application\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: D:\\Work\\eclipse_ws\\uman\\application\n"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:5
+msgid "Login page"
+msgstr "Вход в систему"
+
+msgid "skin.orgname_pref"
+msgstr "Государственное учреждение"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:62
+msgid "skin.orgname_full"
+msgstr "Официальный сайт сбора и обработки статистической информации медицинских вузов МОЗ Украины"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:71
+msgid "skin.copyright_info"
+msgstr "&#169;2006-14 КГМУ. Разработка и сопровождение – информационно-аналитический отдел."
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:96
+msgid "EnterLogin"
+msgstr "Введите,&#160;пожалуйста,&#160;имя&#160;и&#160;пароль:"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:104
+msgid "UserName"
+msgstr "имя:"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:114
+msgid "UserPassword"
+msgstr "пароль:"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:126
+msgid "btLogin"
+msgstr "Вход"
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/views/scripts/page/login.phtml:130
+msgid "Guest login"
+msgstr "Гостевой вход"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/pagination_control.phtml:9
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/pagination_control.phtml:11
+msgid "Previous"
+msgstr "Предыдущая"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/pagination_control.phtml:25
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/pagination_control.phtml:27
+msgid "Next"
+msgstr "Следующая"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showforums.phtml:4
+msgid "Forums"
+msgstr "Форумы"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showforums.phtml:10
+msgid "Forum"
+msgstr "Форум"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showforums.phtml:11
+msgid "Themes"
+msgstr "Темы"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showforums.phtml:12
+msgid "Messages"
+msgstr "Сообщения"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showforums.phtml:13
+msgid "Last message"
+msgstr "Последнее сообщение"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showmessages.phtml:2
+msgid "Quote"
+msgstr "Цитировать"
+
+#: D:\Work\eclipse_ws\uman\application/modules/forum/views/scripts/forum/showthemes.phtml:10
+msgid "Theme"
+msgstr "Тема"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/map/index.phtml:7
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:40
+msgid "skin.hint.map"
+msgstr "Карта сайта"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_left.phtml:48
+msgid "skin.user"
+msgstr "Пользователь"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:14
+msgid "skin.img.alt.gerb"
+msgstr "Логотип"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:34
+msgid "skin.hint.home"
+msgstr "На главную страницу"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:37
+msgid "skin.hint.login"
+msgstr "Вход в систему"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:43
+msgid "skin.hint.search"
+msgstr "Поиск"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/page/content_top.phtml:46
+msgid "skin.hint.mail"
+msgstr "Написать письмо"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/search/search.phtml:10
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/search/search.phtml:18
+msgid "skin.gadget.search.search"
+msgstr "Поиск"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/search/search.phtml:28
+msgid "skin.gadget.search.results"
+msgstr "Результаты поиска"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/search/search.phtml:35
+msgid "skin.gadget.search.pages"
+msgstr "Страницы"
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/scripts/search/search.phtml:49
+msgid "skin.gadget.search.notfound"
+msgstr "Не найдено ни одного документа, соответствующего запросу."
+
+#: D:\Work\eclipse_ws\uman\application/modules/auth/controllers/PageController.php:31
+msgid "Authorization error. Please, try again."
+msgstr "Ошибка&#160;авторизации.&#160;Пожалуйста,&#160;попробуйте&#160;ещё&#160;раз."
+
+#: D:\Work\eclipse_ws\uman\application/modules/contingent/controllers/PageController.php:18
+#: D:\Work\eclipse_ws\uman\application/modules/site/controllers/PageController.php:24
+msgid "skin.oficial_site_info"
+msgstr "Официальный сайт сбора и обработки статистической информации медицинских вузов МОЗ Украины."
+
+#: D:\Work\eclipse_ws\uman\application/modules/site/views/helpers/NewsHelper.php:64
+msgid "skin.gadget.rss.details"
+msgstr "Подробнее"
+
+msgid "skin.poll.title"
+msgstr "Голосование"
+
+msgid "skin.poll.vote"
+msgstr "Голосовать"
+
+#~ msgid "skin.informer"
+#~ msgstr "Информер"
+
+#~ msgid "skin.gadget.search.page"
+#~ msgstr "Страница"
+
+#~ msgid "skin.gadget.search.totalHits"
+#~ msgstr "Всего найдено"

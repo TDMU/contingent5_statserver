@@ -1,0 +1,131 @@
+<?php $this->headStyle()->captureStart() ?>
+@import "/modules/admin/js/dijit/themes/claro/claro.css";
+@import "/modules/admin/js/dojo/resources/dojo.css";
+@import "/modules/admin/js/dojox/form/resources/CheckedMultiSelect.css";
+
+html, body {
+  border: 0 none;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.nodenotvisible{
+	color: silver;
+}
+
+.focusednode{
+	background-color: blue;
+}
+
+// For editor dialog (in future will be dojox.dialog)
+.form tr{
+vertical-align:top;
+}
+.form .element{
+padding-left:5px;
+}
+.form .required{
+font-weight:bold;
+}
+<?php $this->headStyle()->captureEnd() ?>
+<?php $this->headScript()->captureStart() ?>
+  var dojoConfig = {
+        isDebug: true,
+        parseOnLoad: true,
+        locale: "ru-RU",
+        async: false,
+        paths: {
+            "uman": "../uman"
+        }
+    };
+<?php $this->headScript()->captureEnd() ?>
+<?php $this->headScript()->appendFile("/modules/admin/js/dojo/dojo.js") ?>
+<?php $this->headScript()->appendFile("/modules/admin/js/uman/uman.js") ?>
+<?php $this->headScript()->appendFile("/modules/admin/js/uman/uman_ru.js") ?>
+<?php $this->headScript()->captureStart() ?>
+//require(["dojo/_base/declare", "dojo/_base/config"], function(declare, config){
+//}
+
+dojo.require("dojo.rpc.JsonService");
+dojo.require("dojo.parser");
+dojo.require("dijit.dijit"); // optimize: load dijit layer
+
+dojo.require("dijit.Toolbar");
+dojo.require("dijit.Menu");
+dojo.require("dijit.form.Button");
+dojo.require("dijit.form.TextBox");
+
+dojo.require("dojox.data.JsonRestStore");
+
+dojo.require("dojox.layout.ContentPane");
+dojo.require("dijit.layout.BorderContainer");
+
+dojo.require("uman.ForestStoreModel");
+dojo.require("uman.Tree");
+dojo.require("uman.admin.main");
+
+
+//dojo.require("dijit._tree.dndSource");
+
+
+var adminRPC = null;
+var admin = null;
+
+
+function error(e) {
+	console.error(e);
+	alert(e['message']);
+}
+
+dojo.ready(function() {
+	adminRPC = new dojo.rpc.JsonService("/admin/rpc/smd");
+	admin = new uman.admin.main();
+});
+<?php $this->headScript()->captureEnd() ?>
+
+<div style="position: relative; width: 100%; height: 100%; border: 1px #ccc solid;">
+	<div data-dojo-type="dijit.layout.BorderContainer" gutters="true" style="width: 100%; height: 100%;" >
+		<div data-dojo-type="dijit.layout.ContentPane" region="top" splitter="false">
+<div id="toolbar1" data-dojo-type="dijit.Toolbar">
+	<div data-dojo-type="dijit.form.Button" id="edit" disabled="true" showLabel="true" onclick="admin.edit()">Edit</div>
+	<div data-dojo-type="dijit.form.Button" id="delete" disabled="true" showLabel="true" onclick="admin.del()">Delete</div>
+	<div data-dojo-type="dijit.form.ComboButton" iconClass="plusIcon" showLabel="true">
+		<span>Add</span>
+		<div data-dojo-type="dijit.Menu" jsId="addMenu" style="display: none;"></div>
+	</div>
+	<span data-dojo-type="dijit.ToolbarSeparator">&nbsp;</span>
+	<div data-dojo-type="dijit.form.ComboButton" showLabel="true">
+		<span>Mode</span>
+		<div data-dojo-type="dijit.Menu" jsId="modesMenu" style="display: none;"></div>
+	</div>
+	<div data-dojo-type="dijit.form.ComboButton" showLabel="true">
+		<span>Actions</span>
+		<div data-dojo-type="dijit.Menu" jsId="actMenu" style="display: none;">
+			<div data-dojo-type="dijit.MenuItem" id="pexp" label="Get package (export)" onClick="admin.pexp()"></div>
+			<div data-dojo-type="dijit.MenuItem" id="pimp" label="Import package" onClick="admin.pimp()"></div>
+			<div data-dojo-type="dijit.MenuItem" id="qimp" disabled="true" label="Import questions" onClick="admin.qimp()"></div>
+		</div>
+	</div>
+</div>
+		</div>
+
+		<div data-dojo-type="dijit.layout.BorderContainer" liveSplitters="false" design="sidebar" region="center" id="mainSplit">
+			<div data-dojo-type="dijit.layout.ContentPane" region="leading" splitter="true" minSize="200" style="width: 350px;">
+
+<div data-dojo-type="dojox.data.JsonRestStore" jsId="store" target="/admin/guide/treelevel" idAttribute="NODEID" loadLazyValues="true" syncMode="false"></div>
+<div data-dojo-type="uman.ForestStoreModel" jsId="model" store="store" rootId="-1" childrenAttrs="items" labelAttr="TITLE"></div>
+<div data-dojo-type="uman.Tree" jsId="nav" id="nav" model="model" label="root" persist="true" showRoot="false" openOnClick="false">
+ 	<script type="dojo/method" event="getLabelClass" args="item,opened">
+		return (item.root || this.model.store.getValue(item, 'VISIBLE') ? '' : 'nodenotvisible');
+	</script>
+ 	<script type="dojo/method" event="getIconClass" args="item,opened">
+		return (item.root || this.model.store.getValue(item, 'T_IS_FOLDER')) ? (opened ? 'dijitFolderOpened' : 'dijitFolderClosed') : 'dijitLeaf';
+	</script>
+</div>
+			</div>
+ 			<div data-dojo-type="dojox.layout.ContentPane" jsId="nodeContent" executeScripts="true" renderStyles="true" region="center"></div>
+		</div>
+	</div>
+</div>

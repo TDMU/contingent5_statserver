@@ -1,0 +1,2 @@
+//>>built
+define("dojox/data/XmlItem",["dojo/_base/declare"],function(d){return d("dojox.data.XmlItem",null,{constructor:function(c,a,b){this.element=c;this.store=a;this.q=b},toString:function(){var c="";if(this.element)for(var a=0;a<this.element.childNodes.length;a++){var b=this.element.childNodes[a];if(b.nodeType===3||b.nodeType===4)c+=b.nodeValue}return c}})});

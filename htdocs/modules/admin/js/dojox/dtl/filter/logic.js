@@ -1,0 +1,3 @@
+//>>built
+define("dojox/dtl/filter/logic",["dojo/_base/lang","../_base"],function(d,e){d.getObject("dojox.dtl.filter.logic",!0);d.mixin(e.filter.logic,{default_:function(a,b){return a||b||""},default_if_none:function(a,b){return a===null?b||"":a||""},divisibleby:function(a,b){return parseInt(a,10)%parseInt(b,10)===0},_yesno:/\s*,\s*/g,yesno:function(a,b){b||(b="yes,no,maybe");var c=b.split(dojox.dtl.filter.logic._yesno);if(c.length<2)return a;if(a)return c[0];if(!a&&a!==null||c.length<3)return c[1];return c[2]}});
+return dojox.dtl.filter.logic});

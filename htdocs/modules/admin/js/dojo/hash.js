@@ -1,0 +1,12 @@
+/*
+	Copyright (c) 2004-2011, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
+
+//>>built
+define("dojo/hash",["./_base/kernel","require","./_base/connect","./_base/lang","./ready","./_base/sniff"],function(a,u,h,i,v,j){function p(c,f){var a=c.indexOf(f);return a>=0?c.substring(a+1):""}function d(){return p(location.href,"#")}function l(){h.publish("/dojo/hashchange",[d()])}function q(){d()!==b&&(b=d(),l())}function s(c){if(e)if(e.isTransitioning())setTimeout(i.hitch(null,s,c),m);else{var a=e.iframe.location.href,b=a.indexOf("?");e.iframe.location.replace(a.substring(0,b)+"?"+c)}else location.replace("#"+
+c),!t&&q()}function w(){function c(){b=d();h=g?b:p(r.href,"?");n=!1;o=null}var f=document.createElement("iframe"),e=a.config.dojoBlankHtmlUrl||u.toUrl("./resources/blank.html");a.config.useXDomain&&!a.config.dojoBlankHtmlUrl&&console.warn("dojo.hash: When using cross-domain Dojo builds, please save dojo/resources/blank.html to your domain and set djConfig.dojoBlankHtmlUrl to the path on your domain to blank.html");f.id="dojo-hash-iframe";f.src=e+"?"+d();f.style.display="none";document.body.appendChild(f);
+this.iframe=a.global["dojo-hash-iframe"];var h,n,o,j,g,r=this.iframe.location;this.isTransitioning=function(){return n};this.pollLocation=function(){if(!g)try{var a=p(r.href,"?");if(document.title!=j)j=this.iframe.document.title=document.title}catch(q){g=!0,console.error("dojo.hash: Error adding history entry. Server unreachable.")}var k=d();if(n&&b===k)if(g||a===o)c(),l();else{setTimeout(i.hitch(this,this.pollLocation),0);return}else if(!(b===k&&(g||h===a)))if(b!==k){b=k;n=!0;o=k;f.src=e+"?"+o;g=
+!1;setTimeout(i.hitch(this,this.pollLocation),0);return}else if(!g)location.href="#"+r.search.substring(1),c(),l();setTimeout(i.hitch(this,this.pollLocation),m)};c();setTimeout(i.hitch(this,this.pollLocation),m)}a.hash=function(a,b){if(!arguments.length)return d();a.charAt(0)=="#"&&(a=a.substring(1));b?s(a):location.href="#"+a;return a};var b,e,t,m=a.config.hashPollFrequency||100;v(function(){"onhashchange"in a.global&&(!j("ie")||j("ie")>=8&&document.compatMode!="BackCompat")?t=h.connect(a.global,
+"onhashchange",l):document.addEventListener?(b=d(),setInterval(q,m)):document.attachEvent&&(e=new w)});return a.hash});

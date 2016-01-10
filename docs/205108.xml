@@ -1,0 +1,20 @@
+<letter>
+	<sql>select  IU.NODEID as USERID, '' as MESSAGE, cast (? as varchar(15)) as curdate
+from INFO_USERS IU
+where IU.NODEID in (:userlist)
+</sql>
+	<text>Шановні колеги!
+
+Перелік спеціальностей на сайті доповнено новими, згідно оновленого переліку спеціальностей, затвердженого постановою Кабінету Міністрів України № 266 від 29 квітня 2015 р. Просимо наново закачати файли шаблонів статистичних звітів з сайту contingent.tdmu.edu.ua !
+
+
+З найкращими побажаннями,
+група розробників
+
+E-Mail:  contingent@tdmu.edu.ua
+     Web:  csmu.tdmu.edu.ua  
+	</text>
+	<subject>МОЗ. Статистика за 4 картал 2015р., і плани на 2016р.</subject>
+	<from_email>contingent@tdmu.edu.ua</from_email>
+	<from_name>Група розробників</from_name>
+</letter>

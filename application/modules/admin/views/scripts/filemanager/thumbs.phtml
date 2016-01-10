@@ -1,0 +1,10 @@
+<?php foreach($this->files as $file) :?>
+<dl class="thumbnailListing">
+<dt>
+<img src="<?php echo $this->url(array('action' => 'thumb', 'img' => $file['name']))?>"></img>
+</dt>
+<dd class="thumbnailListing_info">
+<input type="checkbox" value="<?php echo $file['name']?>"/>&nbsp;<span class="name" title="<?php echo $file['name']?>"><?php echo Uman_Utils::shortenFileName($file['name'])?></span>
+</dd>
+</dl>
+<?php endforeach;?>

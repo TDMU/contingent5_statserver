@@ -1,0 +1,16 @@
+<letter>
+	<sql>select  IU.NODEID as USERID, '' as MESSAGE, cast (? as varchar(15)) as curdate
+from INFO_USERS IU
+where IU.NODEID in (:userlist)
+</sql>
+	<text>Уважаемые коллеги!
+
+С наилучшими пожеланиями,
+группа разработчиков
+
+ 
+	</text>
+	<subject>2015</subject>
+	<from_email>contingent</from_email>
+	<from_name>Группа разработчиков</from_name>
+</letter>

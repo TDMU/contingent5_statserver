@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content>В связи с перемещение сайта сбора и обработки статистики МОЗ Украины, следует изменить настройки программы &quot;Статистика 2&quot; следующим способом:<br />
+В диалоговом окне &quot;Настройка подключения к серверу&quot; (меню &quot;Настройка&quot;) заменить адрес www.csmu.edu.ua на contingent.tdmu.edu.ua , сохранить изменения и перезапустить программу.</content>

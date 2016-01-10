@@ -1,0 +1,23 @@
+<html>
+<head>
+<style>
+table.data {width: 100%;}
+table.data th,table.data td {border: 1px dotted;}
+table.data thead tr {background-color: #EEEEEE; font-weight: bold; text-align: center;}
+table.data thead td {text-align: center;}
+table.data tbody td {text-align: center; vertical-align: middle;}
+table.data tbody td.left {text-align: left;}
+</style>
+<script type="text/javascript">
+  dojo.addOnLoad(function() {
+	  setTimeout(dojo.hitch(admin.currentManObj, 'refresh'), 1);
+  });
+</script>
+</head>
+<body>
+<div style="font-size:medium; font-weight: bold">Changes:</div>
+<hr/>
+<?php	echo Admin_Model_Changes::getForm()?>
+<hr/>
+<div data-dojo-type="dojox.layout.ContentPane" jsId="changesContent" executeScripts="false"></div>
+</body>

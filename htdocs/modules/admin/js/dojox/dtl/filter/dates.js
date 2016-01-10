@@ -1,0 +1,3 @@
+//>>built
+define("dojox/dtl/filter/dates",["dojo/_base/lang","../_base","../utils/date"],function(f,g,e){f.getObject("dojox.dtl.filter.dates",!0);var c=g.filter.dates;f.mixin(c,{_toDate:function(a){if(a instanceof Date)return a;a=new Date(a);if(a.getTime()==(new Date(0)).getTime())return"";return a},date:function(a,b){a=c._toDate(a);if(!a)return"";return e.format(a,b||"N j, Y")},time:function(a,b){a=c._toDate(a);if(!a)return"";return e.format(a,b||"P")},timesince:function(a,b){a=c._toDate(a);if(!a)return"";
+var d=e.timesince;if(b)return d(b,a);return d(a)},timeuntil:function(a,b){a=c._toDate(a);if(!a)return"";var d=e.timesince;if(b)return d(b,a);return d(new Date,a)}});return dojox.dtl.filter.dates});

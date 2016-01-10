@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/cometd/_base"],function(c,a,b){a.provide("dojox.cometd.timestamp");a.require("dojox.cometd._base");b.cometd._extendOutList.push(function(a){a.timestamp=(new Date).toUTCString();return a})});

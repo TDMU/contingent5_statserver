@@ -1,0 +1,2 @@
+//>>built
+define("dojox/analytics/plugins/consoleMessages",["dojo/_base/lang","../_base","dojo/_base/config","dojo/aspect"],function(c,b,a,d){consoleMessages=c.getObject("dojox.analytics.plugins.consoleMessages",!0);this.addData=c.hitch(b,"addData","consoleMessages");b=a.consoleLogFuncs||["error","warn","info","rlog"];console||(console={});for(a=0;a<b.length;a++)console[b[a]]?d.after(console,b[a],c.hitch(this,"addData",b[a]),!0):console[b[a]]=c.hitch(this,"addData",b[a]);return consoleMessages});

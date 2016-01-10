@@ -1,0 +1,2 @@
+//>>built
+define("dojox/widget/DialogSimple",["dojo","dijit","dojox","dijit/Dialog","dojox/layout/ContentPane"],function(a,c,b){a.getObject("widget",!0,b);return a.declare("dojox.widget.DialogSimple",[b.layout.ContentPane,c._DialogBase],{})});

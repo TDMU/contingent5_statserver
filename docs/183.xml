@@ -1,0 +1,25 @@
+<guide name="countrytype" key="T_COUNTRYTYPES" title="Типи країн" version="1.0" kind="global">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+			</columns>
+			<sql>
+				<uman>
+          select VAD.VAL as ID, CT1.TITLE as VAL
+      from CONTENTTREE CT
+      inner join CONTENTTREE CT1
+      on CT1.PARENTID = CT.NODEID
+      inner join V_ADD_VALUES VAD
+      on VAD.NODEID = CT1.NODEID
+      where CT1.VISIBLE = 1 
+      and CT.NODE_KEY =   'STAT2_GUIDE_COUNTRYTYPE'
+      and VAD.FIELDNAME = '_ADD_ORIGINID'
+	         </uman>
+				<cont5>
+          select distinct COUNTRYTYPE as ID, COUNTRYTYPE as VAL
+          from GUIDE_COUNTRY
+			
+				</cont5>
+			</sql>
+			<items/>
+		</guide>

@@ -1,0 +1,40 @@
+<?php if(count($this->channel->news) > 0):?>
+		<table style="width: 100%; height: 100%">
+			<tr>
+				<td colspan="2" class="sep1"><div /></td>
+			</tr>
+			<tr style="height: 25px">
+				<td>
+					<h2 class="artitle">
+						<?php echo $this->channel->info['TITLE']?>
+					</h2>
+				</td>
+				<td style="text-align: right">
+ 					<a onclick="this.target='_blank'" href="/news/rss/show/docid/<?php echo $this->channel->info['NODEID']?>?ctxid=<?php echo $this->docid?>"><img style="border: none" src="/modules/site/img/rss.png" alt="rss"/></a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="cnt">
+					<div>
+<table>
+<?php
+	foreach ($this->channel->news as $key => &$val) {
+		$newsid = $val['NEWSID'];
+		if ($key > 0)
+			echo '<tr><td>&#160;</td></tr>';
+		echo '<tr><td align="left">' . $val ['NEWSDATE_STR'] . '<br/><b>' . $val ['TITLE'] . '</b><br/>&nbsp;&nbsp;' . $val ['DESCRIPTION'];
+		if($val ['URL']) {
+			echo '<br/>&#160;&#160;<a href="'.$val ['URL'].'">'.$this->translate('skin.gadget.rss.details').'</a>&#160;...';
+		}
+		echo  '</td></tr>';
+	}
+?>
+</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="sep2"><div /></td>
+			</tr>
+		</table>
+<?php endif;?>

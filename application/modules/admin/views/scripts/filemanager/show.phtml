@@ -1,0 +1,78 @@
+<?php $this->headScript()->captureStart() ?>
+function selectRes(url) {
+	var CKEditorFuncNum = window.location.href.replace(/.*CKEditorFuncNum=(\d+).*/,"$1")||alert('Error: lost CKEditorFuncNum param from url'+window.location.href)||1;
+	window.opener.CKEDITOR.tools.callFunction(CKEditorFuncNum, url);
+	window.close();
+}
+
+function doAction(action, params) {
+	dojo.byId('files').innerHTML = 'loading ...';
+	if(!params) params = {};
+	params['act'] = action;
+	dojo.io.iframe.send ({
+		url: "<?php echo $this->url(array('action' => 'execute'))?>",
+		handleAs: "html",
+		form: "actionsForm",
+		content: params,
+		load: function (response, ioArgs) {
+			dojo.byId('files').innerHTML = response.body.innerHTML;
+			var clr = dojo.byId('inputClear');
+			var tmp = clr.innerHTML; clr.innerHTML = ''; clr.innerHTML = tmp;
+			dojo.query('#files input').onclick(function(){
+				var chkCount = dojo.query('#files input:checked').length;
+				dojo.byId('checkAll').checked = dojo.query('#files input').length == chkCount;
+			});
+			dojo.query('#files .name').onclick(function(e){selectRes("<?php echo $this->type == 'images' ? '' : 'downloads/'?>"+dojo.attr(e.target, 'title'));});
+			return response;
+		},  
+		error: function(response, ioArgs) {  
+			alert(response); 
+			return response;
+		} 
+	});
+}
+
+function refresh() {
+	doAction('refresh');
+}
+
+function upload() {
+	doAction('uploadref');
+}
+
+function del() {
+  var files = '';
+	dojo.query('#files input:checked').forEach(function(node){files += (files?',':'') + node.value;});
+	
+  if(files) doAction('del', {files: files});
+}
+
+function checkAllAct() {
+	dojo.query('#files input').attr('checked', dojo.byId('checkAll').checked);
+}
+
+dojo.require("dojo.io.iframe");
+
+dojo.addOnLoad(function() {
+	refresh();
+});
+<?php $this->headScript()->captureEnd() ?>
+
+<div id="header">
+	<form id="actionsForm" name="actionsForm" method="post" enctype="multipart/form-data">
+		<span id="inputClear"><input type="file" id="uploadFile" name="upload" size="35"/></span>
+		<a href="#" onclick="upload()" id="actionUpload" class="action"><span>upload</span></a>
+		&nbsp;&nbsp;
+		<input type="checkbox" id="checkAll" onclick="checkAllAct()">&nbsp;<span>check all</span></input>
+		<a href="#" onclick="del()" id="actionDelete" class="action"><span>delete</span></a>
+		<a href="#" onclick="refresh()" id="actionRefresh" class="action"><span>refresh</span></a>
+		&nbsp;&nbsp;
+<?php if($this->type == 'images'):?>
+		<input type="radio" name="view" value="files" onclick="refresh()">&nbsp;files</input>
+		<input type="radio" name="view" value="thumbs" onclick="refresh()" checked>&nbsp;thumbs</input>
+<?php endif;?>
+	</form>
+</div>
+<div id="filesDiv">
+	<div id="files"></div>
+</div>

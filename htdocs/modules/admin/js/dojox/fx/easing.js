@@ -1,0 +1,2 @@
+//>>built
+define("dojox/fx/easing",["dojo/_base/kernel","dojo/fx/easing"],function(a,b){a.deprecated("dojox.fx.easing","Upgraded to Core, use dojo.fx.easing instead","2.0");return lang.getObject("dojox.fx",!0).easing=b});

@@ -1,0 +1,1621 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content><h1>
+	История измений программы &quot;Контингент&nbsp;5&quot;</h1>
+<p>
+	<br />
+	&nbsp;&nbsp; Версия 5.6.18.215&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.12.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлена ошибка создания ведомости на пересдачу с ограничением количества пересдач (для восстановленных студентов) (ECard.dll)<br />
+	&nbsp; - Добавлено в типы учреждений охраны здоровья:<br />
+	&nbsp;&nbsp;&nbsp; 143 Медичний коледж<br />
+	&nbsp;&nbsp;&nbsp; 144 ЦПМСД Центр первинної медико - санітарної допомоги&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в должности:<br />
+	&nbsp;&nbsp;&nbsp; 154 Викладач<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в места распределения:<br />
+	&nbsp;&nbsp;&nbsp; 53 ГУМВС України<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлены названия дисциплин:<br />
+	&nbsp;&nbsp;&nbsp; 594 Гігієна, соціальна медицина, організація та економіка охорони здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp; 834 Актуальні питання нефрології<br />
+	&nbsp;&nbsp;&nbsp; 1826 Instrumental methods of functional diagnostics<br />
+	&nbsp;&nbsp;&nbsp; 1850 Історія української культури<br />
+	&nbsp;&nbsp;&nbsp; 1886 Екзамен &quot;Українська мова (за професійним спрямуванням)&quot;<br />
+	&nbsp;&nbsp;&nbsp; 1907 Підготовка фармацевтичного працівника<br />
+	&nbsp;&nbsp;&nbsp; 1941 Сестринська практика в стоматологiї<br />
+	&nbsp;&nbsp;&nbsp; 1971 Пропедевтична практика<br />
+	&nbsp;&nbsp;&nbsp; 1987 ДІ Акушерство і гінекологія<br />
+	&nbsp;&nbsp;&nbsp; 1997 Безпека життєдіяльності та охорона праці<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлен срок обучения<br />
+	&nbsp;&nbsp;&nbsp; 2,6&nbsp;&nbsp; &nbsp; 2 рік 6 місяців<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлено название результата модульного контроля:<br />
+	&nbsp;&nbsp;&nbsp; -3 не допущено<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлена должность:<br />
+	&nbsp;&nbsp;&nbsp; 154&nbsp;&nbsp; &nbsp;Викладач<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлены основания приказов:<br />
+	&nbsp;&nbsp;&nbsp; 12006 допуск до ліцензійного інтегрованого іспиту &quot;Крок-2. Загальна лікарська підготовка&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12008 допуск до ліцензійного інтегрованого іспиту &quot;Крок-2. Стоматологія&quot;<br />
+	<br />
+	&nbsp; - Исправлены специальности:<br />
+	&nbsp;&nbsp;&nbsp; 22 лікувальна справа (м.спеціаліст)<br />
+	&nbsp;&nbsp;&nbsp; 53 виробництво фармацевтичних препаратів<br />
+	&nbsp;&nbsp;&nbsp; 57 8.110102&nbsp; |&nbsp; сестринська справа (магістр)&nbsp;&nbsp; (Исправлены 2 колонки)<br />
+	&nbsp;&nbsp;&nbsp; 86 педагогіка вищої школи<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлена специальность: &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; 93 8.05140103&nbsp; |&nbsp; фармацевтична біотехнологія<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлены основания приказов:<br />
+	&nbsp;&nbsp;&nbsp; 12007 недопуск до ліцензійного інтегрованого іспиту &quot;Крок-2. Загальна лікарська підготовка&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12009 недопуск до ліцензійного інтегрованого іспиту &quot;Крок-2. Стоматологія&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12010 допуск до ліцензійного інтегрованого іспиту &quot;Крок 1. Загальна лікарська підготовка&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12011 недопуск до ліцензійного інтегрованого іспиту &quot;Крок 1. Загальна лікарська підготовка&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12012 допуск до ліцензійного інтегрованого іспиту &quot;Крок-1. Стоматологія&quot;<br />
+	&nbsp;&nbsp;&nbsp; 12013 недопуск до ліцензійного інтегрованого іспиту &quot;Крок-1. Стоматологія&quot;<br />
+	&nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2067&nbsp;&nbsp; &nbsp;Астрономія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2068&nbsp;&nbsp; &nbsp;Художня культура<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2069&nbsp;&nbsp; &nbsp;Людина і світ<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2070&nbsp;&nbsp; &nbsp;Епідеміологія хвороб<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2071&nbsp;&nbsp; &nbsp;Основи економіки фармації<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2072&nbsp;&nbsp; &nbsp;Психологічне консультування та психокорекція<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2073&nbsp;&nbsp; &nbsp;Соціальна медицина, організація охорони здоров&#39;я та біостатистика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2074&nbsp;&nbsp; &nbsp;Навчальна практика з технології готових лікарських засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2075&nbsp;&nbsp; &nbsp;Проблеми дитячої кардіології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2076&nbsp;&nbsp; &nbsp;Курсовий проект з прикладної механіки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2077&nbsp;&nbsp; &nbsp;Основи фармацевтичної біотехнології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2078&nbsp;&nbsp; &nbsp;Метрологія, стандартизація, сертифікація, акредитація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2079&nbsp;&nbsp; &nbsp;Гігієна і виробнича санітарія біотехнологічних виробництв<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2080&nbsp;&nbsp; &nbsp;Актуальні проблеми профілактики тютюнопаління, алкоголізму, токсикоманії і наркоманії &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.17.214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.11.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость итогового модульного контроля.rtf&quot; (убрано место для даты в ведомостях на пересдачу)<br />
+	&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.17.213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18.11.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Убрано &quot;от даты...&quot; из ведомости модульного контроля:<br />
+	&nbsp;&nbsp;&nbsp; &quot;Ведомость итогового модульного контроля.rtf&quot;<br />
+	&nbsp; - В приказ о зачислении (в текст) добавлена информация о специальности:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp; направление, код направления и образовательный уровень.<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.17.212&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.11.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан выбор студентов в ведомости на пересдачу.<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.17.211&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04.11.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен импорт из Excel<br />
+	&nbsp; - Добавлена возможность в традиционных дисциплинах отмечать дисциплины уровня ПЗСО,<br />
+	&nbsp;&nbsp;&nbsp; Выбирать/исключать эти дисциплины в отчетах:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Приложение к аттестату<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Приложение к диплому(ECTS) с ECTS оценками<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Приложение к диплому(ECTS)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Приложение к диплому<br />
+	&nbsp; - В мастере создания ведомостей (ECTS) добавлена возможность ограничить выборку студентов<br />
+	&nbsp;&nbsp;&nbsp; в ведомость на пересдачу кол-вом уже назначенных пересдач<br />
+	&nbsp; - В отчет &quot;Перерыв в обучении по фамилиям (Excel)&quot; добавлено вывод примечания к студенту из<br />
+	&nbsp;&nbsp;&nbsp; личной карточки в поле примечание. (xrp, xls)<br />
+	&nbsp; - В приказ &quot;Разрешение на обучение по индивидуальному графику&quot; добавлено<br />
+	&nbsp;&nbsp;&nbsp; основание &quot;у зв&#39;язку з вагітністю&quot;.<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2026&nbsp;&nbsp; &nbsp;Актуальні питання ортопедії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2027&nbsp;&nbsp; &nbsp;Основи пластичної і косметичної хірургії та трансплантології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2028&nbsp;&nbsp; &nbsp;Психологія дитинства<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2029&nbsp;&nbsp; &nbsp;Психологія девіантної поведінки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2030&nbsp;&nbsp; &nbsp;Основи нейролінгвістичного програмування<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2031&nbsp;&nbsp; &nbsp;Основи християнської етики та моралі<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2032&nbsp;&nbsp; &nbsp;Порівняльна психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2033&nbsp;&nbsp; &nbsp;Психомоторика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2034&nbsp;&nbsp; &nbsp;Кратологія - наука про владу<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2035&nbsp;&nbsp; &nbsp;Гендерна психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2036&nbsp;&nbsp; &nbsp;Сексологія та сексопатологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2037&nbsp;&nbsp; &nbsp;Медико-психологічна експертиза<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2038&nbsp;&nbsp; &nbsp;Медицина та психологія надзвичайних ситуацій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2039&nbsp;&nbsp; &nbsp;Психологія життєвої кризи особистості, вмирання та смерті<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2040&nbsp;&nbsp; &nbsp;Психологія сім&rsquo;ї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2041&nbsp;&nbsp; &nbsp;Фтизіатрія з пульмонологією<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2042&nbsp;&nbsp; &nbsp;Пластична та реконструктивна хірургія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2043&nbsp;&nbsp; &nbsp;Актуальні питання дерматовенерології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2044&nbsp;&nbsp; &nbsp;Актуальні питання реабілітації та професійної орієнтації інвалідів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2045&nbsp;&nbsp; &nbsp;Актуальні питання фтизіатрії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2046&nbsp;&nbsp; &nbsp;Актуальні питання фтизіатрії та пульмонології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2047&nbsp;&nbsp; &nbsp;Актуальні питання дитячої кардіології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2048&nbsp;&nbsp; &nbsp;Актуальні питання дитячої гастроентерології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2049&nbsp;&nbsp; &nbsp;Актуальні питання дитячої пульмонології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2050&nbsp;&nbsp; &nbsp;Актуальні питання дитячої нефрології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2051&nbsp;&nbsp; &nbsp;Актуальні питання дитячої гематології та трансфузіології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2052&nbsp;&nbsp; &nbsp;Гігієна ліквідації наслідків аварії на ЧАЕС<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2053&nbsp;&nbsp; &nbsp;Основи санітарно-гігієнічної експертизи виробів та матеріалів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2054&nbsp;&nbsp; &nbsp;Актуальні проблеми професійної токсикології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2055&nbsp;&nbsp; &nbsp;Гігієна застосування небезпечних речовин у праці та побуті<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2056&nbsp;&nbsp; &nbsp;Проблеми охорони здоров&rsquo;я медичних працівників<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2057&nbsp;&nbsp; &nbsp;Сучасні проблеми екології людини<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2058&nbsp;&nbsp; &nbsp;Актуальні питання індивідуальної та громадської гігієни та профілактики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2059&nbsp;&nbsp; &nbsp;Гігієнічна лабораторна діагностика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2060&nbsp;&nbsp; &nbsp;Інфекційні та паразитарні хвороби<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2061&nbsp;&nbsp; &nbsp;Клінічна онкологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2062&nbsp;&nbsp; &nbsp;Моделювання анатомічної форми зубів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2063&nbsp;&nbsp; &nbsp;Техніка виготовлення ортодонтичних та ортопедичних конструкцій в дитячому віці<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2064&nbsp;&nbsp; &nbsp;Анатомія людини та фізіологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2065&nbsp;&nbsp; &nbsp;Захворювання, що передаються статевим шляхом<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2066&nbsp;&nbsp; &nbsp;Внутрішня медицина з фізіотерапією<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; - Исправлено в справочнике дисциплин:<br />
+	&nbsp;&nbsp;&nbsp; 1676 Навчальна ознайомча практика з фармацевтичним забезпеченням населення<br />
+	&nbsp;&nbsp;&nbsp; 1847 Теоретичні основи синтезу<br />
+	&nbsp;&nbsp;&nbsp; 2022 Курсова робота з математичного моделювання та застосування ЕОМ у біотехнології&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp; - Добавлено в справочник подразделений:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;58&nbsp;&nbsp; &nbsp;3-й медичний факультет (іноземних громадян)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;59&nbsp;&nbsp; &nbsp;медичний факультет (іноземних громадян)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;60&nbsp;&nbsp; &nbsp;стоматологічний факультет (іноземних громадян)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;61&nbsp;&nbsp; &nbsp;фармацевтичний факультет (іноземних громадян)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.16.210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.09.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет &quot;Приложение к диплому(ECTS)&quot; (xrp)<br />
+	&nbsp; - Доработан отчет &quot;Приложение к диплому(ECTS) с ECTS оценками&quot; (xrp) (Исправлена сортировка дисциплин)<br />
+	&nbsp; - Доработан отчет &quot;Движение контингента по фамилиям&quot; - добавлен параметр &quot;тип гражданства&quot; (xrp)<br />
+	&nbsp; - Исправлена формулировка допуска к &quot;Крок 1. Загальна лікарська підготовка&quot;<br />
+	&nbsp; - Исправлен экспорт в программу &quot;Education&quot;<br />
+	&nbsp; - Исправлен импорт из &quot;Контингент 6. Приёмная комиссия &quot;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2021&nbsp;&nbsp;&nbsp; Курсова робота з загальної мікробіології та вірусології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2022&nbsp;&nbsp;&nbsp; курсова робота з математичного моделювання та застосування ЕОМ у біотехнології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2023&nbsp;&nbsp;&nbsp; Товарознавство в фармацевтичному підприємстві<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2024&nbsp;&nbsp;&nbsp; Виробництво та застосування косметичних препаратів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2025&nbsp;&nbsp;&nbsp; Корнеологія &nbsp;<br />
+	<br />
+	&nbsp; - Добавлено в справочник специальностей:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;90&nbsp;&nbsp; &nbsp;8.12010006&nbsp;&nbsp; &nbsp;сестринська справа<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;91&nbsp;&nbsp; &nbsp;8.12010007&nbsp;&nbsp; &nbsp;лабораторна діагностика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;92&nbsp;&nbsp; &nbsp;8.03060107&nbsp;&nbsp; &nbsp;логістика<br />
+	<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.15.209&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31.05.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Создан отчет: &quot;Общий итог сдачи экзаменов(ECTS).&quot;.(xrp, rtf)<br />
+	&nbsp; - Доработан отчет: &quot;Общий итог сдачи экзаменов&quot;.(rtf)<br />
+	&nbsp; - Доработан отчет: &quot;Перерыв в обучении по фамилиям (Excel)&quot;.(xls) (Добавлено поле &quot;Примечание&quot;)<br />
+	&nbsp; - Доработан приказ: &quot;Разрешение на обучение по индивидуальному графику&quot;.(xrp) (Добавлены формулировки:<br />
+	&nbsp;&nbsp; &nbsp; &quot;у зв&#39;язку з доглядом за дитиною&quot;, &quot;у зв&#39;язку з призивом на строкову військову службу&quot;)<br />
+	&nbsp; - Изменен файл &quot;userinterface.cml&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Доработан отчет: &quot;Приложение к диплому(ECTS)&quot;.(xrp) (добавлена возможность сортировки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp; по началу\концу изучения дисциплины)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2020&nbsp;&nbsp; &nbsp;Актуальні проблеми інфекційних хвороб<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.14.208&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.05.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - В отчете &quot;Приложение к диплому(ECTS) с ECTS оценками&quot; добавлена возможность сортировки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp; по началу\концу изучения дисциплины.(Изменены процедуры &quot;SP_RP_DIPLOM_B&quot;, &quot;SP_RP_DIPLOM_PRACTIC_B&quot;,<br />
+	&nbsp;&nbsp;&nbsp;&nbsp; &quot;SP_RP_DIPLOM_STATE_B&quot;)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2015&nbsp;&nbsp; &nbsp;Комплексний кваліфікаційний іспит<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2016&nbsp;&nbsp; &nbsp;Курсова робота з процесів та апаратів хіміко-фармацевтичного виробництва<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2017&nbsp;&nbsp; &nbsp;Біологія продуцентів БАР<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2018&nbsp;&nbsp; &nbsp;Загальна мікробіологія і вірусологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2019&nbsp;&nbsp; &nbsp;Автоматизація та управління біотехнологічним виробництвом<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.13.207&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29.04.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Изменены процедуры &quot;SP_RP_DIPLOM_B&quot;, &quot;SP_RP_DIPLOM_PRACTIC_B&quot;, &quot;SP_RP_DIPLOM_STATE_B&quot;.<br />
+	&nbsp; - Исправлены формы контроля : &quot;державна атестація(крок)&quot;, &quot;державний іспит&quot;.<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1996&nbsp;&nbsp; &nbsp;Розробка та валідація методів контролю якості фармацевтичної продукції<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1997&nbsp;&nbsp; &nbsp;Безпека життєдіяльності та охорона праці<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1998&nbsp;&nbsp; &nbsp;Державне та регіональне управління<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1999&nbsp;&nbsp; &nbsp;Право<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2000&nbsp;&nbsp; &nbsp;Економічна теорія (мікроекономіка)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2001&nbsp;&nbsp; &nbsp;Управлінська інформація і комунікації<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2002&nbsp;&nbsp; &nbsp;Фінанси, гроші та кредит<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2003&nbsp;&nbsp; &nbsp;Основи моделювання управлінських рішень<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2004&nbsp;&nbsp; &nbsp;Самоменеджмент<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2005&nbsp;&nbsp; &nbsp;Етика ділового спілкування менеджера<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2006&nbsp;&nbsp; &nbsp;Гігієна та промсанітарія фармацевтичного підприємства<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2007&nbsp;&nbsp; &nbsp;Управління господарською діяльністю підприємств<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2008&nbsp;&nbsp; &nbsp;Ринкова трансформація економічного регіону<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2009&nbsp;&nbsp; &nbsp;Курсова робота з менеджменту організацій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2010&nbsp;&nbsp; &nbsp;ДІ Внутрішні, професійні та інфекційні хвороби<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2011&nbsp;&nbsp; &nbsp;ДІ Хірургічні хвороби з дитячою хірургією<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2012&nbsp;&nbsp; &nbsp;Належні фармацевтичні практики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2013&nbsp;&nbsp; &nbsp;ДІ Дитячі хвороби з дитячими інфекційними хворобами<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;2014&nbsp;&nbsp; &nbsp;ДІ Гігієна, соціальна медицина, організація та екоміка охорони здорв&#39;я&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.12.206&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18.04.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Изменена процедура &quot;SP_EXP_MOZ_YEAR&quot;.<br />
+	&nbsp; - Доработан модуль &quot;Учебные планы(ECTS)&quot; (Проверка на существование дисциплины)<br />
+	&nbsp; - Исправлен отчет: &quot;Заявка на Крок&quot;.(xrp)<br />
+	&nbsp; - Исправлен отчет: &quot;Крок&quot;.(xrp,xls) &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Приложение к диплому(ECTS) с ECTS оценками&quot;.(xrp,rtf)<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;protocol.pass&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1989&nbsp;&nbsp; &nbsp;Обгрунтування господарських рішень і оцінювання ризиків<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1990&nbsp;&nbsp; &nbsp;Медична та художня культура<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1991&nbsp;&nbsp; &nbsp;Клінічні аспекти імунопрофілактики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1992&nbsp;&nbsp; &nbsp;Дерматовенерологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1993&nbsp;&nbsp; &nbsp;Основи біоетики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1994&nbsp;&nbsp; &nbsp;Гігієна та екологія (6 курс)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1995&nbsp;&nbsp; &nbsp;Онкологія (6 курс) &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.12.205&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.04.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Диплом(экспорт)&quot;.<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.12.204&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.03.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Добавлен &quot;код специальности&quot; в информацию о варианте дисциплины.<br />
+	&nbsp; - Доработан приказ: &quot;Допуск&quot;.(xrp).Добавлен допуск к &quot;Крок-1. Стоматология&quot;(Изменения в базе)<br />
+	&nbsp; - Доработан приказ: &quot;Недопуск&quot;.(xrp).<br />
+	&nbsp; - Доработан приказ: &quot;Допуск (шапка)&quot;.(xrp).<br />
+	&nbsp; - Добавлен факультет: 57 міжнародний факультет &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.11.203&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.03.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Добавлено поле &quot;Специальность с кодом&quot;.<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.10.202&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен модуль: &quot;Протоколы ранжирования&quot;.<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.10.201&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен модуль: &quot;Учебная карочка&quot;. (Исправлено добавление плана для неболонских.)<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.9.200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет: &quot;Список студентов, имеющих задолженности&quot;.(xrp) (В параметры добавлен учебный год.Исправлено получение последней ведомости на дату)<br />
+	&nbsp; - Доработан модуль: &quot;Протоколы ранжирования&quot;.(Добавлено поле &quot;Примечание&quot;. Добавлена проверка на отсутствие ведомостей по дисциплине.<br />
+	&nbsp;&nbsp; &nbsp; Добавлен показ ведомостей по дисциплине)<br />
+	&nbsp; - Доработан отчет: &quot;Протокол ранжирования&quot;.(xrp,rtf).<br />
+	&nbsp; - Исправлен файл &quot;protocol.pass&quot;.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;. (Добавлено поле REAL_CREATEDATE)<br />
+	&nbsp; - Исправлен отчет: &quot;Успеваемость за семестр (сводная ECTS)&quot;.(xrp).<br />
+	&nbsp; - Исправлен приказ: &quot;Изменение фамилии&quot;(cfm).(Добавлено удаление семейного положения при удалении приказа об изменении фамилии)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.9.199&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(rtf).<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.8.198&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан приказ: &quot;Допуск (заголовок раздела)&quot;.(xrp).<br />
+	&nbsp; - Доработан приказ: &quot;Допуск к обучению&quot;.(xrp).<br />
+	&nbsp; - Доработан отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(xrp,rtf).<br />
+	&nbsp; - Доработан отчет: &quot;Список студентов, имеющих задолженности&quot;.(xrp,rtf).<br />
+	&nbsp; - Доработан модуль: &quot;Протоколы ранжирования&quot;.<br />
+	&nbsp; - Добавлено в справочник специальностей:<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;59&nbsp;&nbsp; &nbsp;7.12010001&nbsp;&nbsp; &nbsp;лікувальна справа<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;60&nbsp;&nbsp; &nbsp;7.12010002&nbsp;&nbsp; &nbsp;педіатрія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;61&nbsp;&nbsp; &nbsp;7.12010003&nbsp;&nbsp; &nbsp;медико-профілактична справа<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;62&nbsp;&nbsp; &nbsp;7.12010004&nbsp;&nbsp; &nbsp;медична психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;63&nbsp;&nbsp; &nbsp;7.12010005&nbsp;&nbsp; &nbsp;стоматологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;64&nbsp;&nbsp; &nbsp;8.12010001&nbsp;&nbsp; &nbsp;лікувальна справа<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;65&nbsp;&nbsp; &nbsp;8.12010002&nbsp;&nbsp; &nbsp;педіатрія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;66&nbsp;&nbsp; &nbsp;8.12010003&nbsp;&nbsp; &nbsp;медико-профілактична справа<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;67&nbsp;&nbsp; &nbsp;8.12010004&nbsp;&nbsp; &nbsp;медична психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;68&nbsp;&nbsp; &nbsp;8.12010005&nbsp;&nbsp; &nbsp;стоматологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;69&nbsp;&nbsp; &nbsp;7.12020101&nbsp;&nbsp; &nbsp;фармація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;70&nbsp;&nbsp; &nbsp;7.12020102&nbsp;&nbsp; &nbsp;клінічна фармація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;71&nbsp;&nbsp; &nbsp;7.12020103&nbsp;&nbsp; &nbsp;технології фармацевтичних препаратів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;72&nbsp;&nbsp; &nbsp;7.12020104&nbsp;&nbsp; &nbsp;технології парфумернокосметичних засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;73&nbsp;&nbsp; &nbsp;8.12020101&nbsp;&nbsp; &nbsp;фармація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;74&nbsp;&nbsp; &nbsp;8.12020102&nbsp;&nbsp; &nbsp;клінічна фармація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;75&nbsp;&nbsp; &nbsp;8.12020103&nbsp;&nbsp; &nbsp;технології фармацевтичних препаратів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;76&nbsp;&nbsp; &nbsp;8.12020104&nbsp;&nbsp; &nbsp;технології парфумернокосметичних засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;77&nbsp;&nbsp; &nbsp;7.03050701&nbsp;&nbsp; &nbsp;маркетинг<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;78&nbsp;&nbsp; &nbsp;8.03050701&nbsp;&nbsp; &nbsp;маркетинг<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;79&nbsp;&nbsp; &nbsp;7.03050401&nbsp;&nbsp; &nbsp;економіка підприємства (за видами економічної діяльності)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;80&nbsp;&nbsp; &nbsp;8.03050401&nbsp;&nbsp; &nbsp;економіка підприємства (за видами економічної діяльності)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;81&nbsp;&nbsp; &nbsp;7.05140101&nbsp;&nbsp; &nbsp;промислова біотехнологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;82&nbsp;&nbsp; &nbsp;8.05140101&nbsp;&nbsp; &nbsp;промислова біотехнологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;83&nbsp;&nbsp; &nbsp;7.18010001&nbsp;&nbsp; &nbsp;якість, стандартизація і сертифікація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;84&nbsp;&nbsp; &nbsp;8.18010010&nbsp;&nbsp; &nbsp;якість, стандартизація і сертифікація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;85&nbsp;&nbsp; &nbsp;8.18010018&nbsp;&nbsp; &nbsp;адміністративний менеджмент<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;86&nbsp;&nbsp; &nbsp;8.18010021&nbsp;&nbsp; &nbsp;педагогіка вищої школи<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;87&nbsp;&nbsp; &nbsp;5.12010105&nbsp;&nbsp; &nbsp;акушерська справа<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1984&nbsp;&nbsp; &nbsp;російська (українська) мова<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1985&nbsp;&nbsp; &nbsp;Професійна розмовна іноземна мова<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1986&nbsp;&nbsp; &nbsp;виробнича практика з фармакогнозії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1987&nbsp;&nbsp; &nbsp;Акушерство і гінекологія (ДІ)<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.6.8.197&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан модуль: &quot;Протоколы ранжирования&quot;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Доработан отчет: &quot;Протокол ранжирования&quot;.(rtf).<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.6.8.196&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03.02.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан : &quot;Реестр рассылки&quot;. (Добавлен &quot;сектор військового обліку&quot;)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.8.195&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.01.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан модуль: &quot;Учебная карточка&quot;.(Добавлена возможность создания ведомостей для выделенных при пересдаче)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.8.194&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27.01.2011<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет: &quot;Ведомость итогового модульного контроля&quot;.(rtf).<br />
+	&nbsp; - Исправлен файл &quot;protocol.pass&quot;.&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.6.7.193&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 31.12.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлены процедуры SP_EXP_MOZ_YEAR,SP_RP_23NK1,SP_RP_CONTINGENT<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.7.192&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.12.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет: &quot;Ведомость итогового модульного контроля&quot;.(rtf).&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлена учебная карточка(в ведомости с формой контроля &quot;зачет&quot; добавлено &quot;не виконав&quot;).&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.6.191&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.12.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан отчет: &quot;Список студентов, имеющих задолженности&quot;.(xrp).&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Доработан приказ: &quot;Изменение фамилии&quot;.(cfm,xrp,rtf). (автоматическое изменение статуса)&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;- Изменена дисциплина 1894 Біофізика з фізичними методами аналізу та метрологія.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Доработан модуль: &quot;Протокол ранжирования&quot;.<br />
+	&nbsp; - Доработан модуль: &quot;Планы приема&quot;.<br />
+	&nbsp; - Обновлен файл &quot;blacklist.dat&quot;.<br />
+	&nbsp; - Решена возможная проблема с планами поступления и восстановлениz резервной копии БД (EDUBASISID, COUNTRYTYPE)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1941&nbsp;&nbsp; &nbsp;Сестринська практика в стоматологiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1942&nbsp;&nbsp; &nbsp;Актуальні проблеми інфекційних хвороб та ВІЛ-інфекція<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1943&nbsp;&nbsp; &nbsp;Актуальнi проблеми фiзiотерапii , курортологii та реабiлiтацii<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1944&nbsp;&nbsp; &nbsp;Основи біологічної фізики та медична апаратура<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1945&nbsp;&nbsp; &nbsp;Медсестринство в психіатрії та наркології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1946&nbsp;&nbsp; &nbsp;Очні хвороби<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1947&nbsp;&nbsp; &nbsp;Хірургічні хвороби в т.ч. хірургія надзвичайних ситуацій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1948&nbsp;&nbsp; &nbsp;Інфекційні хвороби. Актуальні проблели инфекційних хвороб та ВІЛ інфекцій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1949&nbsp;&nbsp; &nbsp;Невідкладні стани, екстрена та невідкладна медична допомога<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1950&nbsp;&nbsp; &nbsp;Фтизіатрія, актуальні проблеми фтизіатрії та пульмонології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1951&nbsp;&nbsp; &nbsp;Загальна хірургія (з оперативною хірургією)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1952&nbsp;&nbsp; &nbsp;Фармакопейнi методи аналiзу<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1953&nbsp;&nbsp; &nbsp;Використання лiкарських препаратiв у клiнiчнiй медицинi<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1954&nbsp;&nbsp; &nbsp;Контроль якостi лiкарських засобiв та харчових добавок<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1955&nbsp;&nbsp; &nbsp;Внутрiшнi хвороби, в т.ч.: невiдкладнi стани i терапiя надзвичайних ситуацiй<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1956&nbsp;&nbsp; &nbsp;Хiрургiчнi хвороби, в т.ч.: хiрургiя надзвичайних ситуацiй<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1957&nbsp;&nbsp; &nbsp;Основи бiологiчно&nbsp; фiзики та медична апаратура<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1958&nbsp;&nbsp; &nbsp;Медсестринство в психiатрii та наркологii<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1959&nbsp;&nbsp; &nbsp;Медсестринська переддипломна практика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1960&nbsp;&nbsp; &nbsp;Патоморфологiя з секцiйним курсом<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1961&nbsp;&nbsp; &nbsp;Бiофiзика, фiзичнi методи аналiзу та метрологiя<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1962&nbsp;&nbsp; &nbsp;Навчальна ознайомча практика з фармацевтичного забезпечення населення<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1963&nbsp;&nbsp; &nbsp;Латинська медична термінологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1964&nbsp;&nbsp; &nbsp;Ознайомча практика з практичної косметологiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1965&nbsp;&nbsp; &nbsp;Трихологiя<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1966&nbsp;&nbsp; &nbsp;Основи патологічної анатомiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1967&nbsp;&nbsp; &nbsp;Психологія здоров&rsquo;я людини<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1968&nbsp;&nbsp; &nbsp;Психологія обдарованості<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1969&nbsp;&nbsp; &nbsp;Тілесно-орієнтована психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1970&nbsp;&nbsp; &nbsp;Основи технології лікувально-косметичних засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1971&nbsp;&nbsp; &nbsp;Пропедевтична практика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1972&nbsp;&nbsp; &nbsp;Фармакогностична практика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1973&nbsp;&nbsp; &nbsp;Клінічна фармація та фармацевтична опіка<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1974&nbsp;&nbsp; &nbsp;Формування бізнес моделі підприємства<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1975&nbsp;&nbsp; &nbsp;Організація системи охорони здоров&#39;я та медичне страхування<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1976&nbsp;&nbsp; &nbsp;РГЗ з маркетингової цінової політики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1977&nbsp;&nbsp; &nbsp;Промислова екологія. Патентознавство<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1978&nbsp;&nbsp; &nbsp;Світова література<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1979&nbsp;&nbsp; &nbsp;Промислова технологія синтетичних субстанцій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1980&nbsp;&nbsp; &nbsp;Валідація технологічних процесів та аналітичних методик<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1981&nbsp;&nbsp; &nbsp;Пластична&nbsp; косметична хiрургiя.Крiоконсервування тканин<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1982&nbsp;&nbsp; &nbsp;Основи психотренінгу<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1983&nbsp;&nbsp; &nbsp;Догляд за хворими та медична маніпуляційна техніка<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Версия 5.6.5.190&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.12.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Доработан модуль: &quot;Учебные планы&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.5.189&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.10.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Обновлен файл &quot;blacklist.dat&quot;.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Доработан отчет: &quot;Семестровая выписка (ECTS)&quot;(xrp, rtf).<br />
+	&nbsp; - Доработан отчет: &quot;Семестровая выписка&quot;.(xrp, rtf).<br />
+	&nbsp; - Доработан модуль: &quot;Учебный план (ECTS)&quot;. (возможность копирования информации о модуле).<br />
+	<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.5.188&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.09.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - В личную карточку студента добавлено поле &quot;Крок id&quot;<br />
+	&nbsp; - Исправлен файл &quot;pers.xml&quot;.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Доработан отчет: &quot;Заявка на Крок&quot;.(rtf,xrp).<br />
+	&nbsp; - Доработан отчет: &quot;Крок&quot;.(rtf,xrp).<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.5.187&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.09.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Бланк&quot;.(xrp)<br />
+	&nbsp; - Исправлен приказ: &quot;Перерыв в обучении&quot;.(rtf,xrp)<br />
+	&nbsp; - Доработан отчет: &quot;Список студентов, имеющих задолженности&quot;.(xrp, rtf). Можно делать отчет за весь период обучения.<br />
+	&nbsp; - Доработан отчет: &quot;Протокол ранжирования&quot;.(rtf).<br />
+	&nbsp; - Доработан отчет: &quot;Итоги экзаменационной сессии(ECTS)&quot;.(rtf). Переделана шапка<br />
+	&nbsp; - Доработан модуль: &quot;Учебный план (ECTS)&quot;. Теперь отображается форма контроля.<br />
+	&nbsp; - Доработан модуль: &quot;Протокол ранжирования&quot;. Возможность делать протокол ранжирования на основании относительного для выделенных.<br />
+	&nbsp; - Исправлен файл &quot;protocol.pass&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1927&nbsp;&nbsp; &nbsp;Медичне правознавство<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1928&nbsp;&nbsp; &nbsp;Екстрена та невiдкладна медична допомога<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1929&nbsp;&nbsp; &nbsp;Основи бiоетики та бiобезпеки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1930&nbsp;&nbsp; &nbsp;Актуальнi проблеми фтизiатрi та пульмонологi<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1931&nbsp;&nbsp; &nbsp;Комбустiологiя. Крiоконсервування тканин<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1932&nbsp;&nbsp; &nbsp;Медичне обладнання<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1933&nbsp;&nbsp; &nbsp;Екстрена та невiдкладна медична допомога<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1934&nbsp;&nbsp; &nbsp;Соцiальна медицина, органiзацiя та економiка охорони здоров&#39;я<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1935&nbsp;&nbsp; &nbsp;Загальна практика (сiмейна медицина)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1936&nbsp;&nbsp; &nbsp;Актуальнi питання клiнiчноi iмунологii та алергологii&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1937&nbsp; Актуальні проблеми ревматології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1938&nbsp;&nbsp; &nbsp;Актуальні проблеми ВІЛ-інфекції<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1939&nbsp;&nbsp; &nbsp;Актуальні питання кардіохірургії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1940&nbsp;&nbsp; &nbsp;Паліативна хірургія&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp; -&nbsp;&nbsp; &nbsp;Добавлено в справочник факультетов<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 55&nbsp;&nbsp;&nbsp; Факультет з підготовки іноземних громадян<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; -&nbsp;&nbsp; &nbsp;Добавлено в справочник должностей<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 151&nbsp;&nbsp;&nbsp; Сестра медична<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 152&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Сестра медична-бакалавр<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 153&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Зубний технік<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.4.186&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25.06.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Допуск&quot;.(rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Недопуск&quot;.(rtf)&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.4.185&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.06.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Недопуск&quot;.(xrp)<br />
+	&nbsp; - Исправлен приказ: &quot;Допуск&quot;.(xrp)<br />
+	&nbsp; - Исправлен приказ: &quot;Допуск (шапка)&quot;.(rtf, xrp)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.4.184&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.06.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к аттестату&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Движение контингента (статистика для ПФО)&quot;.(xrp, xls)<br />
+	&nbsp; - Добавлен отчет: &quot;Список студентов (термин обучения)&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1916&nbsp;&nbsp; &nbsp;Гiгiена та екологiя (для 6 курсу)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1917&nbsp;&nbsp; &nbsp;Анатомія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1918&nbsp;&nbsp; &nbsp;Біохімія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1919&nbsp;&nbsp; &nbsp;Медсестринство в акушерстві, гінекології та неонатології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1920&nbsp;&nbsp; &nbsp;Практикум із медсестринства в акушерстві, гінекології та неонатології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1921&nbsp;&nbsp; &nbsp;Роль професійного медсестринства у аспекті перемін (семінарський цикл)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1922&nbsp;&nbsp; &nbsp;Роль професійного медсестринства у аспекті перемін (практикум)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1923&nbsp;&nbsp; &nbsp;Фактори і механізми фармакологічної активності і токсичності ліків на етапах фармакокінетики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1924&nbsp;&nbsp; &nbsp;Доказова медицина та фармація<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1925&nbsp;&nbsp; &nbsp;Виробнича практика з аптечної технології лікарських та косметичних засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1926&nbsp;&nbsp; &nbsp;Медичне рятівництво та швидка допомога&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.3.183&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07.06.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;(rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость итогового модульного контроля&quot;(rtf)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен приказ: &quot;Восстановление и допуск к госаттестации&quot;.(rtf, xrp)<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.3.182&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.05.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Недопуск.xrp&quot;(xrp) &nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.3.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13.05.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Движение контингента (статистика)&quot;.(xls)<br />
+	&nbsp; - Исправлен приказ: &quot;Бланк&quot;.(xrp) &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.3.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.04.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Восстановление и допуск к госаттестации&quot;.(rtf, xrp, cfm)<br />
+	&nbsp; - Исправлен файл &quot;Templates.xml&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к аттестату&quot;.(xrp)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1907&nbsp;&nbsp; &nbsp;Підготовка фармацевтичного працівника<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1908&nbsp;&nbsp; &nbsp;Фізіологія з основами анатомії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1909&nbsp;&nbsp; &nbsp;Курсова робота з прикладної механіки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1910&nbsp;&nbsp; &nbsp;Математичне моделювання СУБД<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1911&nbsp;&nbsp; &nbsp;Основи матеріалознавства, тара та паковання<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1912&nbsp;&nbsp; &nbsp;Курсова робота з технології фармацевтичних препаратів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1913&nbsp;&nbsp; &nbsp;Диференційна психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1914&nbsp;&nbsp; &nbsp;Генетична психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1915&nbsp;&nbsp; &nbsp;Патоанатомія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.2.179&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.04.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Крок&quot;.(xls, xrp)<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.6.2.178&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.04.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.(xrp, rtf)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Список выпускников с доп. информацией&quot;.(xrp, rtf)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.2.177&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11.03.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление&quot;.(rtf, xrp) &nbsp;<br />
+	&nbsp; - Добавлены права на таблицу GUIDE_STRUCTURE.<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(xrp)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Выполнение плана трудоустройства.&quot;.(rtf, xrp)<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;guides.xml&quot;.<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass)<br />
+	&nbsp; - Добавлен справочник &quot;Направления распределения&quot;<br />
+	&nbsp; - Добавлено поле &quot;Направления распределения&quot; в справочник &quot;Специальности&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1906&nbsp;&nbsp; &nbsp;Виготовлення ліків у польових умовах<br />
+	&nbsp; - Добавлена специальность &quot;лікувальна справа м.спеціаліст&quot;.<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.1.176&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.03.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Итоги экзаменационной сессии(ECTS)&quot;.(xrp, rtf) &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(rtf)<br />
+	&nbsp; - Добавлен отчет: &quot;Список протоколов ранжирования&quot;.(xrp, rtf)<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass)<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1895&nbsp;&nbsp; &nbsp;Управління інноваційними процесами<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1896&nbsp;&nbsp; &nbsp;Менеджмент державних установ і організацій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1897&nbsp;&nbsp; &nbsp;Маркетинговий менеджмент та дослідження ринку<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1898&nbsp;&nbsp; &nbsp;Управління ризиками та методи їх оцінювання<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1899&nbsp;&nbsp; &nbsp;Професійна психологія та управління конфліктами<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1900&nbsp;&nbsp; &nbsp;Національна економіка<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1901&nbsp;&nbsp; &nbsp;Курсова робота з мікробіології продуцентів БАР<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1902&nbsp;&nbsp; &nbsp;Курсова робота з прикладної механіки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1903&nbsp;&nbsp; &nbsp;Курсова робота з процесів та апаратів хіміко-фармацевтичних виробництв<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1904&nbsp;&nbsp; &nbsp;Курсова робота з промислової технології фармацевтичних препаратів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1905&nbsp;&nbsp; &nbsp;Курсова робота з економіки, планування та організації хіміко-фармацевтичного виробництва<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Версия 5.6.0.175&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.02.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.(xrp) &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Карточка трудоустройства выпускника&quot;.(rtf)<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Итоги экзаменационной сессии(ECTS)&quot;.(xrp, rtf)<br />
+	&nbsp; - Добавлен отчет: &quot;Список протоколов ранжирования&quot;.(xrp, rtf)<br />
+	&nbsp; - Добавлен отчет: &quot;Список студентов не сдавших крок&quot;.(xrp, rtf)<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.6.0.174&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22.02.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Список должников(книги)&quot;.(rtf,xrp) &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Список выпускников с документами об образовании&quot;.(xrp)<br />
+	&nbsp; - Изменена украинская локализация.<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.5.16.173&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.02.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(rtf,xrp) &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость итогового модульного контроля&quot;.(rtf,xrp)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к аттестату&quot;.(rtf,xrp)<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;. &nbsp;<br />
+	&nbsp; - Переделан Модуль &quot;Протокол ранжирования&quot;.&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass)<br />
+	&nbsp; - Исправлен приказ: &quot;Неперевод на другой семестр&quot;.(rtf) &nbsp;<br />
+	&nbsp; - Исправлен приказ: &quot;Перевод на другой семестр&quot;.(rtf)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1887 Дослідження фармацевтичного ринку<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1888 Українська наукова фармацевтична термінологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1889 Польова практика з медичної ботаніки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1890 Виробнича практика з пропедевтичної стоматології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1891 Педіатрія, дитячі інфекції<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1892 Військова терапія з терапією надзвичайних ситуацій<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1893 Українська наукова медична термінологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1894 Біофізика з фізичними методами аналізу та метологія<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.5.15.172&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29.01.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Учебные планы(ECTS)&quot;.<br />
+	&nbsp; - Добавлен: &quot;факультет заочної (дистанційної) форми навчання&quot;<br />
+	&nbsp; - Исправлен отчет: &quot;Список студентов с доп. информацией&quot;.(rtf, xrp)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому(ECTS)&quot;.(rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.(rtf) &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;pers.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;guides.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Движение контингента (статистика для ПФО)&quot;.<br />
+	&nbsp; - Добавлены поля &quot;PROTOCOLNUM&quot; и &quot;PROTOCOLDATE&quot; в таблицу &quot;STUDENTS&quot;.<br />
+	&nbsp; - Исправлен Модуль &quot;Планы распределения&quot;.<br />
+	&nbsp; - Добален справочник &quot;Структура вуза&quot;<br />
+	&nbsp; - Добавлена связь специальности со структурой вуза.<br />
+	&nbsp; - Добавлено в справочник дисциплин:&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1877 Фiлософiя, релiгiєзнавство, етика та естетика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1878 Безпека життєдiяльностi; основи охорони працi<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1879 Безпека життєдiяльностi населення<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1880 Охорона працi. Охорона працi в галузi<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1881 Клiнiчне медсестринство в професiйнiй патологii<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1882 Навчальна практика з промислової технологiї ЛЗ<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1883 Виробнича практика з клiничної фармацiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1884 Менеджмент та маркетинг у фармацiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1885 Етика та деонтологiя у фармацiї<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1886 Українська мова (за професійним спрямуванням), держ. iспит&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; Версия 5.5.14.171&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13.01.2010<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен бланк приказа.<br />
+	&nbsp; - Исправлен отчет: Успеваемость за семестр (сводная ECTS).xrp<br />
+	&nbsp; - Переработан Модуль &quot;Статистика МОЗ&quot;.<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.14.170&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26.12.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: Студенческий(экспорт).xrp<br />
+	&nbsp; - Движение контингента (статистика)(xrp,rtf)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Переработан Модуль &quot;Статистика МОЗ&quot;.<br />
+	&nbsp; -&nbsp;&nbsp; &nbsp;Добавлено в справочник: GUIDE_DEPARTMENT<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53&nbsp;&nbsp;&nbsp; 2-й медичний факультет фармацевтичне відділення<br />
+	&nbsp; -&nbsp;&nbsp; &nbsp;Добавлено в справочник: GUIDE_PRIVILEGE<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp; Дитина шахтаря<br />
+	&nbsp; - Добавлено в справочник дисциплин:&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1868&nbsp;&nbsp; &nbsp;Практика з АТЛ (виробнича)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1869&nbsp;&nbsp; &nbsp;Лікарські рослини та фітотерапія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1870&nbsp;&nbsp; &nbsp;Ендодонтична техніка в стоматології<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1871&nbsp;&nbsp; &nbsp;Підготовка до державного іспиту<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1872&nbsp;&nbsp; &nbsp;Курсова робота з медичної хімії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1873&nbsp;&nbsp; &nbsp;Курсова робота з фармакоекономіки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1874&nbsp;&nbsp; &nbsp;Курсова робота з систем управлiння якiстю<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1875&nbsp;&nbsp; &nbsp;Цивiльний захист<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1876&nbsp;&nbsp; &nbsp;Гiгiєна та промислова санiтарiя&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.13.169&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.12.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: Студенческий(экспорт).xrp<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.13.168&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 02.12.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; -&nbsp;&nbsp; &nbsp;Добавлено в справочник GUIDE_DISCIPLINETYPE:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; В&nbsp;&nbsp; &nbsp;курс за вибором<br />
+	&nbsp; - Добавлено в справочник мест распределения:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 52 Військово-медичний клінічний центр центрального регіону (Міністерство оборони України)<br />
+	&nbsp; - Исправлен Модуль &quot;Статистика МОЗ&quot;(Добавлен фильтр по уровням образования).<br />
+	&nbsp; - Исправлен отчет: &quot;Текущая успеваемость&quot;.(xrp,rtf)<br />
+	&nbsp; - Добавлено в справочник: GUIDE_PRIVILEGE<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19&nbsp;&nbsp;&nbsp; інвалід дитинства<br />
+	&nbsp; - Исправлен отчет: Список студентов, имеющих задолженности.xrp<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1846&nbsp;&nbsp; &nbsp;Паблiк рилейшiнз<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1847&nbsp;&nbsp; &nbsp;Теоретичні основи сінтезу<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1848&nbsp;&nbsp; &nbsp;Біохімічні дії лакарських засобів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1849&nbsp;&nbsp; &nbsp;Польова практика з фармацевтичної ботаніки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1850&nbsp;&nbsp; &nbsp;Істрія української культури<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1851&nbsp;&nbsp; &nbsp;Курсова робота з фінансового менеджменту<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1852&nbsp;&nbsp; &nbsp;РГЗ з управління проектами<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1853&nbsp;&nbsp; &nbsp;Курсова робота з економічної діагностики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1854&nbsp;&nbsp; &nbsp;РГЗ з фармакоекономічних основ формулярної системи<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1855&nbsp;&nbsp; &nbsp;Курсова робота зі стратегічного маркетингу<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1856&nbsp;&nbsp; &nbsp;РГЗ з рекламного менеджменту<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1857&nbsp;&nbsp; &nbsp;Курсова робота з фінансів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1858&nbsp;&nbsp; &nbsp;Курсова робота з маркетингової товарної політики<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1859&nbsp;&nbsp; &nbsp;Курсова робота з мікроекономіки<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1860&nbsp;&nbsp; &nbsp;Курсова робота з економіки підприємства&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1861&nbsp;&nbsp; &nbsp;Дентальна імпланктологія зубів<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1862&nbsp;&nbsp; &nbsp;Сучасна технологія протезування<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1863&nbsp;&nbsp; &nbsp;Клінічна мікробіологія та імунологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1864&nbsp;&nbsp; &nbsp;Основи психосоматичної медицини<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1865&nbsp;&nbsp; &nbsp;Сімейна психологія<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1866&nbsp;&nbsp; &nbsp;Клiнiчне медсестринство у внутрiшнiй медицинi<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1867&nbsp;&nbsp; &nbsp;Клiнiчне медсестринство в професiйнiй патологii&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Версия 5.5.12.167&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16.11.2009<br />
+	&nbsp;&nbsp;&nbsp; --------------------------------------<br />
+	&nbsp; - Обновлен файл rights.cml<br />
+	&nbsp;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.12.166&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.10.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Назначение именных стипендий&quot;.(rtf)<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.12.165&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14.10.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Подпись&quot;.(xrp,rtf)<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.12.164&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.10.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Текущая успеваемость&quot;.(xrp,rtf)<br />
+	&nbsp; - Добавлен отчет: &quot;Журнал посещений&quot;.(xrp,rtf)<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;. &nbsp;<br />
+	&nbsp; - Переделан Модуль &quot;Протокол ранжирования&quot;.<br />
+	&nbsp; - Переделан протокол ранжирования(protocol.pass) &nbsp;<br />
+	&nbsp; - Переделан отчет: &quot;Протокол ранжирования&quot;(xrp, rtf)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1825 Реаніматологія (в т.ч. дитяча реаніматологія)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1826 Інструментальні методи функціональної діагностики(курс за вибором)<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1827 Епідеміологія надзвичайних станiв<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1828 Терапія надзвичайних станiв<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1829 Анестезіологія та iнтенсивна терапiя<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1830 Дитячі інфекції<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1831 Клінічне медсестринство в інфекційній клініці<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1832 Клінічна фармакологія з токсикологією<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1833 Правознавство і медичне законодавство<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1834 Педагогіка і мистецтво викладання<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1835 Безпечний лікарняний простір<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1836 Медсестринський діагноз<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1837 Менеджмент в медсестринстві<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1838 Первинна медико-санітарна допомога<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1839 Інформатика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1840 Клінічна практика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1841 Педагогічна практика<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1842 Написання магістерської роботи<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1843 Роль професійного медсестринства у аспекті перемін<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1844 Пропедевтика психіатрії<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;1845 Арт-терапія &nbsp;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.11.163&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.10.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: Студенческий(экспорт).xrp&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.11.162&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.09.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен протокол ранжирования, F, FX соответствует трад. оценка 2 балла (protocol.pass)<br />
+	&nbsp; - Исправлен приказ: Перевод на другой семестр.rtf<br />
+	&nbsp; - Переделан импорт абитуриентов из Excel.<br />
+	&nbsp; - Исправлена процедура SP_IMP_STUDENTS (deep)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1821&nbsp;&nbsp; &nbsp;Дитячі хвороби та дитячі інфекційні хвороби<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1822&nbsp;&nbsp; &nbsp;Українська мова та література<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1823&nbsp;&nbsp; &nbsp;Підготовка до ліцензійного іспиту Nclex<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1824&nbsp;&nbsp; &nbsp;Нутриціологія та дієтотерапія<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.10.161&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03.09.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлена хранимая процедура SP_GET_STUDENTMARKS_AS (на dbs2)<br />
+	&nbsp; - Исправлен отчет: Академическая справка(ECTS).rtf &nbsp;<br />
+	&nbsp; - Исправлен приказ: Неперевод на другой семестр.rtf<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.10.160&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 02.09.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: Реестр рассылки.rtf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (27.08.2009)<br />
+	&nbsp; - Исправлен приказ: Неперевод на другой семестр.rtf (27.08.2009)<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.10.159&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09.07.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.(protocol.pass) &nbsp;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.10.158&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08.07.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования.xrp&quot;<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.(xrp,rtf)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка&quot;.(xrp,rtf)<br />
+	&nbsp; - SP SP_EXP_MOZ (deep)<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.10.157&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.06.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Добавлена возможность разнесения выбранных дисциплин плана для &quot;трад.&quot; студентов.<br />
+	&nbsp; - Исправлен отчет: &quot;Список выпускников с доп. информацией&quot;.(rtf)<br />
+	&nbsp; - Исправлен протокол ранжирования<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.(protocol.pass) &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Список выпускников с документами об образовании&quot;.(xrp,rtf)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1791&nbsp;&nbsp; &nbsp;Хірургія з основами стоматології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1792&nbsp;&nbsp; &nbsp;Госпітальна педіатрія (в т.ч. неонатологія)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1793&nbsp;&nbsp; &nbsp;Основи ендоскопічної та лазерної хірургії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1794&nbsp;&nbsp; &nbsp;Хірургія, дитяча хірургія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1795&nbsp;&nbsp; &nbsp;Педіатрія, дитяча педіатрія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1796&nbsp;&nbsp; &nbsp;Загальна практика (сімейна медицина)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1797&nbsp;&nbsp; &nbsp;Основи клінічної медицини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1798&nbsp;&nbsp; &nbsp;Манікюр, педикюр, візаж<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1799&nbsp;&nbsp; &nbsp;Аптечна технологія лікарських та косметичних засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1800&nbsp;&nbsp; &nbsp;Навчальна практика з технології лікарських препаратів промислового виробництва<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1801&nbsp;&nbsp; &nbsp;Загальна біохімія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1802&nbsp;&nbsp; &nbsp;Загальна біотехнологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1803&nbsp;&nbsp; &nbsp;Хімія БАР лікарських рослин<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1804&nbsp;&nbsp; &nbsp;Технологія переробки сировини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1805&nbsp;&nbsp; &nbsp;Екобіотехнологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1806&nbsp;&nbsp; &nbsp;Аналіз фінансово-господарської діяльності фармацевтичних підприємств<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1807&nbsp;&nbsp; &nbsp;Міжнародний маркетинг в медицині<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1808&nbsp;&nbsp; &nbsp;Виробнича практика з фармацевтичної інформатики та фармацевтичної опіки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1809&nbsp;&nbsp; &nbsp;Вища математика з математичною статистикою<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1810&nbsp;&nbsp; &nbsp;Фармація косметичних засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1811&nbsp;&nbsp; &nbsp;Гігієна з основами екології у фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1812&nbsp;&nbsp; &nbsp;Анестезіологія та інтенсивна терапія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1813&nbsp;&nbsp; &nbsp;Державний комплексний випускний іспит з військових та військово-медичних дисциплін<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1814&nbsp;&nbsp; &nbsp;Швидка медична допомога ( невідкладні стани)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1815&nbsp;&nbsp; &nbsp;фізіологія та нейрофізіологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1816&nbsp;&nbsp; &nbsp;Експериментальна психологія та психодіагностика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1817&nbsp;&nbsp; &nbsp;Психологія особистості<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1818&nbsp;&nbsp; &nbsp;Основи психотренінгу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1819&nbsp;&nbsp; &nbsp;Психологія діяльності медичного працівника<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1820&nbsp;&nbsp; &nbsp;Виробнича практика (лікарська) &nbsp;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.9.156&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.04.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.9.155&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06.04.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(xrp,rtf)<br />
+	&nbsp; - Добавлен отчет: &quot;Список выпускников с доп. информацией&quot;.(rtf, xrp)<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;userinterface.cml&quot;.<br />
+	&nbsp; - Исправлен приказ: &quot;Перевод на другой семестр&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Неперевод на другой семестр&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Перевод на другой семестр (шапка)&quot;.(xrp)<br />
+	&nbsp; - В таблицу GUIDE_EDUDIRECTION добавлено поле EDUDIRECTION_CODE.<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.9.154&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18.02.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Список студентов с доп. информацией&quot;.(rtf, xrp)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому(ECTS)&quot;.(rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.(rtf) &nbsp;<br />
+	&nbsp; - Исправлен файл &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен файл &quot;pers.xml&quot;.<br />
+	&nbsp; - Добавлены поля &quot;PROTOCOLNUM&quot; и &quot;PROTOCOLDATE&quot; в таблицу &quot;STUDENTS&quot;.<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.9.153&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06.02.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Добавлено поле в справочник &quot;Специальности&quot;.<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.9.152&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 03.02.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(xrp)<br />
+	&nbsp; - Изменен справочник: &quot;GUIDE_MARKTYPE_B&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(rtf, xrp)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1677&nbsp;&nbsp; &nbsp;Хірургія (абдомінальна хірургія)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1678&nbsp;&nbsp; &nbsp;Медичне законодавство<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1679&nbsp;&nbsp; &nbsp;Спортивні танці<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1680&nbsp;&nbsp; &nbsp;Масаж<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1681&nbsp;&nbsp; &nbsp;Метрологічний контроль у фізичному вихованні, спорті, фізичній реабілітації та спортивній медицині<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1682&nbsp;&nbsp; &nbsp;Психологія спорту<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1683&nbsp;&nbsp; &nbsp;Методи та засоби управління якістю<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1684&nbsp;&nbsp; &nbsp;Кардіохірургія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1685&nbsp;&nbsp; &nbsp;Судинна хірургія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1686&nbsp;&nbsp; &nbsp;Російський мовленнєвий етикет<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1687&nbsp;&nbsp; &nbsp;Спортивні і оздоровчі види&nbsp;&nbsp;&nbsp;&nbsp; гімнастики<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1688&nbsp;&nbsp; &nbsp;Спортивні ігри<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1689&nbsp;&nbsp; &nbsp;Плавання<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1690&nbsp;&nbsp; &nbsp;Легка атлетика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1691&nbsp;&nbsp; &nbsp;Футбол та міні-футбол<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1692&nbsp;&nbsp; &nbsp;Онтокінезіологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1693&nbsp;&nbsp; &nbsp;Олімпійський і професійний спорт<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1694&nbsp;&nbsp; &nbsp;Гігієна харчування у спорті<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1695&nbsp;&nbsp; &nbsp;Спортивна фізіологія та біохімія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1696&nbsp;&nbsp; &nbsp;Біомеханіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1697&nbsp;&nbsp; &nbsp;Технічні засоби у спортивній медицині<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1698&nbsp;&nbsp; &nbsp;Силові види спорту<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1699&nbsp;&nbsp; &nbsp;Спортивна медицина і спортивна валеологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1700&nbsp;&nbsp; &nbsp;Лікувальна фізкультура і фізична реабілітація<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1701&nbsp;&nbsp; &nbsp;Фітнес<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1702&nbsp;&nbsp; &nbsp;Спортивна травматологія і&nbsp;&nbsp;&nbsp;&nbsp; фармакологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1703&nbsp;&nbsp; &nbsp;Загальна теорія підготовки спортсменів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1704&nbsp;&nbsp; &nbsp;Дитячий та юнацький спорт. Жіночій спорт<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1705&nbsp;&nbsp; &nbsp;Спорт інвалідів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1706&nbsp;&nbsp; &nbsp;Функціональна діагностика у спорті<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1707&nbsp;&nbsp; &nbsp;Внутрішня медицина<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1708&nbsp;&nbsp; &nbsp;Стандартизація лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1709&nbsp;&nbsp; &nbsp;Виробнича практика з фармацевтичної хімії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1710&nbsp;&nbsp; &nbsp;Органiзацiя та економiка фармацii. Фармацевтичний менеджмент та маркетинг.<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1711&nbsp;&nbsp; &nbsp;Організація роботи лабораторії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1712&nbsp;&nbsp; &nbsp;Лабораторна імунологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1713&nbsp;&nbsp; &nbsp;Комплексний теоретичний тестовий іспит зі спеціальності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1714&nbsp;&nbsp; &nbsp;Методи дослідження метаболізму лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1715&nbsp;&nbsp; &nbsp;Державне регулювання освітньої діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1716&nbsp;&nbsp; &nbsp;Управління соціальною та екологічною безпекою<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1717&nbsp;&nbsp; &nbsp;Управління інформаційними зв&#39;зками<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1718&nbsp;&nbsp; &nbsp;Управління змістом робіт<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1719&nbsp;&nbsp; &nbsp;Управління трудовими ресурсами<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1720&nbsp;&nbsp; &nbsp;Правові засади адміністративної діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1721&nbsp;&nbsp; &nbsp;Керівник адміністративної служби<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1722&nbsp;&nbsp; &nbsp;Інформаційні технології в менеджменті<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1723&nbsp;&nbsp; &nbsp;Культура наукової мови<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1724&nbsp;&nbsp; &nbsp;Культурологія (культурологія, етика, естетика)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1725&nbsp;&nbsp; &nbsp;Університетська освіта<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1726&nbsp;&nbsp; &nbsp;Мовна модель сучасного інформаційного простору<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1727&nbsp;&nbsp; &nbsp;Економічна інформатика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1728&nbsp;&nbsp; &nbsp;Основи медико-біологічних та фармакологічних знань<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1729&nbsp;&nbsp; &nbsp;Історія економіки та економічної думки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1730&nbsp;&nbsp; &nbsp;Регіональна економіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1731&nbsp;&nbsp; &nbsp;Економіко-математичне моделювання<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1732&nbsp;&nbsp; &nbsp;Виробнича практика з клінічної косметології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1733&nbsp;&nbsp; &nbsp;Технологія косметичних та парфумерних засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1734&nbsp;&nbsp; &nbsp;Організація, економіка та управління в фармації та парфумерно-косметичної галузі<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1735&nbsp;&nbsp; &nbsp;Військова хірургія з хірургією надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1736&nbsp;&nbsp; &nbsp;Ділова англійська мова<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1737&nbsp;&nbsp; &nbsp;Англійська мова із введенням у літературу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1738&nbsp;&nbsp; &nbsp;Введення в психологію<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1739&nbsp;&nbsp; &nbsp;Психологія розвитку людини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1740&nbsp;&nbsp; &nbsp;Практикум з основ медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1741&nbsp;&nbsp; &nbsp;Медсестринські навички з обстеження пацієнта<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1742&nbsp;&nbsp; &nbsp;Медсестринський догляд за дорослими І<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1743&nbsp;&nbsp; &nbsp;Практикум з медсестринського догляду за дорослими І<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1744&nbsp;&nbsp; &nbsp;Медсестринський догляд за дорослими ІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1745&nbsp;&nbsp; &nbsp;Практикум з медсестринського догляду за дорослими ІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1746&nbsp;&nbsp; &nbsp;Медсестринський догляд за дорослими ІІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1747&nbsp;&nbsp; &nbsp;Практикум з медсестринського догляду за дорослими ІІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1748&nbsp;&nbsp; &nbsp;Медсестринство в акушерстві та неонатології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1749&nbsp;&nbsp; &nbsp;Практикум з медсестринства в акушерстві та неонатології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1750&nbsp;&nbsp; &nbsp;Медсестринство в педіатрії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1751&nbsp;&nbsp; &nbsp;Практикум з медсестринства в педіатрії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1752&nbsp;&nbsp; &nbsp;Практикум з медсестринства в психіатрії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1753&nbsp;&nbsp; &nbsp;Актуальні проблеми медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1754&nbsp;&nbsp; &nbsp;Ораторське мистецтво<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1755&nbsp;&nbsp; &nbsp;Курс математики коледжу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1756&nbsp;&nbsp; &nbsp;Елементарна статистика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1757&nbsp;&nbsp; &nbsp;Мистецтво<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1758&nbsp;&nbsp; &nbsp;Введення в Європейську історію<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1759&nbsp;&nbsp; &nbsp;Гуманітарний курс (курс за вибором І)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1760&nbsp;&nbsp; &nbsp;Американські студії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1761&nbsp;&nbsp; &nbsp;Введення в комп&#39;ютерні технології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1762&nbsp;&nbsp; &nbsp;Введення в соціологію<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1763&nbsp;&nbsp; &nbsp;Іноземна культура (курс за вибором II)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1764&nbsp;&nbsp; &nbsp;Цикл природничо-наукової підготовки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1765&nbsp;&nbsp; &nbsp;Цикл професійної та практичної підготовки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1766&nbsp;&nbsp; &nbsp;Профілактичне медсестринство та пропаганда здорового способу життя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1767&nbsp;&nbsp; &nbsp;Введення у професійне медсестринство<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1768&nbsp;&nbsp; &nbsp;Оцінка стану здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1769&nbsp;&nbsp; &nbsp;Практикум з оцінки стану здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1770&nbsp;&nbsp; &nbsp;Основи медсестринського практикуму<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1771&nbsp;&nbsp; &nbsp;Інтегрований медсестринський практикум<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1772&nbsp;&nbsp; &nbsp;Розлади здоров&#39;я І<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1773&nbsp;&nbsp; &nbsp;Практикум із розладів здоров&#39;я І<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1774&nbsp;&nbsp; &nbsp;Наукові дослідження у медсестринстві<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1775&nbsp;&nbsp; &nbsp;Розлади здоров&#39;я ІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1776&nbsp;&nbsp; &nbsp;Практикум із розладів здоров&#39;я ІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1777&nbsp;&nbsp; &nbsp;Лідерство в медсестринстві<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1778&nbsp;&nbsp; &nbsp;Розлади здоров&#39;я ІІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1779&nbsp;&nbsp; &nbsp;Практикум із розладів здоров&#39;я ІІІ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1780&nbsp;&nbsp; &nbsp;Громадське медсестринство та охорона здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1781&nbsp;&nbsp; &nbsp;Практикум з громадського медсестринства та охорони здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1782&nbsp;&nbsp; &nbsp;Актуальні питання професійного медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1783&nbsp;&nbsp; &nbsp;Підсумковий практикум з професійного медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1784&nbsp;&nbsp; &nbsp;Європейська культура<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1785&nbsp;&nbsp; &nbsp;Роль професійного медсестринства у аспекті перемін<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1786&nbsp;&nbsp; &nbsp;Сучасні проблеми у медсестринстві<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1787&nbsp;&nbsp; &nbsp;Громадське медсестринство<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1788&nbsp;&nbsp; &nbsp;Практикум з громадського медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1789&nbsp;&nbsp; &nbsp;Аспекти професійного медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1790&nbsp;&nbsp; &nbsp;Практикум з професійного медсестринства<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.151&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28.01.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Подпись&quot;.(xrp,rtf) &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.01.2009<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.(xrp) &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.149&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26.12.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;.<br />
+	&nbsp; - Исправлен Модуль &quot;Учебные планы&quot;.<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.148&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25.12.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Карточка трудоустройства выпускника&quot;.(xrp,rtf)<br />
+	&nbsp; - Новогодние поздравления.<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.147&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8.12.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Справка об обучении(Англ)&quot;.(rtf)<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.11.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Добавлен отчет: &quot;Семестровая выписка (ECTS)(Англ)&quot;.(xrp,rtf) &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Справка об обучении(Англ)&quot;.(xrp,rtf)<br />
+	&nbsp; - Исправлен &quot;fields.xml&quot;.<br />
+	&nbsp; - Исправлен &quot;userinterface.cml&quot;.&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен Модуль &quot;Настройки&quot;.<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.8.145&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17.09.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(xrp,rtf) &nbsp;<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление в связи с окончанием&quot;.(rtf,xrp) &nbsp;<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление в связи с несдачей гос экзаменов&quot;.(rtf,xrp)<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление&quot;.(rtf,xrp)<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.(protocol.pass) &nbsp;<br />
+	&nbsp; - Исправлен отчет 2-3НК (хранимая процедура, 10-значные коды специальностей)<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1664&nbsp;&nbsp; &nbsp;Внутрішня медицина (в тому числі ендокринологія)&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1665&nbsp;&nbsp; &nbsp;Неврологія&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1666&nbsp;&nbsp; &nbsp;Дерматологія, венерологія&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1667&nbsp;&nbsp; &nbsp;Фізична реабілітація, спортивна медицина&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1668&nbsp;&nbsp; &nbsp;Судова медицина, медичне законодавство&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1669&nbsp;&nbsp; &nbsp;Медична субкультура&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1670&nbsp;&nbsp; &nbsp;Хірургічна стоматологія та щелепно-ліцева хірургія&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1671&nbsp;&nbsp; &nbsp;Невідкладні стани в клініці дитячих хвороб&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1672&nbsp;&nbsp; &nbsp;Біостатика&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1673&nbsp;&nbsp; &nbsp;Військова хірургія&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1674&nbsp;&nbsp; &nbsp;Військова терапія&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1675&nbsp;&nbsp; &nbsp;Анатомія людини та основи гістології&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1676&nbsp;&nbsp; &nbsp;Навчальна ознайомча&nbsp; практиказ фармацевтичним забезпеченням населення<br />
+	&nbsp;<br />
+	&nbsp;&nbsp; Версия 5.5.8.144&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17.07.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.(xrp) &nbsp;<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;.<br />
+	<br />
+	&nbsp;&nbsp; Версия 5.5.8.143&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15.07.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.(xrp) &nbsp;<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.7.142&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.06.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1659&nbsp;&nbsp; &nbsp;Основи професійного законодавства&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1660&nbsp;&nbsp; &nbsp;Перша долікарська підготовка&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1661&nbsp;&nbsp; &nbsp;Стоматологія дитячого віку&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1662&nbsp;&nbsp; &nbsp;Біостатистика&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1663&nbsp;&nbsp; &nbsp;Російська мова (за професійним спрямуванням)&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.141&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.06.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление в связи с окончанием&quot;.(rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Присвоение квалификации и выдача дипломов&quot;.(xrp, rtf)<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.140&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.06.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость успеваемости по дисциплине&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Отчисление в связи с окончанием&quot;.(rtf)<br />
+	&nbsp; - Исправлен приказ: &quot;Присвоение квалификации и выдача дипломов&quot;.(xrp, rtf)<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.(protocol.pass)<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.139&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29.05.2008<br />
+	&nbsp;&nbsp; &nbsp;--------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Движение контингента по фамилиям&quot;.(xrp)<br />
+	&nbsp; - Исправлен отчет: &quot;Общий итог сдачи экзаменов&quot;.(xrp , rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.(xrp , rtf)<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому(ECTS)&quot;.(xrp , rtf)<br />
+	&nbsp; - Добавлено в справочник &quot;Місця розподілу&quot;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 51 АМН України<br />
+	<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.138&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.05.2008<br />
+	&nbsp; --------------------------------------<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.137&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.05.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Исправлен Модуль &quot;Приказы&quot;.<br />
+	&nbsp; - Исправлен Модуль &quot;Протокол&quot;.<br />
+	&nbsp; - Исправлен Модуль &quot;Учебная карточка&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Движение контингента по фамилиям&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Приложение к диплому&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Семестровая выписка(Англ)&quot;. &nbsp;<br />
+	&nbsp; - Исправлен приказ: &quot;Изменение фамилии&quot;.<br />
+	&nbsp; - Исправлен приказ: &quot;Допуск&quot;.<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.6.136&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.05.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость о результатах экзаменационной сессии&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Приложение к диплому(ECTS)&quot;<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.5.135&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11.04.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Исправлен отчет: &quot;Протокол ранжирования&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка&quot;.&nbsp; &nbsp;<br />
+	&nbsp; - Исправлен отчет: &quot;Академическая справка(ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Ведомость о результатах экзаменационной сессии&quot;. &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Информация о дипломе выпускников&quot;. &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Информация о приказах&quot;.<br />
+	&nbsp; - Добавлен отчет: &quot;Приложение к диплому(ECTS)&quot; &nbsp;<br />
+	&nbsp; - Добавлен отчет: &quot;Список студентов (средний балл за весь период ECTS)&quot;.<br />
+	&nbsp; - Исправлена подпись приказа.<br />
+	&nbsp; - Добавлено в справочник дисциплин: &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1652&nbsp;&nbsp; &nbsp;Загальна гігієна та радіаційна гігієна<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1653&nbsp;&nbsp; &nbsp;Гігієна праці, в т.ч. охорона праці мед. працівників<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1654&nbsp;&nbsp; &nbsp;Хiрургiчна стоматологiя та щелепно-лицева хiрургiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1655&nbsp;&nbsp; &nbsp;Ортопедична стоматологiя, в т.ч. iмплантологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1656&nbsp;&nbsp; &nbsp;Дерматокосметологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1657&nbsp;&nbsp; &nbsp;Технологія виготовлення лікарських засобів в польових умовах<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1658&nbsp;&nbsp; &nbsp;Фармацевтична опека<br />
+	<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.4.134&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18.03.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Изменена система ранжирования (в соответствии с письмом МОЗ 08.01-22/65 от 21.01.2008).<br />
+	&nbsp; - Добавлен модуль &quot;Библиотека&quot;(эксперементальный).<br />
+	&nbsp; - Добавлено в справочник дисциплин: &nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1645 Аптечна технологія лікарських та косметичних засобів з основами біофармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1646 Основи організації охорони здоров&#39;я та страхова медицина<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1647 Педагогічна та професійна психологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1648 Психологічний тренінг<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1649 Стажування (педагогіка)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1650 Стандарти вищої освіти і управління якістю<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1651 Філософія освіти<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.5.3.133&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25.02.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Добавлен приказ: &quot;Отработка расхождений в учебных планах&quot;.(xrp, rtf, cfm, template.xml)<br />
+	&nbsp; - Исправлен приказ: &quot;Отработка занятий&quot;<br />
+	&nbsp; - Исправлен отчет: &quot;Список студентов (средний балл ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Успеваемость за семестр (сводная ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Направление на работу&quot;(xrp, rtf).<br />
+	&nbsp; - Исправлен отчет: &quot;Список трудоустройства&quot;(xrp, rtf).<br />
+	&nbsp; - Исправлены отчеты по распределению и трудоустройству.<br />
+	&nbsp; - Изменен справочник специальностей. &nbsp;<br />
+	&nbsp;<br />
+	<br />
+	&nbsp; Версия 5.5.3.132&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.02.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Исправлен отчет &quot;Протокол ранжирования&quot;(.xrp).<br />
+	&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Успеваемость за семестр (сводная ECTS)&quot;.<br />
+	&nbsp; - Исправлен отчет: &quot;Список студентов (средний балл ECTS)&quot;.<br />
+	&nbsp; - В редакторе варианта дисциплины добавлен просмотр информации<br />
+	&nbsp;&nbsp;&nbsp; связанной с вариантом и выделенным модулем: списки ведомостей, студентов. &nbsp;<br />
+	&nbsp;<br />
+	&nbsp;&nbsp; Версия 5.5.2.131&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04.02.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp; - Исправлен мастер создания ведомостей.<br />
+	&nbsp; - В мастер создания протоколов ранжирования добавлен выбор &quot;КРОК&quot;.(В связи с этим изменен протокол ранжирования)<br />
+	&nbsp; - Исправлен отчет &quot;Протокол ранжирования&quot;(.rtf и .xrp).<br />
+	&nbsp; - Исправлена Учебная карточка студента.<br />
+	&nbsp; - Исправлен расчет стипендии.<br />
+	&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1643 Законодавство в охороні здоров&#39;я<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1644 Дитяча реаніматологія<br />
+	<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; Версия 5.5.2.130&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30.01.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp; - Исправлен отчет &quot;Ведомость успеваемости по дисциплине&quot;.<br />
+	&nbsp;&nbsp; - Оптимизирован протокол ранжирования.<br />
+	&nbsp;&nbsp; - В параметры отчета для министерства добавлен пункт &quot;Только выпускники с отличием&quot;.<br />
+	&nbsp;&nbsp; - Исправлена специальность &quot;медико-профілактична справа&quot;.<br />
+	&nbsp;&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;.<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.5.2.129&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Доработан протокол ранжирования.<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.5.2.128&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Ведомость успеваемости по дисциплине&quot;.<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.5.1.127&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.01.2008<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Испарвлено ранжирование для зачетных дисциплин.<br />
+	&nbsp;&nbsp; &nbsp;- Исправлен отчет &quot;Список студентов (средний балл ECTS)&quot;.<br />
+	&nbsp;&nbsp; &nbsp;- Исправлен расчет стипендии для дисциплин с формой контроля &quot;зачет&quot;.<br />
+	&nbsp;&nbsp; &nbsp;- Добавлен справочник &quot;Учебные параметры&quot; для настройки граничных значений баллов ESTC. (В связи с этим изменены ведомость и протокол ранжирования)<br />
+	&nbsp;&nbsp; &nbsp;- Изменена учебная карточка.<br />
+	&nbsp;&nbsp; &nbsp;- Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1631 Обладнення та пректування хіміко-фармацевтичних виробництв<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1632 Методи та засоби менеджменту якості<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1633 Основи екологічного управління<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1634 Основи метрологічної діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1635 Сертифікація продукції та послуг<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1636 Стандартизація продукції та послуг<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1637 Інтелектуальна власність та інноваційна діяльність<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1638 Атестація та сертифікація персоналу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1639 Основи професійної психології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1640 Соціальна та екологічна безпека діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1641 Інформаційні технології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1642 Економіка якості<br />
+	<br />
+	<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.5.0.126&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.12.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - В министерской статистике добавленны коды специальностей<br />
+	&nbsp;&nbsp; &nbsp;- Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1629 Іноземна мова (за прфесійним спрямуванням) та Іноземна мова 2<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1630 Потенціал підприємства: формування та оцінювання<br />
+	&nbsp;<br />
+	&nbsp;&nbsp; &nbsp;Версия 5.4.3.125&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11.12.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Поздравления с НГ<br />
+	&nbsp;<br />
+	&nbsp; Версия 5.4.2.124&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11.12.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Добавлен тип дисциплины &quot;специализация&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Для дисциплин c формой контроля &quot;зачет&quot; в ведомостях текущий контроль расширен до 200 баллов.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1614 Гігієна у фармації з основами екології та військовою гігієною<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1615 Лікарські рослини і фітотерапія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1616 Страхова медицина і фармакоекономіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1617 Виробнича практика зі спеціалізації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1618 Тропічна медицина<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1619 Радіологія (променева діагностика та променева терапія)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1620 Лабораторна діагностика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1621 Основи естетичної реставрації зубів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1622 Хірургічна підготовка порожнини рота до протезування<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1623 Ендодонтична техніка в дитячій стоматології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1624 Сучасні технології застосування незнімної ортодонтичної техніки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1625 Економіка охорони здоров&#39;я. Маркетинг і менеджмент в стоматології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1626 Хірургічна стоматологія в т.ч. хірургічна стоматологія надзвичайних станів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1627 Ортопедична стоматологія в т.ч. ортопедична стоматологія надзвичайних станів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1628 Біофізика, фізичні методи аналізу та метрологія&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.4.1.123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08.11.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - В справочник мест распределения добавлено поле &quot;Подчиненность&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлены отчеты по распределению.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен модуль ранжирования.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка при модификации варианта изучения дисциплины (ECTS).<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1592 Гігієна та екологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1593 Комп&#39;ютерні технології у фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1594 Промислова технологія лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1595 Сучасні методи дослідження біологічних систем<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1596 Екоаналітика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1597 Клітинна біологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1598 Теорія і практика професійної комунікації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1599 Патоморфологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1600 Догляд за хворими (практика)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1601 Медичне рятiвництво<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1602 Теорія пізнання та медицина<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1603 Сучасні методи генетичної діагностики<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1604 Інфекційні хвороби та проблеми ВІЛ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1605 Загальна та медична психологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1606 Хірургічні хвороби, дитяча хірургія, акушерство та гінекологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1607 Невідкладні стани в неврології та психіатрії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1608 Невідкладні стани при захворюваннях внутрішніх органів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1609 Організація та регулювання діяльності підприємств фармацевтичної галузі<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1610 Контроль якості лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1611 Лікарські рослини, фітопрепарати та контроль їх якості<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1612 Виробництво та застосування косметичних засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1613 Промислова технологія ліків<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	<br />
+	&nbsp; Версия 5.4.0.122&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.09.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет: &quot;Семестровая выписка (ECTS)&quot;<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет: &quot;Академическая справка (ECTS)&quot;<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет: &quot;Заявка на Крок&quot;<br />
+	&nbsp;&nbsp;&nbsp; - Добавлен перенос текущих и индивидуальных баллов в ведомость пересдачи в случаях допуска к итоговому контролю.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена хранимая процедура &quot;SP_VARIANT_CHANGE&quot;<br />
+	&nbsp;&nbsp;&nbsp; - Исправлено сохранение дополнительной информации в редакторе варианта.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен мастер создания ведомостей (ECTS).<br />
+	&nbsp;&nbsp;&nbsp; - В редакторе варианта добавлена форма контроля.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1573 Основи проектування<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1574 Польова практика з медичної батаніки та фармакогнозії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1575 Біологічна фізика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1576 Фізико-хімічні методи аналізу лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1577 Захист вітчизни<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1578 Нервовi хвороби, в т.ч. нейростоматологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1579 Патоморфологiя патофiзiологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1580 Медсестринство у внутрiшнiй медицинi<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1581 Патоморфологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1582 Патофiзiологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1583 Гiгiєна та екологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1584 Медицина надзвичайних ситуацiй<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1585 Соцiальна та медична соцiологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1586 Пропедевтика внутрiшньої&nbsp; медицини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1587 Пропедевтика педiатрiї<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1588 Радiологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1589 Сестринська справа<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1590 Сестринська практика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1591 Особливостi зовнiшньo-економiчної дiяльностi пiдприємств фармацевтичної галузi<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.3.0.121&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27.03.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - В приказы добавлено &quot;Академ. отпуск в связи с беременностью и родами&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Академическая справка&quot;<br />
+	&nbsp;&nbsp;&nbsp; - Добавлен отчет &quot;Академическая справка(ECTS) &quot;<br />
+	&nbsp;&nbsp;&nbsp; - Добавлен отчет &quot;Семестровая выписка (ECTS) &quot;<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1565&nbsp;&nbsp;&nbsp; Проблеми ВІЛ-інфекцій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1566&nbsp;&nbsp;&nbsp; Госпітальна хірургія,в т.ч.. військова та надзвичайних станів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1567&nbsp;&nbsp;&nbsp; Лінгвокраєзнавство<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1568&nbsp;&nbsp;&nbsp; Технологія лікарських засобів в польових умовах<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1569&nbsp;&nbsp;&nbsp; Навчальна практика з клінічної фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1570&nbsp;&nbsp;&nbsp; Виробнича практика з фармацевтичного аналізу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1571&nbsp;&nbsp;&nbsp; Виробнича практика з організації та економіки фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1572&nbsp;&nbsp;&nbsp; Біоорганічна та біологічна хімія<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.2.0.120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 21.02.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Успеваемость за семестр (сводная ECTS)&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Протокол ранжирования&quot;.<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.2.0.119&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08.02.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Протокол начисления стипендии&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлено отображение истории семестров в личной карточке.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Общий итог сдачи экзаменов&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Протокол ранжирования&quot;<br />
+	&nbsp;&nbsp;&nbsp; - В ведомость модульного контроля добавлено &quot;не склав&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Доработан отчет &quot;Список студентов (средний балл за весь период)&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1548 Інформаційні технології в освіті<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1549 Історія освіти<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1550 Вступ до спеціальності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1551 Культура мовлення<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1552 Педагогічна майстерність викладача<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1553 Педагогічна психологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1554 Теорія виховання<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1555 Педагогічні технології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1556 Правове забезпечення освіти<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1557 Професійна педагогіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1558 Соціологія освіти<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1559 Сучасний освітній простір<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1560 Теорія виховання<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1561 Екологічний моніторинг у біотехнології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1562 Маркетингові дослідження у біотехнології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1563 Молекулярна біотехнологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1564 Організація та планування науково-дослідних робіт<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.2.0.118&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01.02.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен модуль ранжирования.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен модуль начисления стипендии.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Движение контингента (МОЗ)&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Успеваемость за семестр (сводная)&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Общий итог сдачи экзаменов&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Создан механизм изменения варианта в уч. карточке.<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.2.0.117&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11.01.2007<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена &quot;Ведомость итогового модульного контроля&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен приказ &quot;Неперевод на другой семестр&quot;.<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.2.0.116&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27.12.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен Help, описание уч. карточки ECTS.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен отчет &quot;Семестровая выписка (ECTS)&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Создана форма ввода планов приема.<br />
+	&nbsp;&nbsp;&nbsp; - Создан модуль начисления стипендии.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена учебная карточка.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлены названия дисциплин.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1541 Медсестринство І<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1542 Хімічна мікробіологія, гігієна і промсанітарія фарм. виробництва<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1543 Фармакогнозія з основами біохімії ЛР, фармакогностичні методи аналізу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1544 Обладнання, спецобладнання та проектування хім.-фарм. виробництв<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1545 Промислова біотехнологія, технологія БАР<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1546 Промислова екологія, іноватика та захист інтелектуальної власності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1547 Управління хім.-фарм. Виробництвом, маркетинг у пром. сфері<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.1.0.115&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 06.12.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка при приеме XML-пакета с уч. планами.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен мастер создания ведомостей (ECTS) (пересдача положительного результата).<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка в фильтре (были проблемы с апострофом).<br />
+	&nbsp;&nbsp;&nbsp; - Доработан приказ об изменении фамилии.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка в &quot;Статистика МОЗ&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен мастер создания ведомостей (ECTS) (ошибка при создании ведомости за прошлый период).<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка при создании пакета с уч. планами (ECTS).<br />
+	&nbsp;&nbsp;&nbsp; - В справочнике дисциплин исправлены названия дисциплин.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1472 ЕКГ-діагностика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1473 Інтелектуальна власність та основи наукової діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1474 Психологія консультування<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1475 Клінічні випробування лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1476 Практика з фармацевтичної інформатики та фармацевтичної опіки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1477 Практика з медичної хімії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1478 Догляд та психологічне спостереження за хворими<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1479 Медсестринська та з психодіагностики і психотренінгу<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1480 Лікарська загальномедична та з психологічного консультуваня і психокорекції<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1481 Лікарська загальномедична та з патопсихології і психіатрії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1482 Лікарська з медичної психології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1483 Трансфузiологiя<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1484 Основи одонтореставрацi<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1485 Дiагностичне та медичне обладнання<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1486 Економіка праці та соціально-трудові відносини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1487 Психологія та педагогіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1488 Медичнi апарати та системи (полiклiнiка)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1489 Державний іспит з економічної теорії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1490 Комплексний державний іспит за фахом<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1491 Безпека життєдіяльності та охорона праці<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1492 Фармацевтична технологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1493 Мікробіологія та імунологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1494 Трудове право<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1495 Інвестиційний менеджмент<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1496 Антикризове управління<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1497 Конфліктологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1498 Менеджмент організацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1499 Психологія управління<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1500 Стратегічний менеджмент<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1501 Уравління якістю у фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1502 АРМ менеджера<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1503 Методологія наукових досліджень<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1504 Організаційно-економічна навчальна практика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1505 Менеджерська практика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1506 Комплексний кваліфікаційний іспит за фахом<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1507 Правові засади управлінської діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1508 Теорія організації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1509 Техніка адміністративної діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1510 Аудит і оцінювання управлінської діяльності<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1511 Ризик у менеджменті<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1512 Фармацевтична ботаніка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1513 Внутрішні хвороби клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1514 Інфекційні хвороби з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1515 Хірургічні хвовроби з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1516 Акушерство та гінекологія з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1517 Фтизіатрія з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1518 Дитячі хвороби з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1519 Реаніматологія та анестезіологія з клінічною психологією<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1520 Психотерапія та психокорекція у клінічній практиці<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1521 Медична деонтологія та психологічні аспекти взаємодії &quot;лікар-пацієнт&quot;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1522 Психогігієна діяльності медичного працівника<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1523 Психокорекція та психотерапія сексуальної сфери особистості<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1524 Сугестивна психотерапія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1525 Арт- та ігрова психотерапія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1526 Медико-психологічні поблеми алкоголізму та наркоманії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1527 Вікова патопсихологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1528 Ліцензійний інтегрований іспит &quot;Крок 1. Сестринська справа&quot;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1529 Фармакогностичний аналіз нової ЛРС і фітотерапія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1530 Державна система забезпечення якості ЛЗ<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1531 Основи медсестринства<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1532 Виробнича практика з технології екстемпоральних лікарських та косметичних засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1533 Виробнича практика з організації та економіки фармації у ПК галузі<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1534 Історія косметології та аромології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1535 Медична та біологічна фізика, метрологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1536 Медсестринська виробнича практика<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1537 Виробнича практика з клінічної лабораторної діагностики<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1538 Інженерна комп&#39;ютерна графіка<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1539 Біологія клітини<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1540 Теорія ймовірності<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.1.0.114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.10.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен мастер создания ведомостей (ECTS) (включались отчисленные).<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.1.0.113&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 23.10.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена учебная карточка (ECTS) (не всегда удалялась дисциплина).<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.1.0.112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19.10.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен редактор вариантов.<br />
+	&nbsp;&nbsp;&nbsp; - Дополнена справка.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1462 Психологія сприйняття людини людиною<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1463 Основні технології виготовлення зубних протезів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1464 Судова медицина (стоматологія)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1465 Терапія надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1466 Хірургічна стоматологія, в тому числі хірургічна стоматологія надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1467 Терапевтична стоматологія, в тому&nbsp; числі терапевтична стоматологія надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1468 Ортопедична стоматологія, в тому числі ортопедична стоматологія надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1469 Епідеміологія, в тому числі епідеміологія надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1470 Аптечна технологія лікарських засобів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1471 Етика і деонтологія у фармації<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.1.0.111&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.10.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - В статистику для МОЗ введена информация о гражданстве.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлен редактор вариантов.<br />
+	&nbsp;&nbsp;&nbsp; - Дополнен отчет &quot;Движение контингента&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка при приеме пакета с удалением студентов из исходной БД.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена ошибка в фильтре для значений с апострофом.<br />
+	&nbsp;&nbsp;&nbsp; - Исправлено представление V_STATEBEFOREORDER, которое используется в стат. отчетах.<br />
+	&nbsp;&nbsp;&nbsp; - Разрешено удаление любых учебных планов (ECTS).<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1443 Загальна хірургія (з оперативною хірургією та топографічною анатомією)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1444 Гігієна у фармації з основами екології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1445 Основи сучасної гомеопатичної фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1446 Аромологія в косметології і аромотерапії<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1447 Функціональна біохімія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1448 Фізична культура<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1449 Нормальна фізіологія, в тому числі фізіологія щелепно-лицевої ділянки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1450 Загальна гігієна, екологія та охорона праці в медицині, в тому числі гігієна надзвичайних ситуацій<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1451 Основи геронтології<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1452 Лікарська практика з профілактики стоматологічних захворювань<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1453 Амбулаторна хірургія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1454 ВІЛ - інфекція<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1455 Сучасна діагностика захворювань СНЩС та слинних залоз<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1456 Теорія пізнання та фармація<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1457 Етичні проблеми у фармації<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1458 Сорбенти медичного призначення<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1459 Хімія лікарських препаратів<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1460 Сучасні проблеми&nbsp; біофізики<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1461 Медицина та художня культура<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник подразделений:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 45 Миколаївська філія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 46 Чернігівська філія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 47 Херсонська філія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 48 Кіровоградська філія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 49 Черкаська філія<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник специальностей:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 44 промислова біотехнологія<br />
+	<br />
+	<br />
+	<br />
+	&nbsp; Версия 5.0.0.110&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05.09.2006<br />
+	&nbsp; --------------------------------------<br />
+	&nbsp;&nbsp;&nbsp; - Исправлена учебная карточка.<br />
+	&nbsp;&nbsp;&nbsp; - Реализована возможность ранжирования на основании результатов протокола<br />
+	&nbsp;&nbsp;&nbsp; - Реализована возможность предварительного ранжирования<br />
+	&nbsp;&nbsp;&nbsp; - В стат. отчете для МОЗ теперь можно получить только новое поступление и выпуск<br />
+	&nbsp;&nbsp;&nbsp; - Зарпещено изменение семестра изучения модуля, если существует ведомость<br />
+	&nbsp;&nbsp;&nbsp; - Создан отчет &quot;Список студентов, имеющих задолженность&quot;.<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник дисциплин:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1440 Виробнича практика з фармацевтичної економіки<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1441 Світова цивілізація<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1442 Україна в контексті загального цивілізаційного процесу<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник специальностей:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 42 менеджмент організацій (спеціаліст)<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 43 адміністративний менеджмент (магістр)<br />
+	&nbsp;&nbsp;&nbsp; - Добавлено в справочник направлений подготовки:<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp; медицина<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp; менеджмент<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp; економіка та підприємництво<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; біотехнологія<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 специфічні категорії&nbsp;&nbsp;&nbsp;<br />
+	<br />
+	<span class="textcur"><img alt="" height="12" src="check.gif" width="15" />&nbsp;Релиз версии 5 </span><br />
+	&nbsp;</p>
+</content>

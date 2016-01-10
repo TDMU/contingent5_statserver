@@ -1,0 +1,50 @@
+<letter>
+	<sql>select  IU.NODEID as USERID,
+         LIST((CT2.TITLE||' за '||CT.TITLE||' до '||  LPAD(EXTRACT(DAY FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))), 2, '0') || '.' ||
+       LPAD(EXTRACT(MONTH FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))), 2, '0') || '.' ||
+       EXTRACT(YEAR FROM (select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICENDDATE')))) ), ',') as MESSAGE
+
+from V_CONTENT_TYPE CT
+inner join CONTENTTREE CT1
+on CT1.NODEID = CT.PARENTID
+inner join CONTENTTREE CT2
+on CT2.NODEID = CT1.PARENTID
+inner join ALLOW_NODES AN
+on AN.NODEID = CT2.NODEID
+inner join CONTENTTREE CT3
+on CT3.NODEID = AN.ALLOWNODEID
+inner join INFO_USERS IU
+on IU.STRUCTUREID = CT3.NODEID
+where CT.T_NODE_KEY = 'T_STAT2_PERIOD'
+      and IU.NODEID in (:userlist)
+   and ((  select AV1.VAL
+         from V_ADD_VALUES_DATE AV1
+         where ((AV1.NODEID = CT.NODEID) and
+         (AV1.FIELDNAME = '_ADD_PUBLICDATE'))) = ?) group by 1</sql>
+	<text>Здравствуйте!
+На официальный сайт сбора и обработки статистической информации медицинских вузов МОЗ Украины (http://contingent.tdmu.edu.ua) опубликованы следующие требования по статистическим отчетам последипломного образования для МОЗ Украины:
+message
+
+
+Внимание! Данные по статистике, которые вы подаете в "Статистику 2" должны полностью совпадать с теми данными, которые подаются в планово-финансовый отдел вашего вуза. Только тогда в МОЗ Украины будут совпадать данные Управления финансов и Управления образования и науки.
+
+-- 
+С наилучшими пожеланиями,
+ группа разработчиков
+
+E-Mail:  contingent@tdmu.edu.ua
+   Web:  contingent.tdmu.edu.ua
+	</text>
+	<subject>Министерская статистика. Последипломное образование</subject>
+	<from_email>contingent@tdmu.edu.ua</from_email>
+	<from_name>Группа разработчиков</from_name>
+</letter>

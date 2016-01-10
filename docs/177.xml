@@ -1,0 +1,27 @@
+<guide name="eduform" key="T_EDUFORMS" title="Форма навчання" version="1.0" kind="global">
+<columns>
+	<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+	<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+	<column attr="use" kind="local" ctrltype="ctCheck" title="Use"/>
+</columns>
+<sql>
+	
+	<uman>
+          select VAD.VAL as ID, CT1.TITLE as VAL, 1 as USE
+      from CONTENTTREE CT
+      inner join CONTENTTREE CT1
+      on CT1.PARENTID = CT.NODEID
+      inner join V_ADD_VALUES VAD
+      on VAD.NODEID = CT1.NODEID
+      where CT.VISIBLE = 1 
+      and CT.NODE_KEY =   'STAT2_GUIDE_EDUFORM'
+      and VAD.FIELDNAME = '_ADD_ORIGINID'
+	</uman>
+	
+	<cont5>
+          select EDUFORMID as ID, EDUFORM as VAL, CAST(USE as SMALLINT) as USE
+          from GUIDE_EDUFORM
+	</cont5>
+</sql>
+<items/>
+</guide>

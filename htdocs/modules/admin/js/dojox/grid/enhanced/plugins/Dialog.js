@@ -1,0 +1,3 @@
+//>>built
+define("dojox/grid/enhanced/plugins/Dialog",["dojo/_base/declare","dojo/_base/html","dojo/window","dijit/Dialog"],function(e,d,f,g){return e("dojox.grid.enhanced.plugins.Dialog",g,{refNode:null,_position:function(){if(this.refNode&&!this._relativePosition){var a=d.position(d.byId(this.refNode)),b=d.position(this.domNode),c=f.getBox();if(b.w&&b.h){if(a.x<0)a.x=0;if(a.x+a.w>c.w)a.w=c.w-a.x;if(a.y<0)a.y=0;if(a.y+a.h>c.h)a.h=c.h-a.y;a.x=a.x+a.w/2-b.w/2;a.y=a.y+a.h/2-b.h/2;if(a.x>=0&&a.x+b.w<=c.w&&a.y>=
+0&&a.y+b.h<=c.h)this._relativePosition=a}}this.inherited(arguments)}})});

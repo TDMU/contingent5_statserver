@@ -1,0 +1,16 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->node_info['DOC_LOCALE_CODE']?>" lang="<?php echo $this->node_info['DOC_LOCALE_CODE']?>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<?php
+	echo $this->headTitle();
+	echo $this->headMeta();
+	echo $this->headStyle();
+	echo $this->headLink();
+	echo $this->headScript();
+?>
+</head>
+<body>
+<?php echo $this->layout()->content?>
+</body>
+</html>

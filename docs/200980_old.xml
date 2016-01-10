@@ -1,0 +1,151 @@
+<report>
+	<info>
+		<reportid/>
+		<title/>
+		<begindate/>
+		<enddate/>
+		<publicdate/>
+		<timelimit/>
+		<comment>
+	ПО Слухачі. (группа 4)
+	Отчет подается в конце каждого календарного года как план на следующий календарный год.
+Отчет подается в конце 1, 2 и 3-ого кварталов за период 1-ого квартала, 1,2-ого кварталов и 1,2,3-его кварталов соответственно, как уточненный план (с учетом присева, отсева за отчетный период, а так же фактического приема/выпуска, если таковые состоялись).
+ 
+	Описание полей отчета (плана, уточненного плана).
+На начало года – всегда показывается фактический контингент обучающихся на последипломном образовании по состоянию на 01.01.YYYY года отчета.
+
+	Прием – В отчете на 1 января показываются только плановые цифры на следующий год; Если нет плановых цифр, утвержденных в МОЗ, показываются плановые показатели прошлого года (если не было других указаний МОЗ);  Дальнейшее описание касается уточняющих отчетов за 1 квартал, 1,2 кварталы, 1-3 кварталы; Если  в  отчетный период прием не состоялся, то показываются плановые  цифры; Если в отчетный период прием состоялся, и больше приема не будет,  то показывается факт приема; Если в отчетный период был прием и еще будет в течение оставшегося времени до конца календарного года, то показывается факт за отчетный период плюс то, что планируется принять до конца календарного года - т.е., показывается сумма (факт + плана).
+
+	Выпуск – В отчете на 1 января показываются только плановые цифры на следующий год; Дальнейшее описание касается уточняющих отчетов за 1 квартал, 1,2 кварталы, 1-3 кварталы; Если  в  отчетный период выпуск не состоялся, то показываются плановые  цифры; Если в отчетный период выпуск состоялся, и больше выпуска не будет,  то показывается фактическое количество выпущенных; Если в отчетный период был выпуск и еще будет в течение оставшегося времени до конца календарного года, то показывается факт за отчетный период плюс то, что планируется выпустить до конца календарного года - т.е., показывается сумма (факт + плана).
+
+	Присев – показывается фактический присев (восстановление, выход из академ. отпуска и т.д.) за отчетный период (в отчете на 1 января – колонка не заполняется).
+
+	Отсев - показывается фактический отсев (отчисление, уход в академ. отпуска и т.д.) за отчетный период (в отчете на 1 января – колонка не заполняется).
+
+	Для справки. Контингент на конец календарного года рассчитывается так:  На конец года = на начало года + прием + присев – выпуск – отсев;
+
+	Подробнее, на главном сервере http://www.csmu.edu.ua в разделе «Статистика», доступном после авторизации, - «Нормативна база» размещено письмо «(ПО) Лист МОЗ № 08.01-47/5775 від 03.03.2014» описывающее данные, подаваемые в статистике.
+
+	Рекомендации по заполнению:
+На данный момент подача статистики ПО реализована в виде четырех требований:
+
+	1. аспиранты, докторанты
+	2. интерны, магистры 
+	3. клинординаторы
+	4. слушатели
+
+	Получать, отправлять и удалять на сайте можно любой из этих отчетов только целиком. Например, не удастся подать: отдельным файлом интернов, отдельным файлом магистров, или подать: отдельным файлом бюджет и отдельным файлом контракт.
+
+	Опыт показал, что проще всего каждый из отчетов сохранить в отдельный файл, например: «АспирантыДокторанты. pkg», «ИнтерныМагистры.pkg».
+
+	Если за подачу «интернов» отвечает Иванов, а за подачу «магистров» Петров, то можно организовать подачу статистики следующим образом. Иванов получает требование и сохраняет его как «ИнтерныМагистры.pkg», заполняет в него «интернов» и пересылает этот файл по электронной почте Петрову. Петров в этот файл добавляет «магистров» и отправляет готовый файл на сайт. (Итоговый файл «ИнтерныМагистры.pkg» обязательно следует сохранить, так как может оказаться, что необходимо что-то корректировать)
+
+	Если в файле *.pkg сохранено несколько отчетов, то при отправке такого файла на сервер отчеты будут загружены следующим образом: если в пакете есть отчет такой же, как на сайте (был загружен ранее), то такой отчет будет проигнорирован, если в пакете есть отчет, какого нет на сайте, то он будет загружен.
+
+	Изменения на сайте могут быть произведены только одним способом: удалением отчета на сайте (в разделе получения требований) и загрузкой пакета с этим отчетом с правильной информацией.
+
+	Удалять отчет на сайте можно сколько угодно раз только в период подачи отчета (в разделе получения требований). По окончанию периода подачи отчета удаление на сайте (с целью корректирования данных) будет возможным только по согласованию с МОЗ.
+
+	Для проверки поданных данных, после отправки пакетов на сервер, следует зайти на сайт http://www.csmu.edu.ua , авторизоваться, перейти в раздел «Статистика» - «Звіти», выбрать отчет «Післядипломна освіта. План контингенту». В этой отчетной форме следует проверить поданные данные по разным формам финансирования и типам гражданства.
+
+	Примечания:
+** - Особи, які подали документи до спеціалізованої вченої ради (що підтверджено довідкою)
+*** - Особи, які зараховані відповідно з наказом ВНЗ та погодженням МОЗ України
+**** - Особи, які відраховані відповідно з наказом ВНЗ та погодженням МОЗ України
+		</comment>
+		<dbversion_cont5 min="" max=""/>
+	</info>
+	<description><!-- old request -->
+		<groupfield name="main" title="main">
+			<filterparam name="FPO_Category" title="ФПО Категория" ctrltype="ctCombobox" datatype="dtInteger" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_FPO_CATEGORYID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/><!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="fpo_categories" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<filterparam name="edubasis" title="Форма фінансування" ctrltype="ctCombobox" datatype="dtString" datasize="1" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_EDUBASISID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/><!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="edubasis" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<filterparam name="countrytype" title="Тип громадянства" ctrltype="ctCombobox" datatype="dtString" datasize="3" required="true" componentwidth="300" unique="true" nodekey="STAT_PARAM_COUNTRYTYPEID">
+				<lookup defkey="#first">
+					<item id="0" value="усі"/><!-- Add lookup list ONLY, can not save in DATA!!! -->
+					<items sourceguide="countrytype" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</filterparam>
+			<fieldgroupparam name="fpo_speciality" title="ФПО Спеціальність" ctrltype="ctCombobox" datatype="dtInteger" componentwidth="300" unique="true" nodekey="STAT_PARAM_FPO_SPECIALITYID">
+				<lookup defkey="#first">
+					<items sourceguide="fpo_speciality_gr3" fieldid="id" fieldtitle="val" fieldorder="val"/>
+				</lookup>
+			</fieldgroupparam>
+			<repeater paramname="reportplankind">
+				<source>
+					<items sourceguide="reportplankind" fieldid="id" fieldtitle="val"/>
+				</source>
+				<content>
+					<groupfield name="reportplankind_%s" title="%s">
+
+						<repeater paramname="kind">
+							<source>
+								<items sourceguide="kind" fieldid="id" fieldtitle="val"/>
+							</source>
+							<content>
+								<field name="cur_%s_%s" title="%s|%s" ctrltype="ctEdit" datatype="dtInteger" componentwidth="100" footer="fvtSum"/>
+							</content>
+						</repeater>
+						<calcfield name="endyear_%s" expression="SUM(cur_%s_STAT_KIND_CS) + SUM(cur_%s_STAT_KIND_CENTER) - SUM(cur_%s_STAT_KIND_CEXIT) + SUM(cur_%s_STAT_KIND_MOVEIN) - SUM(cur_%s_STAT_KIND_MOVEOUT)" ctrltype="ctLabel" title="%s|На кінець року" datatype="dtInteger" footer="fvtSum" componentwidth="100"/>
+					</groupfield>
+				</content>
+			</repeater>
+		</groupfield>
+	</description>
+	<script>
+          procedure sum1(DataSet: TDataSet; AgrFieldName: string; Fields: TStringList);
+          begin
+            DataSet.FieldByName(AgrFieldName).asInteger := 111;
+          end;
+
+          begin
+          end.
+			
+	</script>	
+	<guides>
+		<guide name="fpo_categories" key="T_FPO_CATEGORIES" title="FPO Сategories" version="1.0" kind="static">
+			<items>
+				<item id="200612" val="Слухачі ПАЦ"/>
+				<item id="200613" val="Слухачі ТУ"/>
+				<item id="200614" val="Слухачі циклу спеціалізації"/>
+				<item id="200615" val="Слухачі циклу стажування"/>
+				
+			</items>	
+		</guide>			
+		<guide name="reportplankind" key="T_REPORTPLANKINDS" title="reportplankind" version="1.0" kind="static">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+			</columns>
+			<items>
+				<item id="2" val="План"/>
+			</items>
+
+		</guide>	
+	<guide name="kind" key="T_VALUE_KINDS" title="Kind" version="1.0" kind="static">
+			<columns>
+				<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+				<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+			</columns>
+			<items>
+				<item id="STAT_KIND_CS" val="На початок року"/>		
+				<item id="STAT_KIND_CEXIT" val="Випуск з останнього року навчання **"/>
+				<item id="STAT_KIND_CENTER" val="Прийом на перший рік навчання ***"/>
+				<item id="STAT_KIND_MOVEOUT" val="Відсів (відраховані, переведені, у декретній відпустці) ****"/>
+				<item id="STAT_KIND_MOVEIN" val="Присів (поновлені, переведені)"/>
+				
+			</items>
+		</guide>
+	</guides>
+	<data/>
+	<params/>
+</report>

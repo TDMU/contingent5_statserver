@@ -1,0 +1,15 @@
+<letter>
+	<sql>select  IU.NODEID as USERID, '' as MESSAGE, cast (? as varchar(15)) as curdate
+from INFO_USERS IU
+where IU.NODEID in (:userlist)
+</sql>
+	<text>Здравствуйте!
+
+Новые обновления программы “Контингент 5” Сервиспак 7.2 (V5.7.2.275)
+доступны на сайте http://contingent.tdmu.edu.ua в разделе “Контингент” -> “Скачать”.
+
+	</text>
+	<subject>обновление программы “Контингент 5”</subject>
+	<from_email>contingent@mail.ru</from_email>
+	<from_name>Группа разработчиков</from_name>
+</letter>

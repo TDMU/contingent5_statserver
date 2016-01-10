@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dojox/cometd/longPollTransportJsonEncoded"],function(b,a){a.provide("dojox.cometd.longPollTransport");a.require("dojox.cometd.longPollTransportJsonEncoded")});

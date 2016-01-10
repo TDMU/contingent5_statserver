@@ -1,0 +1,24 @@
+<form  action="<?php echo $this->escape($this->element->getAction())?>" method="<?php echo $this->escape($this->element->getMethod())?>">
+<table style="width:100%" class="params">
+	<tr>
+		<td><?php echo $this->element->period->getLabel() ?></td>
+		<td><?php echo $this->element->period ?></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td rowspan="3"><?php echo $this->element->edulevel ?></td>
+		<td class="btn" rowspan="3"><?php echo $this->element->refresh ?><br/><?php echo $this->element->excel ?></td>
+	</tr>
+	<tr>
+		<td><?php echo $this->element->eduform->getLabel() ?></td>
+		<td><?php echo $this->element->eduform ?></td>
+		<td><?php echo $this->element->edubase->getLabel() ?></td>
+		<td><?php echo $this->element->edubase ?></td>
+	</tr>
+	<tr>
+		<td><?php echo $this->element->country->getLabel() ?></td>
+		<td><?php echo $this->element->country ?></td>
+		<td><?php echo $this->element->countrytype->getLabel() ?></td>
+		<td><?php echo $this->element->countrytype ?></td>
+	</tr>
+</table>
+</form>

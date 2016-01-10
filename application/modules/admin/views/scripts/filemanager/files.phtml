@@ -1,0 +1,21 @@
+<table>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<td><span lang="fileName">Имя файла</span></td>
+			<td><span lang="fileDate">Дата</span></td>
+			<td><span lang="fileSize">Размер</span></td>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach($this->files as $num => $file) :?>
+<tr>
+	<td><input type="checkbox" value="<?php echo $file['name']?>"/></td>
+	<td class="name" title="<?php echo $file['name']?>"><?php echo Uman_Utils::shortenFileName($file['name'], 60)?></td>
+	<td><?php echo date("d.m.Y", $file['mtime'])?></td>
+	<td><?php echo Uman_Utils::getFileSize($file['fullname'])?></td>
+</tr>
+<?php endforeach;?>
+	</tbody>
+	<tfoot/>
+</table>

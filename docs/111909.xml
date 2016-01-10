@@ -1,0 +1,15 @@
+<guide name="disciplines" key="CONT_DISCIPLINES" title="Дисциплины" version="1.0" kind="global">
+		<columns>
+			<column attr="id" kind="global" ctrltype="ctEdit" title="ID"/>
+			<column attr="val" kind="global" ctrltype="ctEdit" title="Value"/>
+		</columns>
+		<sql>
+			<uman>
+select GD.DISCIPLINE as ID, GD.DISCIPLINE as VAL
+from GUIDE_DISCIPLINE GD
+where GD.USE = 1
+order by 2
+			</uman>
+		</sql>
+	<items/>
+</guide>

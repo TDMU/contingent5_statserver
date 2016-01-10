@@ -1,0 +1,32 @@
+<letter>
+	<sql>select IU.NODEID as USERID,
+        ('Шановний користувач: ' || CT.TITLE || '!,' ||
+         '(Вуз: ' || CT1.TITLE || ')') as MESSAGE
+from CONTENTTREE CT -- user
+inner join CONTENTTREE CT1   --   роль - ВНЗ
+  on CT1.NODEID = CT.PARENTID
+inner join CONTENTTREE CT2     -- FPO USERS
+  on CT2.NODEID = CT1.PARENTID
+inner join INFO_USERS IU
+on IU.NODEID = CT.NODEID
+where CT2.NODE_KEY = 'FPO_USERS'
+  and IU.NODEID in (:userlist)</sql>
+	<text>message, щоб виключити невизнаеність, хочемо уточнити два пункти останнього листа:
+
+ПриЙом – розраховується як прийом (фактичний) за звітний пеіиод (на даний момент за перший квартал 2016 року) плюс план прийму в 2,3,4 кварталах 2016 року.
+
+Випуск – розраховується як випуск (фактичний) за звітний період (на даний момент за перший квартал 2016 року) плюс план випуску в 2,3,4 кварталах 2016 року.
+
+Приносим извинения за неточность в формулировках.
+
+-- 
+З найкращими побажаннями,
+ група розробників
+
+E-Mail:  contingent@tdmu.edu.ua
+   Web:  contingent.tdmu.edu.ua
+	</text>
+	<subject>Збір статистичної інформації щодо контингенту післядипломної освіти</subject>
+	<from_email>contingent@tdmu.edu.ua</from_email>
+	<from_name>Група розробників Контингент 5</from_name>
+</letter>

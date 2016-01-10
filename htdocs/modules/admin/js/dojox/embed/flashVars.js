@@ -1,0 +1,3 @@
+//>>built
+define("dojox/embed/flashVars",["dojo"],function(d){d.getObject("dojox.embed",!0);d.deprecated("dojox.embed.flashVars","Will be removed in 2.0","2.0");dojox.embed.flashVars={serialize:function(f,b){var g=function(a){typeof a=="string"&&(a=a.replace(/;/g,"_sc_"),a=a.replace(/\./g,"_pr_"),a=a.replace(/\:/g,"_cl_"));return a},h=dojox.embed.flashVars.serialize,e="";if(d.isArray(b)){for(var c=0;c<b.length;c++)e+=h(f+"."+c,g(b[c]))+";";return e.replace(/;{2,}/g,";")}else if(d.isObject(b)){for(c in b)e+=
+h(f+"."+c,g(b[c]))+";";return e.replace(/;{2,}/g,";")}return f+":"+b}};return dojox.embed.flashVars});

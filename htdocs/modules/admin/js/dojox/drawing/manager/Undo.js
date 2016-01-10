@@ -1,0 +1,3 @@
+//>>built
+define(["dijit","dojo","dojox"],function(e,b,c){b.provide("dojox.drawing.manager.Undo");c.drawing.manager.Undo=c.drawing.util.oo.declare(function(a){this.keys=a.keys;this.undostack=[];this.redostack=[];b.connect(this.keys,"onKeyDown",this,"onKeyDown")},{onKeyDown:function(a){a.cmmd&&(a.keyCode==90&&!a.shift?this.undo():(a.keyCode==90&&a.shift||a.keyCode==89)&&this.redo())},add:function(a){a.args=b.mixin({},a.args);this.undostack.push(a)},apply:function(a,c,d){b.hitch(a,c)(d)},undo:function(){var a=
+this.undostack.pop();console.log("undo!",a);a&&(a.before(),this.redostack.push(a))},redo:function(){console.log("redo!");var a=this.redostack.pop();a&&(a.after?a.after():a.before(),this.undostack.push(a))}})});

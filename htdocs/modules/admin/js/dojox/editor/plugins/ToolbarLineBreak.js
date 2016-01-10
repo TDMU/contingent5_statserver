@@ -1,0 +1,3 @@
+//>>built
+define("dojox/editor/plugins/ToolbarLineBreak",["dojo","dijit","dojox","dijit/_Widget","dijit/_TemplatedMixin","dijit/_editor/_Plugin","dojo/_base/connect","dojo/_base/declare"],function(a,b,c){a.declare("dojox.editor.plugins.ToolbarLineBreak",[b._Widget,b._TemplatedMixin],{templateString:"<span class='dijit dijitReset'><br></span>",postCreate:function(){a.setSelectable(this.domNode,!1)},isFocusable:function(){return!1}});a.subscribe(b._scopeName+".Editor.getPlugin",null,function(a){if(!a.plugin){var d=
+a.args.name.toLowerCase();if(d==="||"||d==="toolbarlinebreak")a.plugin=new b._editor._Plugin({button:new c.editor.plugins.ToolbarLineBreak,setEditor:function(a){this.editor=a}})}});return c.editor.plugins.ToolbarLineBreak});

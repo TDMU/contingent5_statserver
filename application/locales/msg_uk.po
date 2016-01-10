@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2008-12-02 13:37+0200\n"
+"PO-Revision-Date: 2012-01-24 10:25+0200\n"
+"Last-Translator: Alexander Krepky <contingent@mail.ru>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "skin.orgname_pref"
+msgstr "Державна установа"
+
+#: D:\Work\zs_ws\uman\application\default\views\scripts/content.phtml:24
+msgid "skin.orgname_full"
+msgstr "Офіційний сайт збору та обробки статистичної інформації медичних вузів МОЗ України"
+
+#: D:\Work\zs_ws\uman\application\default\views\scripts/content.phtml:219
+msgid "skin.copyright_info"
+msgstr "&#169;2006-12 КДМУ. Розробка та супровід – інформаційно-аналітичний відділ."
+
+msgid "skin.oficial_site_info"
+msgstr "Офіційний сайт збору та обробки статистичної інформації медичних вузів МОЗ України."
+
+msgid "skin.img.alt.gerb"
+msgstr "Логотип"
+
+msgid "skin.hint.home"
+msgstr "На головну сторінку"
+
+msgid "skin.hint.login"
+msgstr "Вхід у систему"
+
+msgid "skin.hint.map"
+msgstr "Карта сайта"
+
+msgid "skin.hint.search"
+msgstr "Пошук"
+
+msgid "skin.hint.mail"
+msgstr "Написати лист"
+
+msgid "skin.informer"
+msgstr "Інформер"
+
+msgid "skin.user"
+msgstr "Користувач"
+
+msgid "skin.gadget.search.search"
+msgstr "Пошук"
+
+msgid "skin.gadget.search.page"
+msgstr "Сторінка"
+
+msgid "skin.gadget.search.results"
+msgstr "Результати пошуку"
+
+msgid "skin.gadget.search.totalHits"
+msgstr "Усього знайдено"
+
+msgid "skin.gadget.search.pages"
+msgstr "Сторінок"
+
+msgid "skin.gadget.search.notfound"
+msgstr "Не знайдено жодного документа, який відповідає запиту."
+
+msgid "skin.gadget.rss.details"
+msgstr "Детальніше"
+
+msgid "skin.poll.title"
+msgstr "Голосування"
+
+msgid "skin.poll.vote"
+msgstr "Голосувати"
+
+msgid "Login page"
+msgstr "Вхід в систему"
+
+msgid "btLogin"
+msgstr "Вхід"
+
+msgid "UserName"
+msgstr "ім'я:"
+
+msgid "UserPassword"
+msgstr "пароль:"
+
+msgid "Guest login"
+msgstr "Гостьовий вхід"
+
+msgid "EnterLogin"
+msgstr "Введіть,&#160;будь&#160;ласка,&#160;ім'я&#160;і&#160;пароль:"
+
+msgid "Authorization error. Please, try again."
+msgstr "Помилка&#160;авторизації.&#160;Будьласка,&#160;спробуйте&#160;ще&#160;раз."
+

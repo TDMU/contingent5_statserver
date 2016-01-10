@@ -1,0 +1,3 @@
+//>>built
+define("dojox/encoding/easy64",["dojo/_base/lang"],function(c){var c=c.getObject("dojox.encoding.easy64",!0),g=function(a,e,f){for(var b=0;b<e;b+=3)f.push(String.fromCharCode((a[b]>>>2)+33),String.fromCharCode(((a[b]&3)<<4)+(a[b+1]>>>4)+33),String.fromCharCode(((a[b+1]&15)<<2)+(a[b+2]>>>6)+33),String.fromCharCode((a[b+2]&63)+33))};c.encode=function(a){var e=[],f=a.length%3,b=a.length-f;g(a,b,e);if(f){for(a=a.slice(b);a.length<3;)a.push(0);g(a,3,e);for(a=3;a>f;e.pop(),--a);}return e.join("")};c.decode=
+function(a){var e=a.length,f=[],b=[0,0,0,0],c,d,g;for(c=0;c<e;c+=4){for(d=0;d<4;++d)b[d]=a.charCodeAt(c+d)-33;for(d=g=e-c;d<4;b[++d]=0);f.push((b[0]<<2)+(b[1]>>>4),((b[1]&15)<<4)+(b[2]>>>2),((b[2]&3)<<6)+b[3]);for(d=g;d<4;++d,f.pop());}return f};return c});

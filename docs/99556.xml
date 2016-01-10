@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE content
+[
+<!ENTITY % ISOnum PUBLIC
+"ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML"
+"ISOnum.pen">
+%ISOnum;
+]>
+<content><h1>
+	Рух контингенту з 2010 року</h1>
+<div class="widget" params="widget=stat/reports/showreport; report=5">
+	&nbsp;</div>
+</content>

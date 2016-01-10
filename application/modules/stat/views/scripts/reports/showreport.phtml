@@ -1,0 +1,16 @@
+<?php $this->headScript()->captureStart()?>
+function showValidation(datareportid, kindid, paramgroupids) {
+  window.open('<?php echo $this->url(array('controller' => 'reports', 'action' => 'validation'))?>/datareportid/' + datareportid + '/kindid/' + kindid + '/paramgroupids/' + paramgroupids, 'validation','width=900,height=300')
+}
+<?php $this->headScript()->captureEnd()?>
+<?php
+echo $this->form;
+
+if($this->report) {
+	echo '<hr/>';
+	$this->headStyle()->captureStart();
+	echo $this->report->generateStyles(false);
+	$this->headStyle()->captureEnd();
+
+	echo $this->report->generateSheetData();
+}

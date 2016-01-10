@@ -1,0 +1,2 @@
+//>>built
+define(["dijit","dojo","dojox","dojo/require!dijit/_WidgetBase"],function(b,a){a.provide("dojox.mobile.app._Widget");a.experimental("dojox.mobile.app._Widget");a.require("dijit._WidgetBase");a.declare("dojox.mobile.app._Widget",b._WidgetBase,{getScroll:function(){return{x:a.global.scrollX,y:a.global.scrollY}},connect:function(b,c,d){if((c.toLowerCase()=="dblclick"||c.toLowerCase()=="ondblclick")&&a.global.Mojo)return this.connect(b,Mojo.Event.tap,d);return this.inherited(arguments)}})});

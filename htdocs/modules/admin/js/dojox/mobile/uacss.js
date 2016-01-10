@@ -1,0 +1,2 @@
+//>>built
+define("dojox/mobile/uacss",["dojo/_base/kernel","dojo/_base/lang","dojo/_base/window","dojox/mobile/sniff"],function(b,c,d,a){d.doc.documentElement.className+=c.trim([a("bb")?"dj_bb":"",a("android")?"dj_android":"",a("iphone")?"dj_iphone":"",a("ipod")?"dj_ipod":"",a("ipad")?"dj_ipad":""].join(" ").replace(/ +/g," "));return b});
