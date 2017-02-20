@@ -407,7 +407,8 @@ order by 1";
 		$sum2 = array();     // [Код специальности] => [строка, строка, ...]
 		$sumItog = array();  // [Код специальности] => [строка, строка, ...]		
 		
-		$lastGroup = -1;
+		$group = null; //set default 2017 to prevent php notice
+        $lastGroup = -1;
 		foreach ($data as $vuznum => $vuz) {
 			$group = $vuz['group'];		
 
