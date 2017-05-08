@@ -302,7 +302,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
     $foreighnStr = $this->params['countrytype'] == 0 ? 'вітчизняних та іноземних ' :
       ($this->getAddValue($this->params['countrytype'], '_ADD_ORIGINID') == 'УКР' ? 'вітчизняних ' : 'іноземних ');
     $eduBaseStr = $this->getAddValue($this->params['edubase'], '_ADD_ORIGINID') == 'Б' ? 'держзамовленням' : 'контрактом';
-    $eduForms = array('ДН' => 'що навчаються', 'ВЧ' => 'що навчаються вечірньо', 'ЗЧ' => 'що навчаються заочно', 'ДЦ' => 'що навчаються дистанційно', 'ДВ' => 'що отримують другу вищу освіту');
+    $eduForms = array('ДН' => 'що навчаються', 'ВЧ' => 'що навчаються вечірньо', 'ЗЧ' => 'що навчаються заочно', 'ДС' => 'що навчаються дистанційно', 'ДВ' => 'що отримують другу вищу освіту');
     $eduFormOriginID = $this->getAddValue($this->params['eduform'], '_ADD_ORIGINID');
     $eduFormStr = $eduForms[$eduFormOriginID] . ' ';
     switch ($eduFormOriginID) {
