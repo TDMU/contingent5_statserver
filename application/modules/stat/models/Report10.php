@@ -637,6 +637,7 @@ order by 1";
 		$footdata[0] = array(
 			'code' => "",
 			'title' => "Итог",
+			'specid' => "",
 			'level' => 0,
 			'DATA' => array()
 		);
@@ -657,6 +658,7 @@ order by 1";
 					$L0Data[$rowL1] = array(
 											'code' => $datarow['CODE'],
 											'title' => $datarow['TITLE'], // Title L0
+											'specid' => $datarow['SPECID'],
 											'level' => 1,
 											'DATA' => array()
 					);
@@ -670,6 +672,7 @@ order by 1";
 					$L1Data[$rowL2] = array(
 											'code' => $datarow['CODE'],
 											'title' => $datarow['TITLE'], // Title L0
+											'specid' => $datarow['SPECID'],
 											'level' => 2,
 											'DATA' => array()
 					);
@@ -688,6 +691,7 @@ order by 1";
 					$parentdata[$rowL3] = array(
 												'code' => $datarow['CODE'],
 												'title' => $datarow['TITLE'], // Title L0
+												'specid' => $datarow['SPECID'],
 												'level' => 3												
 					);					
 				}				
