@@ -96,7 +96,7 @@ order by $order";
 	public function getFpoSpecialities($fpocategoryid) {
 		$sql = "select 
 (select VAV.VAL from V_ADD_VALUES VAV where VAV.NODEID = VCT.NODEID and VAV.FIELDNAME = '_ADD_CODE') as CODE,
-VCT.TITLE_WO_CODE as TITLE
+VCT.TITLE_WO_CODE as TITLE, VCT.NODEID as SPECID
 from CONTENTTREE CT  -- Это справочник
 inner join V_CONTENT_TYPE VCT -- это элементы справочника
 on VCT.PATH starting with CT.FULL_PATH

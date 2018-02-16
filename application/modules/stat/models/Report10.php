@@ -179,7 +179,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 		$sql = "select 
 (select VAV.VAL from V_ADD_VALUES VAV where VAV.NODEID = VCT.NODEID and VAV.FIELDNAME = '_ADD_CODE') as CODE,
 VCT.T_NODE_KEY as TYPE_NODE_KEY, -- info about level
-VCT.TITLE_WO_CODE as TITLE 
+VCT.TITLE_WO_CODE as TITLE, VCT.NODEID as SPECID 
 from CONTENTTREE CT  -- Это справочник
 inner join V_CONTENT_TYPE VCT -- это элементы справочника
 on VCT.PATH starting with CT.FULL_PATH
