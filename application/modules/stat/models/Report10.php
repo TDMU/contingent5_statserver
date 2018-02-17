@@ -516,8 +516,9 @@ order by 1";
 			$this->guide_vuz = $this->getEstablishments('GUIDE_STRUCTURE_FPO', 'SORTORDER');
 //			$this->guide_edudir = $this->getGuideItems('T_EDUDIRECTION', false, false, 'CT.SORTORDER', 'SORTORDER');
 //			$this->guide_edulevel = $this->getGuideItems('T_EDULEVEL', false, false, 'CT.SORTORDER', 'SORTORDER');
-			$this->guide_fpospeciality = $this->getFpoSpecialities($this->params['reportfpocategory']);			//	'STAT2_GUIDE_FPO_SPECIALITY_1'		
-			
+			$this->guide_fpospeciality = $this->getFpoSpecialities($this->params['reportfpocategory']);			//	'STAT2_GUIDE_FPO_SPECIALITY_1'
+			$this->guide_fpospecialityByIDs = $this->getFpoSpecialitiesWithID($this->params['reportfpocategory']);
+
 			$lastEstNum = -1;
 			$lastL0SpecialityCode = -1;
 			$lastL1SpecialityCode = -1;

@@ -112,7 +112,29 @@ order by 1";
 		}
 		
 		return $res;
-	}	
+	}
+	
+	public function getFpoSpecialitiesWithID($fpocategoryid) {
+		$sql = "select 
+(select VAV.VAL from V_ADD_VALUES VAV where VAV.NODEID = VCT.NODEID and VAV.FIELDNAME = '_ADD_CODE') as CODE,
+VCT.TITLE_WO_CODE as TITLE, VCT.NODEID as SPECID, VCT.T_NODE_KEY as TYPE_NODE_KEY 
+from CONTENTTREE CT  -- Это справочник
+inner join V_CONTENT_TYPE VCT -- это элементы справочника
+on VCT.PATH starting with CT.FULL_PATH
+where VCT.VISIBLE = 1
+and CT.NODE_KEY = (select VAV.VAL from V_ADD_VALUES VAV where VAV.NODEID = $fpocategoryid and VAV.FIELDNAME = 'SPECIALITY_GUIDE_NODEKEY')
+-- and VCT.T_NODE_KEY = 'T_FPO_SPECIALITY'
+order by 1";		
+	
+		$items = $this->_db->fetchAll($sql);
+		
+		unset($res);
+		foreach ( $items as &$item ) {
+			$res [$item ['SPECID']] = array('CODE'=>$item ['CODE'], 'TITLE'=>$item ['TITLE'], 'TYPE_NODE_KEY' => $item ['TYPE_NODE_KEY']);
+		}
+		
+		return $res;
+	}
 
 	public function getEstablishments($parentKey = 'GUIDE_STRUCTURE', $keyField = 'NODEID', $canAll = false, $canEmpty = false) {
 		$sql = "select VCT.$keyField, VCT.TITLE as TITLE
