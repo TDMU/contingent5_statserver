@@ -227,16 +227,19 @@ order by 1";
 
 			//var_dump($sumRows);
 			
-			$v = array_key_exists($leveldata['code'], $sumRows);
+			//$v = array_key_exists($leveldata['code'], $sumRows);
+			$v = array_key_exists($leveldata['specid'], $sumRows);
 			/*
 			echo '<br/><br/>';
 			var_dump($leveldata['code']); echo '<br/>';
+			var_dump($leveldata['specid']); echo '<br/>';
 			var_dump($sumRows); echo '<br/>';
 			var_dump($v);
 			*/
 			for ($col=3; $col<=9; $col++){
 				$colStr = PHPExcel_Cell::stringFromColumnIndex($col);
-				$sheet->setCellValueByColumnAndRow($col, $current_row, ($v ? "=$colStr" . implode("+$colStr", $sumRows[$leveldata['code']]) : "0") );
+				//$sheet->setCellValueByColumnAndRow($col, $current_row, ($v ? "=$colStr" . implode("+$colStr", $sumRows[$leveldata['code']]) : "0") );
+				$sheet->setCellValueByColumnAndRow($col, $current_row, ($v ? "=$colStr" . implode("+$colStr", $sumRows[$leveldata['specid']]) : "0") );
 			}
 										
 		}
@@ -324,16 +327,28 @@ order by 1";
 			
 			
 			// Номер строки вносим в итого по вузам
-			if(array_key_exists($leveldata['code'], $sumItog))
-				array_push($sumItog[$leveldata['code']], $current_row);
-            else
-				$sumItog[$leveldata['code']] = array($current_row);
+//			if(array_key_exists($leveldata['code'], $sumItog))
+//				array_push($sumItog[$leveldata['code']], $current_row);
+//            else
+//				$sumItog[$leveldata['code']] = array($current_row);
             
             // Номер строки вносим в итого по группе                      
-            if(array_key_exists($leveldata['code'], $sum))
-            	array_push($sum[$leveldata['code']], $current_row);
+//            if(array_key_exists($leveldata['code'], $sum))
+//            	array_push($sum[$leveldata['code']], $current_row);
+//            else
+//            	$sum[$leveldata['code']] = array($current_row);
+			
+			//by specid
+			if(array_key_exists($leveldata['specid'], $sumItog))
+				array_push($sumItog[$leveldata['specid']], $current_row);
             else
-            	$sum[$leveldata['code']] = array($current_row);            
+				$sumItog[$leveldata['specid']] = array($current_row);
+            
+            // Номер строки вносим в итого по группе                      
+            if(array_key_exists($leveldata['specid'], $sum))
+            	array_push($sum[$leveldata['specid']], $current_row);
+            else
+            	$sum[$leveldata['specid']] = array($current_row);			
 		}		
 		
 		// Номер строки вносим в сумму по разделу
@@ -552,7 +567,8 @@ order by 1";
 					}
 					
 					// L0
-					$curL0SpecialityCode = $datarow['L0_SPECIALITY_CODE_STR'];
+					//$curL0SpecialityCode = $datarow['L0_SPECIALITY_CODE_STR'];
+					$curL0SpecialityCode = $datarow['L0_SPECIALITY_NODEID'];
 					if ($lastL0SpecialityCode != $curL0SpecialityCode) {												
 						$rowL0 ++;
 						$rowL1 = -1;
@@ -562,8 +578,11 @@ order by 1";
 						$lastL2SpecialityCode = -1; // speciality
 						$lastL0SpecialityCode = $curL0SpecialityCode;						
 						$vuzData[$rowL0] = array(
-							'code' => $curL0SpecialityCode,
-							'title' => $this->guide_fpospeciality[$curL0SpecialityCode], // Title L0
+							//'code' => $curL0SpecialityCode,
+							'code' => $this->guide_fpospecialityByIDs[$curL0SpecialityCode]['CODE'],
+							//'title' => $this->guide_fpospeciality[$curL0SpecialityCode], // Title L0
+							'title' => $this->guide_fpospecialityByIDs[$curL0SpecialityCode]['TITLE'], // Title L0
+							'specid' => $curL0SpecialityCode,
 							'level' => 0,
 							'DATA' => array()
 						);
@@ -571,15 +590,19 @@ order by 1";
 					}					
 					
 					// L1
-					$curL1SpecialityCode = $datarow['L1_SPECIALITY_CODE_STR'];
+					//$curL1SpecialityCode = $datarow['L1_SPECIALITY_CODE_STR'];
+					$curL1SpecialityCode = $datarow['L1_SPECIALITY_NODEID'];
 					if ($lastL1SpecialityCode != $curL1SpecialityCode) {
 						$rowL1 ++;
 						$rowL2 = -1; // speciality
 						$lastL2SpecialityCode = -1; // speciality
 						$lastL1SpecialityCode = $curL1SpecialityCode;
 						$L0Data[$rowL1] = array(
-							'code' => $curL1SpecialityCode,
-							'title' => $this->guide_fpospeciality[$curL1SpecialityCode], // Title L1
+							//'code' => $curL1SpecialityCode,
+							'code' => $this->guide_fpospecialityByIDs[$curL1SpecialityCode]['CODE'],
+							//'title' => $this->guide_fpospeciality[$curL1SpecialityCode], // Title L1
+							'title' => $this->guide_fpospecialityByIDs[$curL1SpecialityCode]['TITLE'], // Title L1
+							'specid' => $curL1SpecialityCode,
 							'level' => 1,
 							'DATA' => array()
 						);
@@ -587,7 +610,8 @@ order by 1";
 					}
 					
 					// Speciality
-					$curL2SpecialityCode = $datarow["L2_SPECIALITY_CODE_STR"];
+					//$curL2SpecialityCode = $datarow["L2_SPECIALITY_CODE_STR"];
+					$curL2SpecialityCode = $datarow["L2_SPECIALITY_NODEID"];
 					if ($lastL2SpecialityCode != $curL2SpecialityCode) {
 						$rowL2 ++;
 						$lastL2SpecialityCode = $curL2SpecialityCode;
@@ -597,9 +621,12 @@ order by 1";
 						else if (isset($L0Data) && (!is_null($L0Data)) ) $parentdata = &$L0Data;
 						else $parentdata = &$vuzData;
 												
-						$parentdata[$rowL2] = array(						
-							'code' => $curL2SpecialityCode,
-							'title' => $this->guide_fpospeciality[$curL2SpecialityCode], // Title L2 Speciality
+						$parentdata[$rowL2] = array(
+							//'code' => $curL2SpecialityCode,
+							'code' => $this->guide_fpospecialityByIDs[$curL2SpecialityCode]['CODE'],
+							//'title' => $this->guide_fpospeciality[$curL2SpecialityCode], // Title L2 Speciality
+							'title' => $this->guide_fpospecialityByIDs[$curL2SpecialityCode]['TITLE'], // Title L2 Speciality
+							'specid' => $curL2SpecialityCode,
 							'level' => 2
 						);
 																		
