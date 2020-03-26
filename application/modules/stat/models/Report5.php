@@ -117,9 +117,9 @@ iif(GUIDE_EDULEVEL.SORTORDER <= 2, -- разделяем вузы и колле�
 ) as ESTABLISHMENT_NUM,
 */
     $sql = "select first 10000
-iif((GUIDE_EDULEVEL.SORTORDER = 1 or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (54)) or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (7))) and INFO_ESTAB.CODE not in (1,6,12), 1, 2) as GRP,
+iif((GUIDE_EDULEVEL.SORTORDER in (1,5,6) or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (54)) or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (7))) and INFO_ESTAB.CODE not in (1,6,12), 1, 2) as GRP,
 
-iif(GUIDE_EDULEVEL.SORTORDER <= 2, -- разделяем вузы и колледжи
+iif(GUIDE_EDULEVEL.SORTORDER in (1,2,5,6), -- разделяем вузы и колледжи
   iif(GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (5, 14), GUIDE_ESTAB.SORTORDER,
     decode(INFO_ESTAB.CODE, 4, 18, 5, 19, 9, 20, 14, 21, GUIDE_ESTAB.SORTORDER)
   ),
