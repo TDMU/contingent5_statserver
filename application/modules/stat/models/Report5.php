@@ -207,8 +207,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
       $sheet->setCellValueByColumnAndRow(1, $current_row, $isGrandTotal ? 'ЗА ВСІМА ВНЗ' : 'РАЗОМ');
 
-      $sheet->getStyle("A$current_row:T$current_row")->getFont()->setBold(true);
-      $sheet->getStyle("A$current_row:T$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB('FFD8EEEA');
+      $sheet->getStyle("A$current_row:X$current_row")->getFont()->setBold(true);
+      $sheet->getStyle("A$current_row:X$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB('FFD8EEEA');
       $sheet->getStyle("B$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 
       $current_row++;
@@ -220,8 +220,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
         array_push($dirrows, $current_row);
 
         $sheet->setCellValueByColumnAndRow(1, $current_row, "напрям \"$dir\"");
-        $sheet->getStyle("A$current_row:T$current_row")->getFont()->setBold(true);
-        $sheet->getStyle("A$current_row:T$current_row")
+        $sheet->getStyle("A$current_row:X$current_row")->getFont()->setBold(true);
+        $sheet->getStyle("A$current_row:X$current_row")
           ->getFill()
           ->setFillType(PHPExcel_Style_Fill::FILL_SOLID)
           ->getStartColor()
@@ -237,7 +237,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
           array_push($edulevelrows, $current_row);
 
           $sheet->setCellValueByColumnAndRow(1, $current_row, "рівень \"$edulevel\"");
-          $sheet->getStyle("A$current_row:T$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB('FFFDE9D9');
+          $sheet->getStyle("A$current_row:X$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB('FFFDE9D9');
 
           $speciality_count = count($specialities);
           $sheet->insertNewRowBefore($current_row + 2, $speciality_count);
@@ -245,8 +245,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
           $formula_row1 = $current_row + 1;
           $formula_row2 = $current_row + $speciality_count;
 
-          for($col=2; $col<=19; $col++) {
-            if($col == 15) continue;
+          for($col=2; $col<=23; $col++) {
+            if($col == 17) continue;
             $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
             $sheet->setCellValueByColumnAndRow($col, $current_row, "=SUM($colStr$formula_row1:$colStr$formula_row2)");
           }
@@ -257,8 +257,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
             $sheet->setCellValueByColumnAndRow(1, $current_row, $specialityName);
             $sheet->getStyle("B$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 
-            for($col = 2; $col <= 19; $col++) {
-              if($col == 15) continue;
+            for($col = 2; $col <= 23; $col++) {
+              if($col == 17) continue;
               $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
               $sheet->setCellValueByColumnAndRow($col, $current_row, "=$colStr" . implode("+$colStr", $specialityRows));
             }
@@ -267,15 +267,15 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
           }
         }
 
-        for($col=2; $col<=19; $col++) {
-          if($col == 15) continue;
+        for($col=2; $col<=23; $col++) {
+          if($col == 17) continue;
           $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
           $sheet->setCellValueByColumnAndRow($col, $dirrow, "=$colStr" . implode("+$colStr", $edulevelrows));
         }
       }
 
-      for($col=2; $col<=19; $col++) {
-        if($col == 15) continue;
+      for($col=2; $col<=23; $col++) {
+        if($col == 17) continue;
         $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
         $sheet->setCellValueByColumnAndRow($col, $rowAll, "=$colStr" . implode("+$colStr", $dirrows));
       }
@@ -283,7 +283,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
     if (!$isGrandTotal && $isAddDelimiter) { // Разделительная строка между группами вузов
       $sheet->insertNewRowBefore($current_row + 1, 1);
-      $sheet->mergeCellsByColumnAndRow(0, $current_row, 19, $current_row);
+      $sheet->mergeCellsByColumnAndRow(0, $current_row, 23, $current_row);
       $current_row ++;
     }
   }
@@ -356,9 +356,9 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
             $sheet->insertNewRowBefore($current_row + 1, 1);
 
             $sheet->setCellValueByColumnAndRow(0, $current_row, $lastVuzGroup == 1 ? 'ВНЗ 1-2 рівня (2301120)' : 'ВНЗ 3-4 рівня (2301070)');
-            $sheet->mergeCellsByColumnAndRow(0, $current_row, 19, $current_row);
+            $sheet->mergeCellsByColumnAndRow(0, $current_row, 23, $current_row);
 
-            $sheet->getStyle("A$current_row:T$current_row")->getFont()->setBold(true)->setSize(12);
+            $sheet->getStyle("A$current_row:X$current_row")->getFont()->setBold(true)->setSize(12);
             $sheet->getStyle("A$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 
             $current_row ++;
@@ -379,7 +379,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
       $sheet->setCellValueByColumnAndRow(0, $current_row, $vuznum + 1);
       $sheet->setCellValueByColumnAndRow(1, $current_row, $vuz['title']);
 
-      $sheet->mergeCellsByColumnAndRow(1, $current_row, 19, $current_row);
+      $sheet->mergeCellsByColumnAndRow(1, $current_row, 23, $current_row);
 
       $next_row = $current_row + 1;
 
@@ -416,8 +416,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
         $sheet->setCellValueByColumnAndRow(1, $current_row, 'напрям "' . $dir['title'] . '"');
 
-        $sheet->getStyle("A$current_row:T$current_row")->getFont()->setBold(true);
-        $sheet->getStyle("A$current_row:T$current_row")
+        $sheet->getStyle("A$current_row:X$current_row")->getFont()->setBold(true);
+        $sheet->getStyle("A$current_row:X$current_row")
           ->getFill()
           ->setFillType(PHPExcel_Style_Fill::FILL_SOLID)
           ->getStartColor()
@@ -449,14 +449,14 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
 
           // Всего по уровню подготовки
-          for($col=2; $col<=19; $col++) {
-            if($col == 15) continue;
+          for($col=2; $col<=23; $col++) {
+            if($col == 17) continue;
             $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
             $sheet->setCellValueByColumnAndRow($col, $current_row, "=SUM($colStr$formula_row1:$colStr$formula_row2)");
           }
 
           $sheet->setCellValueByColumnAndRow(1, $current_row, "рівень \"{$edulevel['title']}\"");
-          $sheet->getStyle("A$current_row:T$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB($this->colorLevel3);
+          $sheet->getStyle("A$current_row:X$current_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB($this->colorLevel3);
 
           $current_row ++;
 
@@ -474,7 +474,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
             $sheet->setCellValueByColumnAndRow(1, $current_row, $speciality['title']);
             $sheet->getStyle("B$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 
-            foreach (array('CS',null,'CEXIT4','CEXIT3','CEXIT2','CEXIT1',null,'CENTER4','CENTER3','CENTER2','CENTER1',null,'MOVEOUT',null,'MOVEIN') as $colnum => $column) {
+            foreach (array('CS',null,'CEXIT4','CEXIT3','CEXIT2','CEXIT1','CEXIT5','CEXIT6',null,'CENTER4','CENTER3','CENTER2','CENTER1','CENTER5','CENTER6',null,'MOVEOUT',null,'MOVEIN') as $colnum => $column) {
               if($column) {
                 $cell = $sheet->setCellValueByColumnAndRow($colnum + 2, $current_row, array_key_exists($column, $speciality) ? $speciality[$column]['val'] : 0, true);
                 if (!$isExcelFile && @$speciality[$column]['kindid']) {
@@ -485,28 +485,28 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
               }
             }
 
-            $sheet->setCellValueByColumnAndRow(3, $current_row, "=SUM(E$current_row:H$current_row)");
-            $sheet->setCellValueByColumnAndRow(8, $current_row, "=SUM(J$current_row:M$current_row)");
-            $sheet->setCellValueByColumnAndRow(13, $current_row, "=C$current_row-D$current_row+I$current_row");
-            $sheet->setCellValueByColumnAndRow(17, $current_row, "=N$current_row-O$current_row+Q$current_row");
-            $sheet->setCellValueByColumnAndRow(18, $current_row, "=(C$current_row*8.5+R$current_row*3.5)/12");
-            $sheet->setCellValueByColumnAndRow(19, $current_row, "=S$current_row*$coefficient");
+            $sheet->setCellValueByColumnAndRow(3, $current_row, "=SUM(E$current_row:J$current_row)");
+            $sheet->setCellValueByColumnAndRow(8, $current_row, "=SUM(L$current_row:Q$current_row)");
+            $sheet->setCellValueByColumnAndRow(13, $current_row, "=C$current_row-D$current_row+K$current_row");
+            $sheet->setCellValueByColumnAndRow(21, $current_row, "=R$current_row-S$current_row+U$current_row");
+            $sheet->setCellValueByColumnAndRow(22, $current_row, "=(C$current_row*8.5+V$current_row*3.5)/12");
+            $sheet->setCellValueByColumnAndRow(23, $current_row, "=W$current_row*$coefficient");
 
             $current_row ++;
           }
 
         }
 
-        for($col=2; $col<=19; $col++) {
-          if($col == 15) continue;
+        for($col=2; $col<=23; $col++) {
+          if($col == 17) continue;
           $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
           $sheet->setCellValueByColumnAndRow($col, $dirrow, "=$colStr" . implode("+$colStr", $edulevelrows));
         }
 
       }
 
-      for($col=2; $col<=19; $col++) {
-        if($col == 15) continue;
+      for($col=2; $col<=23; $col++) {
+        if($col == 17) continue;
         $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
         $sheet->setCellValueByColumnAndRow($col, $vuzrow, "=$colStr" . implode("+$colStr", $dirrows));
       }
