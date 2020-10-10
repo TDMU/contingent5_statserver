@@ -143,7 +143,7 @@ inner join CONTENTTREE GUIDE_KIND
 on (GUIDE_KIND.NODEID = SD.KINDID)
 where 1 = 1
 and SD.DATAVALUE <> '0' " . (@$this->params['establishment'] != 0 ? " and ADD_ESTABLISHMENTID.VAL = " . $this->params['establishment'] : "") . ($includeEdubasis ? " and SPG_EDUBASISID.PARAMVALUE = '" . $this->params['edubase'] . "'" : "") . ($includeEduform ? " and SPG_EDUFORMID.PARAMVALUE = '" . $this->params['eduform'] . "'" : "") . //group by 1,2,3,4,5,6"
-" order by " . ($reportNum != 1 ? " ADD_ESTABLISHMENTID.VAL," : "") . "ADD_CODE.VAL";
+" order by " . ($reportNum != 1 ? " ADD_ESTABLISHMENTID.VAL, " : "") . "GUIDE_SPEC.NODEID, ADD_EDULEVELID.VAL, ADD_CODE.VAL";
 
 		$res = $this->_db->fetchAll ( $sql );
 
