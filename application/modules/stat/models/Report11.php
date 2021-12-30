@@ -124,7 +124,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 ($includeEdubasis ? $edubasisJoin : "") .
 ($includeCountryType ? $countryTypeJoin : "") .
 
-"where  CT_FPO_CATEGORY.NODE_KEY in ('FPO_CAT_PAC','FPO_CAT_TU','FPO_CAT_SPECIALIZATION','FPO_CAT_STAGUVANNYA','FPO_CAT_TEACHER')" .
+"where  CT_FPO_CATEGORY.NODE_KEY in ('FPO_CAT_PAC','FPO_CAT_TU','FPO_CAT_SPECIALIZATION','FPO_CAT_STAGUVANNYA','FPO_CAT_TEACHER','FPO_CAT_SEMINARU','FPO_CAT_MASTERCLASS','FPO_CAT_PFOFSCHOOL')" .
 
 (@$this->params['establishment'] ? " and ADD_ESTABLISHMENTID.VAL = " . $this->params['establishment'] : "") .
 
