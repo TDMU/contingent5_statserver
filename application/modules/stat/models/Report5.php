@@ -117,10 +117,10 @@ iif(GUIDE_EDULEVEL.SORTORDER <= 2, -- разделяем вузы и колле�
 ) as ESTABLISHMENT_NUM,
 */
     $sql = "select first 10000
-iif((GUIDE_EDULEVEL.SORTORDER in (1,5,6) or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (54)) or (GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (7))) and INFO_ESTAB.CODE not in (1,6,12), 1, 2) as GRP,
+iif((GUIDE_EDULEVEL.SORTORDER in (1, 5, 6) or (GUIDE_EDULEVEL.SORTORDER in (2, 5, 6) and INFO_ESTAB.CODE in (54)) or (GUIDE_EDULEVEL.SORTORDER in (2, 5, 6) and INFO_ESTAB.CODE in (7))) and INFO_ESTAB.CODE not in (1,6,12), 1, 2) as GRP,
 
-iif(GUIDE_EDULEVEL.SORTORDER in (1,2,5,6), -- разделяем вузы и колледжи
-  iif(GUIDE_EDULEVEL.SORTORDER = 2 and INFO_ESTAB.CODE in (5, 14), GUIDE_ESTAB.SORTORDER,
+iif(GUIDE_EDULEVEL.SORTORDER in (1, 2, 5, 6), -- разделяем вузы и колледжи
+  iif(GUIDE_EDULEVEL.SORTORDER in (2, 5, 6) and INFO_ESTAB.CODE in (5, 14), GUIDE_ESTAB.SORTORDER,
     decode(INFO_ESTAB.CODE, 4, 18, 5, 19, 9, 20, 14, 21, GUIDE_ESTAB.SORTORDER)
   ),
   GUIDE_ESTAB.SORTORDER
@@ -188,7 +188,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
     $res = $this->_db->fetchAll($sql);
 
     $this->_db->commit ();
-
+//print_r($res);
     return $res;
   }
 
@@ -246,7 +246,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
           $formula_row2 = $current_row + $speciality_count;
 
           for($col=2; $col<=23; $col++) {
-            if($col == 17) continue;
+            if($col == 19) continue;
             $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
             $sheet->setCellValueByColumnAndRow($col, $current_row, "=SUM($colStr$formula_row1:$colStr$formula_row2)");
           }
@@ -258,7 +258,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
             $sheet->getStyle("B$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 
             for($col = 2; $col <= 23; $col++) {
-              if($col == 17) continue;
+              if($col == 19) continue;
               $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
               $sheet->setCellValueByColumnAndRow($col, $current_row, "=$colStr" . implode("+$colStr", $specialityRows));
             }
@@ -268,14 +268,14 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
         }
 
         for($col=2; $col<=23; $col++) {
-          if($col == 17) continue;
+          if($col == 19) continue;
           $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
           $sheet->setCellValueByColumnAndRow($col, $dirrow, "=$colStr" . implode("+$colStr", $edulevelrows));
         }
       }
 
       for($col=2; $col<=23; $col++) {
-        if($col == 17) continue;
+        if($col == 19) continue;
         $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
         $sheet->setCellValueByColumnAndRow($col, $rowAll, "=$colStr" . implode("+$colStr", $dirrows));
       }
@@ -283,7 +283,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
     if (!$isGrandTotal && $isAddDelimiter) { // Разделительная строка между группами вузов
       $sheet->insertNewRowBefore($current_row + 1, 1);
-      $sheet->mergeCellsByColumnAndRow(0, $current_row, 23, $current_row);
+      $sheet->mergeCellsByColumnAndRow(0, $current_row, 19, $current_row);
       $current_row ++;
     }
   }
@@ -383,8 +383,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
       $next_row = $current_row + 1;
 
-      $sheet->getStyle("A$current_row:T$next_row")->getFont()->setBold(true);
-      $sheet->getStyle("A$current_row:T$next_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB($this->colorLevel1);
+      $sheet->getStyle("A$current_row:X$next_row")->getFont()->setBold(true);
+      $sheet->getStyle("A$current_row:X$next_row")->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setARGB($this->colorLevel1);
       $sheet->getStyle("B$current_row")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 
 
@@ -450,7 +450,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
 
           // Всего по уровню подготовки
           for($col=2; $col<=23; $col++) {
-            if($col == 17) continue;
+            if($col == 19) continue;
             $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
             $sheet->setCellValueByColumnAndRow($col, $current_row, "=SUM($colStr$formula_row1:$colStr$formula_row2)");
           }
@@ -486,8 +486,8 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
             }
 
             $sheet->setCellValueByColumnAndRow(3, $current_row, "=SUM(E$current_row:J$current_row)");
-            $sheet->setCellValueByColumnAndRow(8, $current_row, "=SUM(L$current_row:Q$current_row)");
-            $sheet->setCellValueByColumnAndRow(13, $current_row, "=C$current_row-D$current_row+K$current_row");
+            $sheet->setCellValueByColumnAndRow(10, $current_row, "=SUM(L$current_row:Q$current_row)");
+            $sheet->setCellValueByColumnAndRow(17, $current_row, "=C$current_row-D$current_row+K$current_row");
             $sheet->setCellValueByColumnAndRow(21, $current_row, "=R$current_row-S$current_row+U$current_row");
             $sheet->setCellValueByColumnAndRow(22, $current_row, "=(C$current_row*8.5+V$current_row*3.5)/12");
             $sheet->setCellValueByColumnAndRow(23, $current_row, "=W$current_row*$coefficient");
@@ -498,7 +498,7 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
         }
 
         for($col=2; $col<=23; $col++) {
-          if($col == 17) continue;
+          if($col == 19) continue;
           $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
           $sheet->setCellValueByColumnAndRow($col, $dirrow, "=$colStr" . implode("+$colStr", $edulevelrows));
         }
@@ -506,14 +506,14 @@ on (GUIDE_KIND.NODEID = SD.KINDID)" .
       }
 
       for($col=2; $col<=23; $col++) {
-        if($col == 17) continue;
+        if($col == 19) continue;
         $colStr = PHPExcel_Cell::stringFromColumnIndex($col);
         $sheet->setCellValueByColumnAndRow($col, $vuzrow, "=$colStr" . implode("+$colStr", $dirrows));
       }
 
       if ($indpapers) {
         $sheet->insertNewRowBefore($current_row, 4);
-         $sheet->getStyle('A' . $current_row . ':T' . ($current_row + 3))
+         $sheet->getStyle('A' . $current_row . ':X' . ($current_row + 3))
            ->applyFromArray(
                array(
                 'font' => array (
